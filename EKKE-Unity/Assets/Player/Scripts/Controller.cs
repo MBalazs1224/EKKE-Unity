@@ -48,6 +48,7 @@ public class Controller : MonoBehaviour
         }
     }
 
+    // Makes the palyer jump
     private void Jump()
     {
         if (inAir && canDoubleJump)
@@ -62,6 +63,7 @@ public class Controller : MonoBehaviour
         }
         
     }
+    //Detects if the player has touched the floor.
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor")
