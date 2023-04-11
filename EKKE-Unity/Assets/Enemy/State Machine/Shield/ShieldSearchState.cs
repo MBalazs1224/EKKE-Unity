@@ -35,7 +35,7 @@ public class ShieldSearchState : EnemyBaseState
         }
         else
         {
-            stateManager.StateSwitch(new ShieldAttackState());
+            stateManager.StateSwitch(new CarAttackState());
         }
 
     }
