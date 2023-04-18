@@ -151,7 +151,7 @@ public class Character : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.layer == 3)
         {
             inAir = false;
             canDoubleJump = true;

@@ -16,13 +16,9 @@ public class SceneController : MonoBehaviour
         GameObject[] enemyGameObjects = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var currentObject in enemyGameObjects)
         {
-            if (currentObject.name.Equals("Shield"))
+            if (currentObject.name.Equals("ExplodingCar"))
             {
-                enemies.Add(new EnemyStateManager(new ShieldSearchState(), currentObject));
-            }
-            else
-            {
-                enemies.Add(new EnemyStateManager(new PolicemanSearchState(), currentObject));
+                enemies.Add(new EnemyStateManager(new CarSearchState(), currentObject));
             }
         }
 
