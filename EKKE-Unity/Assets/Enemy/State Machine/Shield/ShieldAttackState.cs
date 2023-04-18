@@ -7,7 +7,6 @@ public class ShieldAttackState : EnemyBaseState
     bool canAttack = true;
     SceneController sceneController;
     int attackCooldown = 3;
-    float speed = .01f;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         stateManager = manager;
