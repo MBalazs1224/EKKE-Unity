@@ -6,6 +6,13 @@ public class SceneController : MonoBehaviour
 {
 
     List<EnemyStateManager> enemies = new List<EnemyStateManager>();
+
+
+    private void Awake()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 30;
+    }
     void Start()
     {
         FindEnemies();
@@ -28,6 +35,7 @@ public class SceneController : MonoBehaviour
     void Update()
     {
         TicKEnemies();
+        //Debug.Log($"FPS: {1.0f / Time.deltaTime}");
     }
 
     private void TicKEnemies()

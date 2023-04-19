@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
 {
     int startRegenerate = 10;
     Checkpoint cp = new Checkpoint();
+    [SerializeField]
     int maxHealth = 2;
     int health;
     Animator anim;
@@ -15,28 +16,53 @@ public class Character : MonoBehaviour
     static bool canDoubleJump = false;
     Rigidbody2D rb;
     bool canWallJump = false;
+    [SerializeField]
+    float jumpHeight = 50;
+    [SerializeField]
+    float doubleJumpHeight = 10;
     Vector3 wallVector;
-    void Death()
-    {
-        anim.SetTrigger("Death");
-        anim.SetBool("Run", false);
+    private bool isSliding;
+    [SerializeField]
+    private int moveSpeed = 50;
+    [SerializeField]
+    int respawnTime = 3;
 
+    IEnumerator Death()
+    {
+        anim.SetBool("Idle", false);
+        anim.SetBool("Run", false);
+        anim.SetBool("Slide", false);
+        anim.SetTrigger("Death");
+        Debug.Log("Respawning");
+        yield return new WaitForSeconds(respawnTime);
+        Respawn();
     }
+
+    private void Respawn()
+    {
+        
+        this.gameObject.transform.position = cp.resumePoint;
+        anim.SetBool("Idle", true);
+        health = maxHealth;
+    }
+
     public bool isDead() => health == 0;
     void Attack()
     {
         anim.SetTrigger("Attack");
         anim.SetBool("Run", false);
+        anim.SetBool("Slide", false);
+        anim.SetBool("Idle", true);
     }
     public void TakeDamage()
     {
-        anim.SetBool("Run", false);
         if (health < 1) return;
-        health--;
-        if (health == 0)
+        anim.SetBool("Run", false);
+        anim.SetBool("Slide", false);
+        if (--health == 0)
         {
-            Death();
-            anim.SetTrigger("Death");
+            StopAllCoroutines();
+            StartCoroutine(Death());
             Debug.Log($"Dead!");
         }
         else
@@ -65,13 +91,20 @@ public class Character : MonoBehaviour
     private void Update()
     {
         if (isDead()) return;
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
+        else if (Input.GetKeyDown(KeyCode.E) && !inAir)
+        {
+            Attack();
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            //StopAllCoroutines();
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
             //StopAllCoroutines();
 
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) && !isSliding)
         {
             MoveRight();
             this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
@@ -79,38 +112,49 @@ public class Character : MonoBehaviour
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.D))
+        else if (Input.GetKeyUp(KeyCode.D) && !isSliding)
         {
             anim.SetBool("Run", false);
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && !isSliding)
         {
             MoveLeft();
             this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             //StopAllCoroutines();
 
         }
-        else if (Input.GetKeyUp(KeyCode.A))
+        else if (Input.GetKeyUp(KeyCode.A) && !isSliding)
         {
             anim.SetBool("Run", false);
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
-        if (Input.GetKey(KeyCode.E))
+
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            Attack();
-            rb.velocity = new Vector2(0, rb.velocity.y);
-            //StopAllCoroutines();
+            Slide();
         }
 
     }
+    void Slide()
+    {
+        anim.SetBool("Run", false);
+        anim.SetBool("Slide",true);
+        isSliding = true;
+    }
 
+    public void UnSlide()
+    {
+        anim.SetBool("Slide", false);
+        isSliding = false;
+    }
 
     private void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         anim = this.gameObject.GetComponent<Animator>();
         health = maxHealth;
+        cp.resumePoint = this.gameObject.transform.position;
     }
 
     private void MoveLeft()
@@ -118,12 +162,15 @@ public class Character : MonoBehaviour
 
         if (rb.velocity.x > -5)
         {
-            rb.velocity += new Vector2(-1f, 0) * Time.deltaTime * 50;
+            rb.velocity += moveSpeed * Time.deltaTime * new Vector2(-1f, 0);
         }
-        anim.SetBool("Run", true);
+        if (!inAir) anim.SetBool("Run", true);
     }
     private void Jump()
     {
+        anim.SetBool("Run", false);
+        anim.SetBool("Idle", false);
+        anim.SetBool("Slide", false);
         if (canWallJump)
         {
             rb.velocity = wallVector;
@@ -131,23 +178,25 @@ public class Character : MonoBehaviour
         }
         else if (inAir && canDoubleJump)
         {
-            rb.velocity = new Vector2(0, 7.5f) * Time.deltaTime * 50;
+            anim.SetTrigger("Jump2");
+            rb.velocity = doubleJumpHeight * Time.deltaTime * new Vector2(0, 7.5f);
             canDoubleJump = false;
         }
         else if (!inAir)
         {
-            rb.velocity = new Vector2(0, 7.5f) * Time.deltaTime * 200;
+            anim.SetTrigger("Jump1");
+            rb.velocity = new Vector2(0, 7.5f) * Time.deltaTime * jumpHeight;
             inAir = true;
         }
-        anim.SetBool("Run", false);
+        
     }
     private void MoveRight()
     {
         if (rb.velocity.x < 5)
         {
-            rb.velocity += new Vector2(1f, 0) * Time.deltaTime * 50;
+            rb.velocity += new Vector2(1f, 0) * Time.deltaTime * moveSpeed;
         }
-        anim.SetBool("Run", true);
+        if (!inAir) anim.SetBool("Run", true);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -156,6 +205,7 @@ public class Character : MonoBehaviour
             inAir = false;
             canDoubleJump = true;
             canWallJump = false;
+            anim.SetBool("Idle",true);
         }
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)

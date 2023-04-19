@@ -5,5 +5,5 @@ using UnityEngine;
 public class Checkpoint 
 {
 
-    //public Vector2 resumePoint = new Vector2(0,0);
+    public Vector2 resumePoint = new Vector2(0,0);
 }
