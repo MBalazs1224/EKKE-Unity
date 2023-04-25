@@ -63,7 +63,7 @@ public class Character : MonoBehaviour
     }
     public void TakeDamage()
     {
-        if (health < 1) return;
+        if (isDead()) return;
         anim.SetBool("Run", false);
         anim.SetBool("Slide", false);
         if (--health == 0)
@@ -124,7 +124,7 @@ public class Character : MonoBehaviour
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.D) && !isSliding && !isOnWall)
+        else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isSliding && !isOnWall)
         {
 
             anim.SetBool("Run", false);
@@ -136,11 +136,6 @@ public class Character : MonoBehaviour
             this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             //StopAllCoroutines();
 
-        }
-        else if (Input.GetKeyUp(KeyCode.A) && !isSliding && !isOnWall)
-        {
-            anim.SetBool("Run", false);
-            rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
         if (Input.GetKeyDown(KeyCode.S) && !inAir)
@@ -250,7 +245,7 @@ public class Character : MonoBehaviour
             anim.SetBool("WallStuck", true);
             anim.SetBool("Fall", false);
             rb.velocity = new Vector2(0, 0);
-            canDoubleJump = false;
+            canDoubleJump = true;
             inAir = false;
             if (WallOnRightSide())
             {
