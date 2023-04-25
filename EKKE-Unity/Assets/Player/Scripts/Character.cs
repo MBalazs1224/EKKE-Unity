@@ -146,6 +146,11 @@ public class Character : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && !inAir)
         {
             Slide();
+
+        }
+        if (isOnWall)
+        {
+            this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .1f);
         }
 
     }
@@ -247,16 +252,24 @@ public class Character : MonoBehaviour
             rb.velocity = new Vector2(0, 0);
             canDoubleJump = false;
             inAir = false;
-            if (collision.gameObject.transform.position.x >= this.gameObject.transform.position.x)
+            if (WallOnRightSide())
             {
-                wallOnRightSide = true;
+                this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
             else
             {
-                wallOnRightSide = false;
+                this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             }
         }
     }
+
+    private bool WallOnRightSide()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.right);
+
+        return hit && hit.transform.position.x >= this.transform.position.x;
+    }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 6)
@@ -265,6 +278,7 @@ public class Character : MonoBehaviour
             inAir = true;
             anim.SetBool("WallStuck", false);
             anim.SetBool("Fall", true);
+            this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
         }
     }
 }
