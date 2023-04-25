@@ -26,6 +26,13 @@ public class Character : MonoBehaviour
     private int moveSpeed = 50;
     [SerializeField]
     int respawnTime = 3;
+    private bool isOnWall;
+
+    bool wallOnRightSide = false;
+    [SerializeField]
+    float wallJumpSpeed = 2f;
+    [SerializeField]
+    private float wallJumpHeight = 10f;
 
     IEnumerator Death()
     {
@@ -92,7 +99,7 @@ public class Character : MonoBehaviour
     {
         if (isDead()) return;
         if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
-        else if (Input.GetKeyDown(KeyCode.E) && !inAir)
+        else if (Input.GetKeyDown(KeyCode.E) && !inAir && !isOnWall)
         {
             Attack();
             rb.velocity = new Vector2(0, rb.velocity.y);
@@ -104,16 +111,22 @@ public class Character : MonoBehaviour
             //StopAllCoroutines();
 
         }
-        else if (Input.GetKey(KeyCode.D) && !isSliding)
+        else if (Input.GetKey(KeyCode.D) && !isSliding && !isOnWall)
         {
+            if (isOnWall)
+            {
+                anim.SetBool("WallStuck", false);
+                anim.SetBool("Fall", true);
+            }
             MoveRight();
             this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             //StopAllCoroutines();
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.D) && !isSliding)
+        else if (Input.GetKeyUp(KeyCode.D) && !isSliding && !isOnWall)
         {
+
             anim.SetBool("Run", false);
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
@@ -124,17 +137,28 @@ public class Character : MonoBehaviour
             //StopAllCoroutines();
 
         }
-        else if (Input.GetKeyUp(KeyCode.A) && !isSliding)
+        else if (Input.GetKeyUp(KeyCode.A) && !isSliding && !isOnWall)
         {
             anim.SetBool("Run", false);
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) && !inAir)
         {
             Slide();
         }
 
+    }
+    private void LateUpdate()
+    {
+        if (isOnWall)
+        {
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            rb.gravityScale = 1;
+        }
     }
     void Slide()
     {
@@ -171,10 +195,14 @@ public class Character : MonoBehaviour
         anim.SetBool("Run", false);
         anim.SetBool("Idle", false);
         anim.SetBool("Slide", false);
-        if (canWallJump)
+        if (isOnWall)
         {
-            rb.velocity = wallVector;
-            Debug.Log("WallJump");
+            rb.gravityScale = 1;
+            anim.SetBool("WallStuck", false);
+            anim.SetBool("Fall", false);
+            anim.SetTrigger("Jump1");
+            Vector2 jumpDirection = new Vector2(-transform.localScale.x * wallJumpSpeed, wallJumpHeight);
+            rb.velocity += jumpDirection;
         }
         else if (inAir && canDoubleJump)
         {
@@ -205,15 +233,38 @@ public class Character : MonoBehaviour
             inAir = false;
             canDoubleJump = true;
             canWallJump = false;
+            anim.SetBool("Fall", false);
             anim.SetBool("Idle",true);
+            isOnWall = false;
+            rb.gravityScale = 1;
+
+        }
+        else if (collision.gameObject.layer == 6)
+        {
+            isOnWall = true;
+            anim.SetBool("WallStuck", true);
+            anim.SetBool("Fall", false);
+            rb.velocity = new Vector2(0, 0);
+            canDoubleJump = false;
+            inAir = false;
+            if (collision.gameObject.transform.position.x >= this.gameObject.transform.position.x)
+            {
+                wallOnRightSide = true;
+            }
+            else
+            {
+                wallOnRightSide = false;
+            }
         }
     }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (hit.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.layer == 6)
         {
-            canWallJump = true;
+            isOnWall = false;
+            inAir = true;
+            anim.SetBool("WallStuck", false);
+            anim.SetBool("Fall", true);
         }
-        wallVector = hit.normal;
     }
 }
