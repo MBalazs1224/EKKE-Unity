@@ -14,8 +14,9 @@ public abstract class EnemyBaseState
     protected bool CanSeePlayer(GameObject current, Character player, float maxDetectionDistance = 3)
     {
         if (player.isDead()) return false;
-        var rayDirection = player.gameObject.transform.position - current.transform.position;
+        var rayDirection = player.transform.position - current.transform.position;
         RaycastHit2D result = Physics2D.Raycast(current.transform.position, rayDirection, maxDetectionDistance);
+        Debug.DrawLine(player.transform.position, current.transform.position);
         return result.transform == player.transform;
     }
 }

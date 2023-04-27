@@ -7,12 +7,19 @@ public class EnemyStateManager
     EnemyBaseState currentState;
     GameObject current;
     Character player;
-    public EnemyStateManager(EnemyBaseState startState,GameObject gameObject)
+    List<EnemyStateManager> toBeRemovedList;
+    public EnemyStateManager(EnemyBaseState startState,GameObject gameObject, List<EnemyStateManager> list)
     {
         currentState = startState;
         current = gameObject;
+        this.toBeRemovedList = list;
         player = GameObject.Find("Player").GetComponent<Character>();
         currentState.EnterState(this,gameObject,player);
+    }
+
+    public void AddSelfToRemove()
+    {
+        toBeRemovedList.Add(this);
     }
     public void Tick()
     {

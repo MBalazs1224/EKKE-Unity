@@ -44,10 +44,14 @@ public class Character : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         Respawn();
     }
+    public bool IsAttacking()
+    {
+        return Input.GetKeyDown(KeyCode.E);
+    }
 
     private void Respawn()
     {
-        
+
         this.gameObject.transform.position = cp.resumePoint;
         anim.SetBool("Idle", true);
         health = maxHealth;
@@ -60,6 +64,13 @@ public class Character : MonoBehaviour
         anim.SetBool("Run", false);
         anim.SetBool("Slide", false);
         anim.SetBool("Idle", true);
+
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position + new Vector3(1,0), Vector2.right);
+
+        if (hit && hit.transform.gameObject.name.Equals("5G Pigeon"))
+        {
+            Debug.Log("Pigeon hit!");
+        }
     }
     public void TakeDamage()
     {
@@ -94,7 +105,7 @@ public class Character : MonoBehaviour
         health = maxHealth;
         Debug.Log("Health is back to max value!");
     }
-    
+
     private void Update()
     {
         if (isDead()) return;
@@ -111,7 +122,7 @@ public class Character : MonoBehaviour
             //StopAllCoroutines();
 
         }
-        else if (Input.GetKey(KeyCode.D) && !isSliding && !isOnWall)
+        else if (Input.GetKey(KeyCode.D) && !isOnWall)
         {
             if (isOnWall)
             {
@@ -124,14 +135,19 @@ public class Character : MonoBehaviour
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isSliding && !isOnWall)
+        else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
         {
 
             anim.SetBool("Run", false);
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
-        else if (Input.GetKey(KeyCode.A) && !isSliding)
+        else if (Input.GetKey(KeyCode.A))
         {
+            if (isOnWall)
+            {
+                anim.SetBool("WallStuck", false);
+                anim.SetBool("Fall", true);
+            }
             MoveLeft();
             this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             //StopAllCoroutines();
@@ -145,25 +161,14 @@ public class Character : MonoBehaviour
         }
         if (isOnWall)
         {
-            this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .1f);
+            this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
         }
 
-    }
-    private void LateUpdate()
-    {
-        if (isOnWall)
-        {
-            rb.gravityScale = 0;
-        }
-        else
-        {
-            rb.gravityScale = 1;
-        }
     }
     void Slide()
     {
         anim.SetBool("Run", false);
-        anim.SetBool("Slide",true);
+        anim.SetBool("Slide", true);
         isSliding = true;
     }
 
@@ -184,11 +189,8 @@ public class Character : MonoBehaviour
     private void MoveLeft()
     {
 
-        if (rb.velocity.x > -5)
-        {
-            rb.velocity += moveSpeed * Time.deltaTime * new Vector2(-1f, 0);
-        }
-        if (!inAir) anim.SetBool("Run", true);
+        rb.position += new Vector2(-0.05f, 0) * moveSpeed * Time.deltaTime;
+        if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
     private void Jump()
     {
@@ -197,7 +199,6 @@ public class Character : MonoBehaviour
         anim.SetBool("Slide", false);
         if (isOnWall)
         {
-            rb.gravityScale = 1;
             anim.SetBool("WallStuck", false);
             anim.SetBool("Fall", false);
             anim.SetTrigger("Jump1");
@@ -216,32 +217,31 @@ public class Character : MonoBehaviour
             rb.velocity = new Vector2(0, 7.5f) * Time.deltaTime * jumpHeight;
             inAir = true;
         }
-        
+
     }
     private void MoveRight()
     {
-        if (rb.velocity.x < 5)
-        {
-            rb.velocity += new Vector2(1f, 0) * Time.deltaTime * moveSpeed;
-        }
-        if (!inAir) anim.SetBool("Run", true);
+        rb.position += new Vector2(0.05f, 0) * Time.deltaTime * moveSpeed;
+
+        if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.layer == 6)
         {
             inAir = false;
             canDoubleJump = true;
             canWallJump = false;
             anim.SetBool("Fall", false);
-            anim.SetBool("Idle",true);
+            anim.SetBool("Idle", true);
             isOnWall = false;
-            rb.gravityScale = 1;
 
         }
-        else if (collision.gameObject.layer == 6)
+        else if (collision.gameObject.layer == 7)
         {
             isOnWall = true;
+            anim.SetBool("Run", false);
+            anim.SetBool("Idle", false);
             anim.SetBool("WallStuck", true);
             anim.SetBool("Fall", false);
             rb.velocity = new Vector2(0, 0);
@@ -256,6 +256,7 @@ public class Character : MonoBehaviour
                 this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             }
         }
+
     }
 
     private bool WallOnRightSide()
@@ -267,8 +268,9 @@ public class Character : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == 7)
         {
+            rb.gravityScale = 1;
             isOnWall = false;
             inAir = true;
             anim.SetBool("WallStuck", false);
