@@ -36,6 +36,7 @@ public class Character : MonoBehaviour
     private float wallJumpHeight = 10f;
 
     bool canDash = true;
+    public int pigeonsKilled = 0;
 
     IEnumerator Death()
     {
