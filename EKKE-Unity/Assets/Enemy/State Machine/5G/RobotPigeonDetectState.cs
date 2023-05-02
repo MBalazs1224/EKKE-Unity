@@ -6,9 +6,10 @@ using UnityEngine;
 public class RobotPigeonDetectState : EnemyBaseState
 {
     Animator anim;
-    float waitTime = 1;
+    float waitTime = 3;
     SceneController sceneController;
     bool canDie = true;
+    bool isDead = false;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         Debug.Log("5G pigeon entered detect state!");
@@ -38,6 +39,7 @@ public class RobotPigeonDetectState : EnemyBaseState
     {
         if (canDie)
         {
+            player.pigeonsKilled++;
             sceneController.StopCoroutine(WaitForFly());
             Debug.Log("5G pigeon died!");
             anim.SetTrigger("Death");
@@ -50,11 +52,6 @@ public class RobotPigeonDetectState : EnemyBaseState
     IEnumerator WaitForFly()
     {
         yield return new WaitForSeconds(waitTime);
-<<<<<<< Updated upstream
-        canDie = false;
-        anim.SetTrigger("Move");
-        Debug.Log("5G pigeon started flying away!");
-=======
         if (!isDead)
         {
             canDie = false;
@@ -62,6 +59,5 @@ public class RobotPigeonDetectState : EnemyBaseState
             stateManager.StateSwitch(new RobotPigeonFlyState());
         }
 
->>>>>>> Stashed changes
     }
 }

@@ -35,6 +35,8 @@ public class Character : MonoBehaviour
     [SerializeField]
     private float wallJumpHeight = 10f;
 
+    public int pigeonsKilled = 0;
+
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
