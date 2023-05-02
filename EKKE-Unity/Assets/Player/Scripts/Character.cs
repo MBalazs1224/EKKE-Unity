@@ -35,6 +35,8 @@ public class Character : MonoBehaviour
     [SerializeField]
     private float wallJumpHeight = 10f;
 
+    bool canDash = true;
+
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -123,6 +125,10 @@ public class Character : MonoBehaviour
             //StopAllCoroutines();
 
         }
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !isSliding)
+        {
+            Dash();
+        }
         else if (Input.GetKey(KeyCode.D) && !isOnWall)
         {
             if (isOnWall)
@@ -155,6 +161,7 @@ public class Character : MonoBehaviour
 
         }
 
+
         if (Input.GetKeyDown(KeyCode.S) && !inAir)
         {
             Slide();
@@ -166,6 +173,19 @@ public class Character : MonoBehaviour
         }
 
     }
+
+    private void Dash()
+    {
+        anim.SetTrigger("Dash");
+        moveSpeed *= 2;
+        canDash = false;
+    }
+    void UnDash()
+    {
+        moveSpeed /= 2;
+        canDash = true;
+    }
+
     void Slide()
     {
         anim.SetBool("Run", false);
