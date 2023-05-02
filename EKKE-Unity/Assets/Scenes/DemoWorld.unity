@@ -11257,6 +11257,7 @@ GameObject:
   - component: {fileID: 1906841359}
   - component: {fileID: 1906841361}
   - component: {fileID: 1906841362}
+  - component: {fileID: 1906841363}
   m_Layer: 0
   m_Name: ExplodingCar
   m_TagString: Enemy
@@ -11305,7 +11306,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< Updated upstream
   m_Sprite: {fileID: -1165932353, guid: 1dcc2d8ddf3f12b4b8b8852791cbf45e, type: 3}
+=======
+  m_Sprite: {fileID: -1207928182, guid: ff653e2c700e60e48b649e7d61c06f55, type: 3}
+>>>>>>> Stashed changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11378,12 +11383,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.782217, y: 2.97}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!1 &1910903918
 GameObject:
+=======
+--- !u!50 &1906841363
+Rigidbody2D:
+  serializedVersion: 4
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1910903919}
@@ -11873,6 +11885,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+  m_GameObject: {fileID: 1906841358}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+>>>>>>> Stashed changes
 --- !u!1 &2144390436
 GameObject:
   m_ObjectHideFlags: 0
