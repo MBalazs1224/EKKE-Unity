@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     private int moveSpeed = 50;
     [SerializeField]
-    int respawnTime = 3;
+    int respawnTime = 10;
     private bool isOnWall;
 
     bool wallOnRightSide = false;
@@ -39,6 +39,9 @@ public class Character : MonoBehaviour
     bool canDash = true;
     public int pigeonsKilled = 0;
 
+    [SerializeField]
+    float waitForAFK = 3f;
+    float afkTime = 0;
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -114,6 +117,15 @@ public class Character : MonoBehaviour
     private void Update()
     {
         if (isDead()) return;
+        if (!Input.anyKey)
+        {
+            afkTime += Time.deltaTime;
+            if (afkTime >= waitForAFK)
+            {
+                StartAFK();
+            }
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
         else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
         else if (Input.GetKeyDown(KeyCode.E) && !inAir && !isOnWall)
@@ -175,6 +187,24 @@ public class Character : MonoBehaviour
             this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
         }
 
+    }
+
+    private void StartAFK()
+    {
+        afkTime = 0;
+
+        System.Random rnd = new System.Random();
+
+        double value = rnd.NextDouble();
+        if (value < .33)
+        {
+            anim.SetTrigger("AFK1");
+        }
+        else if (value < .66)
+        {
+            anim.SetTrigger("AFK2");
+        }
+        else anim.SetTrigger("AFK3");
     }
 
     private void ReloadScene()

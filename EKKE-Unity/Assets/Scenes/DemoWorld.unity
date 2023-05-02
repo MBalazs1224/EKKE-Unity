@@ -164,6 +164,7 @@ MonoBehaviour:
   wallJumpSpeed: 2.36
   wallJumpHeight: 10
   pigeonsKilled: 0
+  waitForAFK: 3
 --- !u!61 &7203351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -281,7 +282,7 @@ SpriteRenderer:
   m_Size: {x: 10, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &7203355
