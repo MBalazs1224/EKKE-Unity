@@ -30,6 +30,7 @@ public class Character : MonoBehaviour
 
     bool wallOnRightSide = false;
     [SerializeField]
+
     float wallJumpSpeed = 2f;
     [SerializeField]
     private float wallJumpHeight = 10f;
