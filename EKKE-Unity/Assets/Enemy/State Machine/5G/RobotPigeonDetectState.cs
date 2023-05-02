@@ -24,7 +24,7 @@ public class RobotPigeonDetectState : EnemyBaseState
     public override void Tick()
     {
         var rayDirection = player.gameObject.transform.position - currentObject.transform.position;
-        RaycastHit2D result = Physics2D.Raycast(currentObject.transform.position, rayDirection, 1);
+        RaycastHit2D result = Physics2D.Raycast(currentObject.transform.position, rayDirection, 2);
         if (result.transform == player.transform && player.IsAttacking()) 
             Death();
        
@@ -41,6 +41,7 @@ public class RobotPigeonDetectState : EnemyBaseState
         {
             player.pigeonsKilled++;
             sceneController.StopCoroutine(WaitForFly());
+            isDead = true;
             Debug.Log("5G pigeon died!");
             anim.SetTrigger("Death");
             stateManager.AddSelfToRemove();
@@ -57,6 +58,7 @@ public class RobotPigeonDetectState : EnemyBaseState
             canDie = false;
             anim.SetTrigger("Move");
             stateManager.StateSwitch(new RobotPigeonFlyState());
+            Debug.Log("5G pigeon started flying away!");
         }
 
     }
