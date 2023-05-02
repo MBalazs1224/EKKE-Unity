@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
@@ -113,7 +114,8 @@ public class Character : MonoBehaviour
     private void Update()
     {
         if (isDead()) return;
-        if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
+        if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
+        else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
         else if (Input.GetKeyDown(KeyCode.E) && !inAir && !isOnWall)
         {
             Attack();
@@ -173,6 +175,11 @@ public class Character : MonoBehaviour
             this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
         }
 
+    }
+
+    private void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void Dash()

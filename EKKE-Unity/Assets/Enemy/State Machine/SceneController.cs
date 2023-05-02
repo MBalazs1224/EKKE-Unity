@@ -28,6 +28,8 @@ public class SceneController : MonoBehaviour
             if (currentObject.name.Equals("ExplodingCar"))
                 enemies.Add(new EnemyStateManager(new CarSearchState(), currentObject, enemiesToBeRemoved));
             else if (currentObject.name.Equals("5G Pigeon")) enemies.Add(new EnemyStateManager(new RobotPigeonIdleState(), currentObject, enemiesToBeRemoved));
+            else if (currentObject.name.Equals("Pigeon")) enemies.Add(new EnemyStateManager(new PigeonIdleState(), currentObject, enemiesToBeRemoved));
+            else if (currentObject.name.Equals("Policeman")) enemies.Add(new EnemyStateManager(new PolicemanSearchState(), currentObject, enemiesToBeRemoved));
         }
 
        

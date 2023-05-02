@@ -1,0 +1,1421 @@
+fileFormatVersion: 2
+guid: 57623aaec7a73134f9f40178ea39cd14
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pigeon_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a049f4273b018f44b2625236cd1ea6c
+      internalID: -602170467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad14d3728fdee94f8e06a132c2f576e
+      internalID: -101690665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_2
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d755f308836bf7a43a5bb8afb909f241
+      internalID: -635491987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_3
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607dacd951e266c479db9b33f4a6fe1a
+      internalID: -1919195481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2a30ce23a5cd544a33fc525afbb7e5
+      internalID: -318923583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_5
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc0e1ca55dd7714cb20b4b35cd580af
+      internalID: 788905933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_6
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673b46a35ff91d34e99a034076e00fca
+      internalID: -1431255878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_7
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99482efe676685d48864624241eb6f15
+      internalID: -1232204665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_8
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214b8b97aad1e774d8ef6ae1d5d38e72
+      internalID: -974292556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_9
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5b0e8c11ec7804da7fba4ed7b05e5a
+      internalID: 1119008332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_10
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedb4690a05e6a64ab01a22900711e37
+      internalID: 1602416761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_11
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033bba0c44b104041ab8f95a93dd0060
+      internalID: -11558408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_12
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5fc80d1c053544394a081438b701e6
+      internalID: 1090716174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_13
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee308309b4fccb4f9409bc4191fcf82
+      internalID: 1107886429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_14
+      rect:
+        serializedVersion: 2
+        x: 3766
+        y: 1047
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d6f8f07b661254086ba583a1e0104f
+      internalID: -2091610566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1752f36e70fe7409008b6f3400c302
+      internalID: -1065625962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_16
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9506f5e52de7724a935d4619b6e1dbb
+      internalID: -1791737344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_17
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a89777d33b715744949ef066bbca0fb
+      internalID: -1395563812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_18
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbe3b439f2c9b24f9e6a05b909059ed
+      internalID: -271992208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_19
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551fbbd2c3512c4419559c26cc901eba
+      internalID: 1350877172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_20
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d429093788608ec4f960a988b9da2ea1
+      internalID: 671752273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_21
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2be5bd0e7b1dce4abd34f2728c0746f
+      internalID: -361783582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_22
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550fa229e0642fd48bccd8d967d55a75
+      internalID: 1738092185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_23
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fa10df93a866a4c87409233fe6a6c7
+      internalID: 490710005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_24
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b608454d23c6f624b934d46c13794fd9
+      internalID: -1812870261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_25
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714a31bb13c62f74dacbd5889ff6a619
+      internalID: 801271306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_26
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb13b0e5fb8f79f4a93cbe304139403d
+      internalID: -1256362234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_27
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ec99f91ea32e54ca69b451922bf854
+      internalID: 1738417073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_28
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefd2b270c3440a4fac4e2d3a7478acf
+      internalID: -1490478734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_29
+      rect:
+        serializedVersion: 2
+        x: 3766
+        y: 698
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f32ad23800b7f42b1bfd29210d5d2d
+      internalID: 629297366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9105a6e505ae6498afa4ca3acedf0a
+      internalID: -1162008401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_31
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ec6603149981d4e848b6d402569591
+      internalID: -247686552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_32
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0210fc25cc1b6d4e883d046a1a4f0ad
+      internalID: 81655819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_33
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052e177ef84422246b40abf8ebfebc21
+      internalID: 1888322271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_34
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dd7e4a103fe2b4abdaed3df4d1bcc6
+      internalID: -1184377102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_35
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4676596a8a3a7499494a1abdce21e7
+      internalID: -752289211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_36
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd3ea21bb85bb54b969b532e728ab96
+      internalID: 829349426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_37
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb7025583f2d494894346716d182262
+      internalID: 279567364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_38
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc77224d62037a74296436144dd1edbe
+      internalID: 1151546356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_39
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15376b5a8089d345863ef35e8ee0fb6
+      internalID: 256020516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_40
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45749d4f994a1d9429b1d4b04a54ba7c
+      internalID: 336930571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_41
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966d8700a43dc4841b90186e7c4b359c
+      internalID: 758463613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_42
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edbb86a128179f4cbcef576ef5ce822
+      internalID: -933652565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_43
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393df15938f02234287ac37898c46779
+      internalID: 526707111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_44
+      rect:
+        serializedVersion: 2
+        x: 3766
+        y: 349
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ca702c72c600c4bb4fcc9ef4c8b13f
+      internalID: 1502222452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740e7a406791dcb4ab3fbc9409dba6d0
+      internalID: 570420487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_46
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acc5c4de78400147a06ddaa50291ff7
+      internalID: 1338646834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_47
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b962424d06139164a9a0173ba98feaef
+      internalID: -1210381041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_48
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7548db8024ab54daf92f884a4a599b
+      internalID: 51431135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_49
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d011aafaae32424fb6da3b4df179e6c
+      internalID: -1589068594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_50
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5df8b0d0b2826d4aa25dee0711ced94
+      internalID: 1446510419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_51
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36636f68d30d7dc43b655264b635dc65
+      internalID: -1387682010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_52
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fae97b55e77e44da760d405ba38790
+      internalID: 1963783610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_53
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fed2f4496ffdf48a02a5e018035508
+      internalID: -2026494733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_54
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788c57c81947a7e4cb836a2d58403aa3
+      internalID: 293511011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_55
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194dc278b41d2ed4d8a963daafa6d215
+      internalID: 1919217293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_56
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa3e7a67794dc64ab46c354b9315632
+      internalID: 327965230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_57
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd0e7f0537b39b47b40c12e2f5b2107
+      internalID: -1186119107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pigeon_idle_58
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 0
+        width: 269
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5705f23f0061d48b05683207faf1a2
+      internalID: -963606632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pigeon_idle_0: -602170467
+      pigeon_idle_1: -101690665
+      pigeon_idle_10: 1602416761
+      pigeon_idle_11: -11558408
+      pigeon_idle_12: 1090716174
+      pigeon_idle_13: 1107886429
+      pigeon_idle_14: -2091610566
+      pigeon_idle_15: -1065625962
+      pigeon_idle_16: -1791737344
+      pigeon_idle_17: -1395563812
+      pigeon_idle_18: -271992208
+      pigeon_idle_19: 1350877172
+      pigeon_idle_2: -635491987
+      pigeon_idle_20: 671752273
+      pigeon_idle_21: -361783582
+      pigeon_idle_22: 1738092185
+      pigeon_idle_23: 490710005
+      pigeon_idle_24: -1812870261
+      pigeon_idle_25: 801271306
+      pigeon_idle_26: -1256362234
+      pigeon_idle_27: 1738417073
+      pigeon_idle_28: -1490478734
+      pigeon_idle_29: 629297366
+      pigeon_idle_3: -1919195481
+      pigeon_idle_30: -1162008401
+      pigeon_idle_31: -247686552
+      pigeon_idle_32: 81655819
+      pigeon_idle_33: 1888322271
+      pigeon_idle_34: -1184377102
+      pigeon_idle_35: -752289211
+      pigeon_idle_36: 829349426
+      pigeon_idle_37: 279567364
+      pigeon_idle_38: 1151546356
+      pigeon_idle_39: 256020516
+      pigeon_idle_4: -318923583
+      pigeon_idle_40: 336930571
+      pigeon_idle_41: 758463613
+      pigeon_idle_42: -933652565
+      pigeon_idle_43: 526707111
+      pigeon_idle_44: 1502222452
+      pigeon_idle_45: 570420487
+      pigeon_idle_46: 1338646834
+      pigeon_idle_47: -1210381041
+      pigeon_idle_48: 51431135
+      pigeon_idle_49: -1589068594
+      pigeon_idle_5: 788905933
+      pigeon_idle_50: 1446510419
+      pigeon_idle_51: -1387682010
+      pigeon_idle_52: 1963783610
+      pigeon_idle_53: -2026494733
+      pigeon_idle_54: 293511011
+      pigeon_idle_55: 1919217293
+      pigeon_idle_56: 327965230
+      pigeon_idle_57: -1186119107
+      pigeon_idle_58: -963606632
+      pigeon_idle_6: -1431255878
+      pigeon_idle_7: -1232204665
+      pigeon_idle_8: -974292556
+      pigeon_idle_9: 1119008332
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
