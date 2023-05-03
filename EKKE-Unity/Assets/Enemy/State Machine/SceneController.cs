@@ -25,11 +25,27 @@ public class SceneController : MonoBehaviour
         foreach (var currentObject in enemyGameObjects)
         {
             currentObject.layer = 2;
-            if (currentObject.name.Equals("ExplodingCar"))
-                enemies.Add(new EnemyStateManager(new CarSearchState(), currentObject, enemiesToBeRemoved));
-            else if (currentObject.name.Equals("5G Pigeon")) enemies.Add(new EnemyStateManager(new RobotPigeonIdleState(), currentObject, enemiesToBeRemoved));
-            else if (currentObject.name.Equals("Pigeon")) enemies.Add(new EnemyStateManager(new PigeonIdleState(), currentObject, enemiesToBeRemoved));
-            else if (currentObject.name.Equals("Policeman")) enemies.Add(new EnemyStateManager(new PolicemanSearchState(), currentObject, enemiesToBeRemoved));
+            EnemyBaseState enemyToBeAdded;
+            switch (currentObject.name)
+            {
+                case "ExplodingCar":
+                    enemyToBeAdded = new CarSearchState();
+                    break;
+                case "5G Pigeon":
+                    enemyToBeAdded = new RobotPigeonIdleState();
+                    break;
+                case "Pigeon":
+                    enemyToBeAdded = new PigeonIdleState();
+                    break;
+                case "Policeman":
+                    enemyToBeAdded = new PolicemanSearchState();
+                    break;
+                default:
+                    enemyToBeAdded = new DroneIdleState();
+                    break;
+            }
+
+            enemies.Add(new EnemyStateManager(enemyToBeAdded, currentObject, enemiesToBeRemoved));
         }
 
        

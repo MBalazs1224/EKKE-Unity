@@ -13,8 +13,8 @@ public class Character : MonoBehaviour
     int maxHealth = 2;
     int health;
     Animator anim;
-    static bool inAir = false;
-    static bool canDoubleJump = false;
+    bool inAir = false;
+    bool canDoubleJump = false;
     Rigidbody2D rb;
     bool canWallJump = false;
     [SerializeField]
@@ -28,6 +28,8 @@ public class Character : MonoBehaviour
     [SerializeField]
     int respawnTime = 10;
     private bool isOnWall;
+    [SerializeField]
+    float fallBackDistance = 5;
 
     bool wallOnRightSide = false;
     [SerializeField]
@@ -40,8 +42,11 @@ public class Character : MonoBehaviour
     public int pigeonsKilled = 0;
 
     [SerializeField]
-    float waitForAFK = 3f;
+    float waitForAFK = 5f;
+
     float afkTime = 0;
+
+    bool isHurting = false;
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -52,6 +57,25 @@ public class Character : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         Respawn();
     }
+
+    public void StartFallBack()
+    {
+        StartCoroutine(FallBack());
+    }
+
+    IEnumerator FallBack()
+    {
+        var directon = this.transform.rotation == new Quaternion(0, 0, 0, 0) ? Vector2.left : Vector2.right;
+        var hit = Physics2D.Raycast(this.transform.position, directon);
+
+        while (Vector3.Distance(this.transform.position,directon) > .1f)
+        {
+            this.transform.position += Vector3.MoveTowards(this.transform.position,directon,5);
+            yield return null;
+        }
+    }
+
+
     public bool IsAttacking()
     {
         return Input.GetKeyDown(KeyCode.E);
@@ -96,6 +120,7 @@ public class Character : MonoBehaviour
             StopCoroutine(StartRegen());
             StartCoroutine(StartRegen());
             anim.SetTrigger("Hurt");
+            isHurting = true;
             //anim.ResetTrigger("Unhurt");
             //anim.ResetTrigger("Death");
 
@@ -105,6 +130,7 @@ public class Character : MonoBehaviour
     public void ResetHurt()
     {
         anim.SetTrigger("Unhurt");
+        isHurting = false;
     }
 
     IEnumerator StartRegen()
@@ -116,7 +142,13 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (isDead()) return;
+        if (isDead() || isHurting) return;
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
+        {
+
+            anim.SetBool("Run", false);
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
         if (!Input.anyKey)
         {
             afkTime += Time.deltaTime;
@@ -126,6 +158,7 @@ public class Character : MonoBehaviour
             }
             return;
         }
+        afkTime = 0;
         if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
         else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
         else if (Input.GetKeyDown(KeyCode.E) && !inAir && !isOnWall)
@@ -157,12 +190,7 @@ public class Character : MonoBehaviour
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
-        {
-
-            anim.SetBool("Run", false);
-            rb.velocity = new Vector2(0, rb.velocity.y);
-        }
+        
         else if (Input.GetKey(KeyCode.A))
         {
             if (isOnWall)
@@ -191,6 +219,9 @@ public class Character : MonoBehaviour
 
     private void StartAFK()
     {
+        anim.SetBool("Run", false);
+        anim.SetBool("Idle", false);
+        anim.SetBool("Slide", false);
         afkTime = 0;
 
         System.Random rnd = new System.Random();
