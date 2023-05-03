@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     private int moveSpeed = 50;
     [SerializeField]
-    int respawnTime = 3;
+    int respawnTime = 10;
     private bool isOnWall;
 
     bool wallOnRightSide = false;
@@ -35,6 +36,12 @@ public class Character : MonoBehaviour
     [SerializeField]
     private float wallJumpHeight = 10f;
 
+    bool canDash = true;
+    public int pigeonsKilled = 0;
+
+    [SerializeField]
+    float waitForAFK = 3f;
+    float afkTime = 0;
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -110,7 +117,17 @@ public class Character : MonoBehaviour
     private void Update()
     {
         if (isDead()) return;
-        if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
+        if (!Input.anyKey)
+        {
+            afkTime += Time.deltaTime;
+            if (afkTime >= waitForAFK)
+            {
+                StartAFK();
+            }
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
+        else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
         else if (Input.GetKeyDown(KeyCode.E) && !inAir && !isOnWall)
         {
             Attack();
@@ -122,6 +139,10 @@ public class Character : MonoBehaviour
             Jump();
             //StopAllCoroutines();
 
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !isSliding)
+        {
+            Dash();
         }
         else if (Input.GetKey(KeyCode.D) && !isOnWall)
         {
@@ -155,6 +176,7 @@ public class Character : MonoBehaviour
 
         }
 
+
         if (Input.GetKeyDown(KeyCode.S) && !inAir)
         {
             Slide();
@@ -166,6 +188,42 @@ public class Character : MonoBehaviour
         }
 
     }
+
+    private void StartAFK()
+    {
+        afkTime = 0;
+
+        System.Random rnd = new System.Random();
+
+        double value = rnd.NextDouble();
+        if (value < .33)
+        {
+            anim.SetTrigger("AFK1");
+        }
+        else if (value < .66)
+        {
+            anim.SetTrigger("AFK2");
+        }
+        else anim.SetTrigger("AFK3");
+    }
+
+    private void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void Dash()
+    {
+        anim.SetTrigger("Dash");
+        moveSpeed *= 2;
+        canDash = false;
+    }
+    void UnDash()
+    {
+        moveSpeed /= 2;
+        canDash = true;
+    }
+
     void Slide()
     {
         anim.SetBool("Run", false);

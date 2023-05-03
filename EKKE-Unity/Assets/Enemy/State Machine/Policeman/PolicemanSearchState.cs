@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PolicemanSearchState : EnemyBaseState
 {
-    int maxDetectionDistance = 5;
+    int maxDetectionDistance = 15;
     Animator animator;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
@@ -18,7 +18,7 @@ public class PolicemanSearchState : EnemyBaseState
     {
         if (CanSeePlayer(currentObject, player, maxDetectionDistance)) 
         {
-            animator.SetTrigger("Spot");
+            animator.SetBool("Spot",true);
             stateManager.StateSwitch(new PolicemanAttackState());
         }
     }
