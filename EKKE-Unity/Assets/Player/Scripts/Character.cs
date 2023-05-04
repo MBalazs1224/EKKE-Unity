@@ -65,16 +65,23 @@ public class Character : MonoBehaviour
 
     IEnumerator FallBack()
     {
-        var directon = this.transform.rotation == new Quaternion(0, 0, 0, 0) ? Vector2.left : Vector2.right;
-        var hit = Physics2D.Raycast(this.transform.position, directon);
+        Debug.Log("Player fallback started!");
+        var directon = this.transform.rotation == new Quaternion(0, 0, 0, 0) ? Vector3.left : Vector3.right;
+        var hit = Physics2D.Raycast(this.transform.position - directon * 3, directon);
+        Vector3 target = hit ? hit.transform.position : GetEndFallback();
 
-        while (Vector3.Distance(this.transform.position,directon) > .1f)
+        while (Vector3.Distance(this.transform.position,target) > .1f)
         {
-            this.transform.position += Vector3.MoveTowards(this.transform.position,directon,5);
+            this.transform.position += Vector3.MoveTowards(this.transform.position,target,5);
             yield return null;
         }
+        Debug.Log("Player fallback ended!");
     }
 
+    private Vector3 GetEndFallback()
+    {
+        return this.transform.rotation == new Quaternion(0, 0, 0, 0) ? this.transform.position + new Vector3(fallBackDistance,0) : this.transform.transform.position + new Vector3(-fallBackDistance, 0);
+    }
 
     public bool IsAttacking()
     {
@@ -224,7 +231,7 @@ public class Character : MonoBehaviour
         anim.SetBool("Slide", false);
         afkTime = 0;
 
-        System.Random rnd = new System.Random();
+        System.Random rnd = new System.Random(Guid.NewGuid().GetHashCode());
 
         double value = rnd.NextDouble();
         if (value < .33)

@@ -25,19 +25,9 @@ public class DroneAttackState : EnemyBaseState
         }
         else
         {
-            anim.SetTrigger("Explode");
-            exploded = true;
-            player.TakeDamage();
-            GameObject.Find("SceneController").GetComponent<SceneController>().StartCoroutine(RemoveEffect());
+            stateManager.StateSwitch(new DroneExplodeState());
         }
        
-    }
-
-    IEnumerator RemoveEffect()
-    {
-        yield return new WaitForSeconds(.817f);
-        stateManager.AddSelfToRemove();
-        currentObject.SetActive(false);
     }
 
     private bool TouchesPlayer()
