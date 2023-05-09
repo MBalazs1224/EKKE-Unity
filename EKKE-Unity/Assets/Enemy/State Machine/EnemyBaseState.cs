@@ -11,7 +11,7 @@ public abstract class EnemyBaseState
     protected Character player;
     public abstract void Tick();
     public abstract void EnterState(EnemyStateManager manager,GameObject gameObject, Character player);
-    protected bool CanSeePlayer(GameObject current, Character player, float maxDetectionDistance = 3)
+    protected bool CanSeePlayer(GameObject current, Character player, float maxDetectionDistance = 10)
     {
         if (player.isDead()) return false;
         var rayDirection = player.transform.position - current.transform.position;

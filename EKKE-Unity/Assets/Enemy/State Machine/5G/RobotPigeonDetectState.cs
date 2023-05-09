@@ -30,15 +30,22 @@ public class RobotPigeonDetectState : EnemyBaseState
        
 
     }
+    IEnumerator RemoveEffect()
+    {
+        yield return new WaitForSeconds(0.75f);
+        currentObject.SetActive(false);
+    }
     public void Death()
     {
         if (canDie)
         {
+            player.pigeonsKilled++;
+            sceneController.StopCoroutine(WaitForFly());
             isDead = true;
             Debug.Log("5G pigeon died!");
             anim.SetTrigger("Death");
             stateManager.AddSelfToRemove();
-            currentObject.SetActive(false);
+            sceneController.StartCoroutine(RemoveEffect());
         }
        
     }
@@ -50,6 +57,7 @@ public class RobotPigeonDetectState : EnemyBaseState
         {
             canDie = false;
             anim.SetTrigger("Move");
+            stateManager.StateSwitch(new RobotPigeonFlyState());
             Debug.Log("5G pigeon started flying away!");
         }
 

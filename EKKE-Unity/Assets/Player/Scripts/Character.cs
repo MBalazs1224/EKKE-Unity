@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class Character : MonoBehaviour
     int maxHealth = 2;
     int health;
     Animator anim;
-    static bool inAir = false;
-    static bool canDoubleJump = false;
+    bool inAir = false;
+    bool canDoubleJump = false;
     Rigidbody2D rb;
     bool canWallJump = false;
     [SerializeField]
@@ -25,8 +26,10 @@ public class Character : MonoBehaviour
     [SerializeField]
     private int moveSpeed = 50;
     [SerializeField]
-    int respawnTime = 3;
+    int respawnTime = 10;
     private bool isOnWall;
+    [SerializeField]
+    float fallBackDistance = 5;
 
     bool wallOnRightSide = false;
     [SerializeField]
@@ -35,6 +38,15 @@ public class Character : MonoBehaviour
     [SerializeField]
     private float wallJumpHeight = 10f;
 
+    bool canDash = true;
+    public int pigeonsKilled = 0;
+
+    [SerializeField]
+    float waitForAFK = 5f;
+
+    float afkTime = 0;
+
+    bool isHurting = false;
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -45,6 +57,32 @@ public class Character : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         Respawn();
     }
+
+    public void StartFallBack()
+    {
+        StartCoroutine(FallBack());
+    }
+
+    IEnumerator FallBack()
+    {
+        Debug.Log("Player fallback started!");
+        var directon = this.transform.rotation == new Quaternion(0, 0, 0, 0) ? Vector3.left : Vector3.right;
+        var hit = Physics2D.Raycast(this.transform.position - directon * 3, directon);
+        Vector3 target = hit ? hit.transform.position : GetEndFallback();
+
+        while (Vector3.Distance(this.transform.position,target) > .1f)
+        {
+            this.transform.position += Vector3.MoveTowards(this.transform.position,target,5);
+            yield return null;
+        }
+        Debug.Log("Player fallback ended!");
+    }
+
+    private Vector3 GetEndFallback()
+    {
+        return this.transform.rotation == new Quaternion(0, 0, 0, 0) ? this.transform.position + new Vector3(fallBackDistance,0) : this.transform.transform.position + new Vector3(-fallBackDistance, 0);
+    }
+
     public bool IsAttacking()
     {
         return Input.GetKeyDown(KeyCode.E);
@@ -89,6 +127,7 @@ public class Character : MonoBehaviour
             StopCoroutine(StartRegen());
             StartCoroutine(StartRegen());
             anim.SetTrigger("Hurt");
+            isHurting = true;
             //anim.ResetTrigger("Unhurt");
             //anim.ResetTrigger("Death");
 
@@ -98,6 +137,7 @@ public class Character : MonoBehaviour
     public void ResetHurt()
     {
         anim.SetTrigger("Unhurt");
+        isHurting = false;
     }
 
     IEnumerator StartRegen()
@@ -109,8 +149,25 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (isDead()) return;
-        if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
+        if (isDead() || isHurting) return;
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
+        {
+
+            anim.SetBool("Run", false);
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+        if (!Input.anyKey)
+        {
+            afkTime += Time.deltaTime;
+            if (afkTime >= waitForAFK)
+            {
+                StartAFK();
+            }
+            return;
+        }
+        afkTime = 0;
+        if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
+        else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
         else if (Input.GetKeyDown(KeyCode.E) && !inAir && !isOnWall)
         {
             Attack();
@@ -122,6 +179,10 @@ public class Character : MonoBehaviour
             Jump();
             //StopAllCoroutines();
 
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !isSliding)
+        {
+            Dash();
         }
         else if (Input.GetKey(KeyCode.D) && !isOnWall)
         {
@@ -136,12 +197,7 @@ public class Character : MonoBehaviour
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
-        {
-
-            anim.SetBool("Run", false);
-            rb.velocity = new Vector2(0, rb.velocity.y);
-        }
+        
         else if (Input.GetKey(KeyCode.A))
         {
             if (isOnWall)
@@ -155,6 +211,7 @@ public class Character : MonoBehaviour
 
         }
 
+
         if (Input.GetKeyDown(KeyCode.S) && !inAir)
         {
             Slide();
@@ -166,6 +223,45 @@ public class Character : MonoBehaviour
         }
 
     }
+
+    private void StartAFK()
+    {
+        anim.SetBool("Run", false);
+        anim.SetBool("Idle", false);
+        anim.SetBool("Slide", false);
+        afkTime = 0;
+
+        System.Random rnd = new System.Random(Guid.NewGuid().GetHashCode());
+
+        double value = rnd.NextDouble();
+        if (value < .33)
+        {
+            anim.SetTrigger("AFK1");
+        }
+        else if (value < .66)
+        {
+            anim.SetTrigger("AFK2");
+        }
+        else anim.SetTrigger("AFK3");
+    }
+
+    private void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void Dash()
+    {
+        anim.SetTrigger("Dash");
+        moveSpeed *= 2;
+        canDash = false;
+    }
+    void UnDash()
+    {
+        moveSpeed /= 2;
+        canDash = true;
+    }
+
     void Slide()
     {
         anim.SetBool("Run", false);

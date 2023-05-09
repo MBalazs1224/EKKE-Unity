@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,9 +39,14 @@ public class PolicemanAttackState : EnemyBaseState
             //lr.SetPositions(emptyPositions);
             lr.startWidth = 0;
             lr.endWidth = 0;
-            animator.SetTrigger("Idle");
+            animator.SetBool("Spot", false);
             stateManager.StateSwitch(new PolicemanSearchState());
-        } 
+        }
+
+        else if (CanSeePlayer(currentObject,player,1) && player.IsAttacking())
+        {
+            Death();
+        }
         else
         {
             if (player.transform.position.x < currentObject.transform.position.x)
@@ -74,6 +80,12 @@ public class PolicemanAttackState : EnemyBaseState
             }
             
         }
+    }
+
+    private void Death()
+    {
+        animator.SetTrigger("Death");
+        stateManager.AddSelfToRemove();
     }
 
     IEnumerator AttackCooldown()
