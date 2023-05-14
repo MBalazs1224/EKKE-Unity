@@ -38,8 +38,7 @@ public class RobotPigeonFlyState : EnemyBaseState
         yield return new WaitForSeconds(waitTime);
         currentObject.SetActive(false);
         Debug.Log("5G pigeon removed!");
-        stateManager.AddSelfToRemove();
+        stateManager.shouldTick = false;
+
     }
-
-
 }

@@ -40,7 +40,7 @@ public class PigeonMoveState : EnemyBaseState
     IEnumerator RemoveSelf()
     {
         yield return new WaitForSeconds(waitTime);
-        stateManager.AddSelfToRemove();
+        stateManager.shouldTick = false;
         currentObject.SetActive(false);
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Undefined
   - Enemy
+  - Foreground
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Foreground
+  - Background
   - 
   - 
   - 
@@ -40,6 +41,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Skybox
+    uniqueID: 1289126527
+    locked: 0
+  - name: Background
+    uniqueID: 2552760363
+    locked: 0
+  - name: Indoor
+    uniqueID: 1274422749
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Assets
+    uniqueID: 1433690325
+    locked: 0
+  - name: Tilemap
+    uniqueID: 2953683733
+    locked: 0
+  - name: Foreground
+    uniqueID: 3540632695
     locked: 0

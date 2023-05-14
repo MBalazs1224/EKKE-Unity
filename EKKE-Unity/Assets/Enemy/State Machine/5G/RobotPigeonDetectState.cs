@@ -44,7 +44,7 @@ public class RobotPigeonDetectState : EnemyBaseState
             isDead = true;
             Debug.Log("5G pigeon died!");
             anim.SetTrigger("Death");
-            stateManager.AddSelfToRemove();
+            stateManager.shouldTick = false;
             sceneController.StartCoroutine(RemoveEffect());
         }
        

@@ -6,7 +6,6 @@ public class SceneController : MonoBehaviour
 {
 
     List<EnemyStateManager> enemies = new List<EnemyStateManager>();
-    List<EnemyStateManager> enemiesToBeRemoved = new List<EnemyStateManager>();
 
 
     private void Awake()
@@ -24,6 +23,7 @@ public class SceneController : MonoBehaviour
         GameObject[] enemyGameObjects = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var currentObject in enemyGameObjects)
         {
+
             currentObject.layer = 2;
             EnemyBaseState enemyToBeAdded;
             switch (currentObject.name)
@@ -45,10 +45,19 @@ public class SceneController : MonoBehaviour
                     break;
             }
 
-            enemies.Add(new EnemyStateManager(enemyToBeAdded, currentObject, enemiesToBeRemoved));
+            enemies.Add(new EnemyStateManager(enemyToBeAdded, currentObject,currentObject.transform.position));
         }
 
        
+    }
+    public void RespawnEnemies()
+    {
+        foreach (var item in enemies)
+        {
+            item.Respawn();
+        }
+        enemies.Clear();
+        FindEnemies();
     }
 
     void Update()
@@ -63,10 +72,5 @@ public class SceneController : MonoBehaviour
         {
             item.Tick();
         }
-        foreach (var item in enemiesToBeRemoved)
-        {
-            enemies.Remove(item);
-        }
-        if (enemiesToBeRemoved.Count != 0) enemiesToBeRemoved.Clear();
     }
 }
