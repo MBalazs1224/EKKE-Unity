@@ -23,7 +23,7 @@ public class SceneController : MonoBehaviour
         GameObject[] enemyGameObjects = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var currentObject in enemyGameObjects)
         {
-
+                
             currentObject.layer = 2;
             EnemyBaseState enemyToBeAdded;
             switch (currentObject.name)

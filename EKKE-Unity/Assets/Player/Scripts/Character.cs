@@ -47,6 +47,9 @@ public class Character : MonoBehaviour
     float afkTime = 0;
 
     bool isHurting = false;
+    private bool canSave;
+    private bool isSaving;
+
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -197,7 +200,7 @@ public class Character : MonoBehaviour
 
 
         }
-        
+
         else if (Input.GetKey(KeyCode.A))
         {
             if (isOnWall)
@@ -222,6 +225,13 @@ public class Character : MonoBehaviour
             this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
         }
 
+    }
+
+    private void StartSave()
+    {
+        isSaving = true;
+        anim.SetTrigger("Save");
+        cp.resumePoint = this.transform.position;
     }
 
     private void StartAFK()
@@ -353,6 +363,10 @@ public class Character : MonoBehaviour
                 this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             }
         }
+        else if(collision.gameObject.layer == 8)
+        {
+            canSave = true;
+        }
 
     }
 
@@ -374,5 +388,28 @@ public class Character : MonoBehaviour
             anim.SetBool("Fall", true);
             this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
         }
+        else if (collision.gameObject.layer == 8)
+        {
+            canSave = false;
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 8 && Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("Save");
+            if (isSaving) return;
+            isSaving = true;
+            cp.resumePoint = collision.gameObject.transform.position;
+            Animator saveAnim = collision.gameObject.GetComponent<Animator>();
+            saveAnim.SetTrigger("Save");
+            SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
+            sc.StartCoroutine(RemoveSave());
+        }
+    }
+    IEnumerator RemoveSave()
+    {
+        yield return new WaitForSeconds(1.03f);
+        isSaving = false;
     }
 }
