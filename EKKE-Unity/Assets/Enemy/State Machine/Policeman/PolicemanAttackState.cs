@@ -85,7 +85,7 @@ public class PolicemanAttackState : EnemyBaseState
     private void Death()
     {
         animator.SetTrigger("Death");
-        stateManager.AddSelfToRemove();
+        stateManager.shouldTick = false;
     }
 
     IEnumerator AttackCooldown()

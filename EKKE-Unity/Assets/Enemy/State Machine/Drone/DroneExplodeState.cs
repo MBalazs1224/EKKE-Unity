@@ -28,7 +28,7 @@ public class DroneExplodeState : EnemyBaseState
                     player.TakeDamage();
                 }
                 GameObject.Find("SceneController").GetComponent<SceneController>().StartCoroutine(RemoveEffect());
-                stateManager.AddSelfToRemove();
+                stateManager.shouldTick = false;
             }
         }
         else
@@ -37,7 +37,7 @@ public class DroneExplodeState : EnemyBaseState
             {
                 GameObject.Find("SceneController").GetComponent<SceneController>().StartCoroutine(RemoveEffect(false));
                 anim.SetTrigger("Hurt");
-                stateManager.AddSelfToRemove();
+                stateManager.shouldTick = false;
             }
         }
     }
