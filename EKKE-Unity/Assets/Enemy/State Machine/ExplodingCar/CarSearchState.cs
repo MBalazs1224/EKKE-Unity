@@ -21,11 +21,6 @@ public class CarSearchState : EnemyBaseState
         Debug.Log("Exploding car entered search state!");
         animator = currentObject.GetComponent<Animator>();
         sr = currentObject.GetComponent<SpriteRenderer>();
-        maxXLeft = currentObject.transform.position.x - 2;
-        maxXRight = currentObject.transform.position.x + 2;
-        this.player = player;
-        Debug.Log("Exploding car entered search state!");
-        animator = currentObject.GetComponent<Animator>();
     }
 
     public override void Tick()

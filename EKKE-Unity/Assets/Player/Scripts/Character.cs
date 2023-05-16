@@ -296,7 +296,7 @@ public class Character : MonoBehaviour
     private void MoveLeft()
     {
 
-        rb.position += new Vector2(-0.05f, 0) * moveSpeed * Time.deltaTime;
+        rb.position += new Vector2(-0.07f, 0) * moveSpeed * Time.deltaTime;
         if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
     private void Jump()
@@ -328,7 +328,7 @@ public class Character : MonoBehaviour
     }
     private void MoveRight()
     {
-        rb.position += new Vector2(0.05f, 0) * Time.deltaTime * moveSpeed;
+        rb.position += new Vector2(0.07f, 0) * Time.deltaTime * moveSpeed;
 
         if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
