@@ -106,13 +106,6 @@ public class Character : MonoBehaviour
         anim.SetBool("Run", false);
         anim.SetBool("Slide", false);
         anim.SetBool("Idle", true);
-
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position + new Vector3(1,0), Vector2.right);
-
-        if (hit && hit.transform.gameObject.name.Equals("5G Pigeon"))
-        {
-            Debug.Log("Pigeon hit!");
-        }
     }
     public void TakeDamage()
     {
@@ -152,7 +145,7 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (isDead() || isHurting) return;
+        if (isDead() || isHurting || isSaving) return;
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
         {
 
@@ -397,8 +390,9 @@ public class Character : MonoBehaviour
     {
         if (collision.gameObject.layer == 8 && Input.GetKeyDown(KeyCode.G))
         {
+            if (isSaving || inAir || isSliding) return;
             Debug.Log("Save");
-            if (isSaving) return;
+            anim.SetTrigger("Graffiti");
             isSaving = true;
             cp.resumePoint = collision.gameObject.transform.position;
             Animator saveAnim = collision.gameObject.GetComponent<Animator>();
