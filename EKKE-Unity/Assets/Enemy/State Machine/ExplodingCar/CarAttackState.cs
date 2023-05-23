@@ -5,6 +5,8 @@ using UnityEngine;
 public class CarAttackState : EnemyBaseState
 {
     SceneController sceneController;
+    Animator animator;
+    float moveSpeed = 0.3f;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         stateManager = manager;
@@ -12,6 +14,7 @@ public class CarAttackState : EnemyBaseState
         this.player = player;
         sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
         Debug.Log("Exploding car entered attack state!");
+        animator = currentObject.GetComponent<Animator>();
     }
 
     public override void Tick()
@@ -20,14 +23,23 @@ public class CarAttackState : EnemyBaseState
             stateManager.StateSwitch(new CarSearchState());
         else
         {
-            Vector2.MoveTowards(currentObject.transform.position, player.transform.position, 1);
+            currentObject.transform.position = Vector2.MoveTowards(currentObject.transform.position, player.transform.position, moveSpeed);
 
             var rayDirection = player.gameObject.transform.position - currentObject.transform.position;
             RaycastHit2D result = Physics2D.Raycast(currentObject.transform.position, rayDirection, 1);
             if (result.transform == player.transform)
             {
+                animator.SetBool("dead", true);
                 player.TakeDamage();
+                stateManager.shouldTick = false;
+                sceneController.StartCoroutine(RemoveEffect());
             }
         }
+    }
+
+    IEnumerator RemoveEffect()
+    {
+        yield return new WaitForSeconds(0.75f);
+        currentObject.SetActive(false);
     }
 }
