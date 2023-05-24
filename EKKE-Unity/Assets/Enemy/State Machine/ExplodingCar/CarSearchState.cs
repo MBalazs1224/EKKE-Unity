@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CarSearchState : EnemyBaseState
 {
-    int maxDetectionDistance = 5;
+    int maxDetectionDistance = 10;
+    float moveSpeed = 0.25f;
     Animator animator;
     float maxXRight;
     float maxXLeft;
@@ -15,12 +16,12 @@ public class CarSearchState : EnemyBaseState
     {
         stateManager = manager;
         currentObject = gameObject;
-        maxXLeft = currentObject.transform.position.x - 5;
-        maxXRight = currentObject.transform.position.x + 5;
+        maxXLeft = currentObject.transform.position.x - 8;
+        maxXRight = currentObject.transform.position.x + 8;
         this.player = player;
         Debug.Log("Exploding car entered search state!");
-        animator = currentObject.GetComponent<Animator>();
         sr = currentObject.GetComponent<SpriteRenderer>();
+        animator = currentObject.GetComponent<Animator>();
     }
 
     public override void Tick()
@@ -29,40 +30,30 @@ public class CarSearchState : EnemyBaseState
         {
             if (moveRight)
             {
-                currentObject.transform.Translate(new Vector3(.2f, 0));
+                currentObject.transform.Translate(Vector3.right * moveSpeed);
                 if (currentObject.transform.position.x >= maxXRight)
                 {
                     moveRight = false;
-                    animator.Play("Turn_Left");
                     sr.flipX = true;
-                    currentObject.transform.Translate(new Vector3(.01f, 0f));
-                    if (currentObject.transform.position.x >= maxXRight)
-                    {
-                        moveRight = false;
-                        animator.SetBool("Left", true);
-                    }
-                }
-                else
-                {
-
-                    currentObject.transform.Translate(new Vector3(-.2f, 0));
-                    if (currentObject.transform.position.x <= maxXLeft)
-                    {
-                        moveRight = true;
-                        animator.Play("Turn_Right");
-                        sr.flipX = false;
-                        currentObject.transform.Translate(new Vector3(-.01f, 0f));
-                        if (currentObject.transform.position.x <= maxXLeft)
-                        {
-                            moveRight = true;
-                        }
-                    }
+                    animator.SetBool("left", true);
                 }
             }
             else
             {
-                stateManager.StateSwitch(new CarAttackState());
+
+                currentObject.transform.Translate(Vector3.left * moveSpeed);
+                if (currentObject.transform.position.x <= maxXLeft)
+                {
+                    moveRight = true;
+                    animator.SetBool("right", true);
+                    sr.flipX = false;
+                }
             }
+        }
+        else
+        {
+            animator.SetBool("spot", true);
+            stateManager.StateSwitch(new CarAttackState());
         }
     }
 }
