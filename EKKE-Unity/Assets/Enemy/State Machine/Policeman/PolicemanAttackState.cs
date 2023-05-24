@@ -17,7 +17,6 @@ public class PolicemanAttackState : EnemyBaseState
     SceneController sceneController;
     Vector3[] currentPositions = new Vector3[2];
 
-    Animator animator;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         stateManager = manager;
@@ -28,22 +27,22 @@ public class PolicemanAttackState : EnemyBaseState
         lr.startColor = Color.red;
         lr.endColor = Color.red;
         Debug.Log("RangedPoliceman entered attack state!");
-        animator = currentObject.GetComponent<Animator>();
+        anim = currentObject.GetComponent<Animator>();
     }
 
     public override void Tick()
     {
-        if (!CanSeePlayer(currentObject, player, maxDetectionDistance)) 
+        if (!CanSeePlayer(maxDetectionDistance)) 
         {
             sceneController.StopCoroutine(AttackCooldown());
             //lr.SetPositions(emptyPositions);
             lr.startWidth = 0;
             lr.endWidth = 0;
-            animator.SetBool("Spot", false);
+            anim.SetBool("Spot", false);
             stateManager.StateSwitch(new PolicemanSearchState());
         }
 
-        else if (CanSeePlayer(currentObject,player,1) && player.IsAttacking())
+        else if (CanSeePlayer(1) && player.IsAttacking())
         {
             Death();
         }
@@ -67,7 +66,7 @@ public class PolicemanAttackState : EnemyBaseState
                 chargedFor += Time.deltaTime;
                 if (chargedFor >= chargeUpTime)
                 {
-                    animator.SetTrigger("Attack");
+                    anim.SetTrigger("Attack");
                     player.TakeDamage();
                     chargedFor = 0;
                     sceneController.StartCoroutine(AttackCooldown());
@@ -84,7 +83,7 @@ public class PolicemanAttackState : EnemyBaseState
 
     private void Death()
     {
-        animator.SetTrigger("Death");
+        anim.SetTrigger("Death");
         stateManager.shouldTick = false;
     }
 
@@ -93,6 +92,6 @@ public class PolicemanAttackState : EnemyBaseState
         canAttack = false;
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
-        animator.SetTrigger("Spot");
+        anim.SetTrigger("Spot");
     }
 }

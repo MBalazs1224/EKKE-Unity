@@ -6,7 +6,6 @@ using UnityEngine;
 public class DroneAttackState : EnemyBaseState
 {
     bool exploded = false;
-    Animator anim;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         this.stateManager = manager;

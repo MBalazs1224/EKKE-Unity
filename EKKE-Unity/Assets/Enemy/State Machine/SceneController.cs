@@ -41,7 +41,7 @@ public class SceneController : MonoBehaviour
                     enemyToBeAdded = new PolicemanSearchState();
                     break;
                 default:
-                    enemyToBeAdded = new DroneIdleState();
+                    enemyToBeAdded = new ShieldSearchState();
                     break;
             }
 

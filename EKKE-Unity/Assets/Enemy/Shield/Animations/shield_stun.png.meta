@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +103,2485 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: shield_stun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2affe424deecf54b908a01a9c8384a7
+      internalID: 613728029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_1
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f28ac4d0efff0a4894cb98d67b64992
+      internalID: 2104472964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_2
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9c90a501c6914281d7b074d1578de
+      internalID: -1289143534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_3
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29234ccfd558604f9f9245e3f2d3578
+      internalID: 1771598333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_4
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b9021fb472c914396611154f43f5c7
+      internalID: 435535051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_5
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601e774e26a2184408c61b05d2c6d1ed
+      internalID: -1616125023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_6
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7c581943f3c454fb8f8d1b519277f3
+      internalID: -1466545849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_7
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b8d69f7c28c3e41b379475bc6e0ee1
+      internalID: -2066465881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_8
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc7cb2277f6d954e88918e8b710b0af
+      internalID: -1504811205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_9
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df2649f5e0b49040a6e671a04ccda75
+      internalID: -2035707579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_10
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdb3462ad6400442941e5b433c4f1df
+      internalID: 1952406397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_11
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c314eb577db0a4ca92fb1646c3cc34
+      internalID: -1004841381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_12
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 9900
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebaaa71586c2c3b48a5d7d09bcb836ef
+      internalID: -1616499315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc29f80b5a229f54ca762224fa8cfdca
+      internalID: -553993766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_14
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542c2454d73a3654b8ea862098ac7b11
+      internalID: 1722826258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_15
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47379419446a63c4ca8f089d2c307bcf
+      internalID: 438613726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_16
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946e2480520a17a4dabb343431fc24ae
+      internalID: -663798070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_17
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be2fef1e0f61f94ca50646983f03b58
+      internalID: -1610665363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_18
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f3357b1ece5bb48a0f7ff2c0153e28
+      internalID: -462644059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_19
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1a2119b122335439db72a569f9b5d7
+      internalID: -1193544474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_20
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5718d72e55beccf468caa43e6766c995
+      internalID: 1395865948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_21
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fe425d93ff13f4db754d659aec2040
+      internalID: 1105972565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_22
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a7997c1be70f74683746b24e84e747
+      internalID: 887888066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_23
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56382b64190a54498e662196a122dbc
+      internalID: 869395404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_24
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e236a8db54f8fea47915b373af316ad9
+      internalID: 1893484954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_25
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 8800
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4387c940c0e1ddc4981b7580cb60b3a4
+      internalID: -1920033231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c348ea86f4d524caf1db73fe7a9ef7
+      internalID: 1526106399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_27
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42863f1086af45438264291fbfaf12f
+      internalID: -1784433050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_28
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e641ca3e4e5f044890960e6877b8978
+      internalID: 1404021798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_29
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d947b94b8ee7df442a35b698ed54e3ef
+      internalID: 2041804589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_30
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6671392208a314aa71e8dc32074070
+      internalID: -500064423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_31
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d73c841f8c3a2f47b75bf257c66e579
+      internalID: -481366538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_32
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0fb810058a5fa4ea9450a7b26f3acc
+      internalID: -911757428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_33
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71d5c27fe0b62f4e8fba1fff8aba20a
+      internalID: -765109830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_34
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf35ef264dd59e4c84ed75b2ee56938
+      internalID: -1871291083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_35
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780962d90b44a13428416d9c11ab2551
+      internalID: -2061594984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_36
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad486757ef32fb4e82d24a0f8425637
+      internalID: -788158985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_37
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67242d558dce44643b644e693d95b7bf
+      internalID: -1131116054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_38
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 7700
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d9af524b92fa24da5699db3b554943
+      internalID: -1169788418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4a296d4d4dea94da44a9d12cb05a93
+      internalID: 2137117676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_40
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e704a6b8f93c264dbf7f3890658cca3
+      internalID: -729800287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_41
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442cff7153f1705459ea41095b590f74
+      internalID: 1759361997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_42
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50eec2c980c252449ebbd960a1d27fc
+      internalID: -103123985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_43
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdafaaae1b73c14d91c376369633aff
+      internalID: 1097369689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_44
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0d11c0bb263fd4fb4188e18b62c7c3
+      internalID: -281523178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_45
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bc090ae039ea34a9f05b94b4fe6f71
+      internalID: 1299268139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_46
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06581136a9a659e4e8cfb71d145d93d6
+      internalID: 268266189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_47
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cb1a496c3e8c14fa95ee98cfff946a
+      internalID: 1329972275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_48
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c91647bafd7ae44905de72752bc49d
+      internalID: -1863213970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_49
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42313f89e372d346a6d43c3bfa342d9
+      internalID: -39485938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_50
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268aeabbcb39ff24c81cddb32e26e3cf
+      internalID: -769697032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_51
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 6600
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0fd7ec86b61344eaba8f84817ac89f
+      internalID: 1306429609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ff3bed9b8556b49ba87765a0b777a7
+      internalID: 575290484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_53
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609d7bb6473ef7b4aa2aa452922ad64e
+      internalID: -1822889391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_54
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf7efef1e6c70b4ea6a264bdcbe3a6c
+      internalID: 1553010668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_55
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800aef5cfb0c21a4a9ff24c020b71671
+      internalID: 888260799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_56
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aba0f572861e584daa8924005e7ee23
+      internalID: 955429022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_57
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0e608e6b5c97347a6b6273486e653c
+      internalID: -818604416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_58
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659d656c0182f3149a9b94b07b6fca29
+      internalID: 781767908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_59
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dafc4c2cc50e14cb90a870eeaaec19
+      internalID: -812761668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_60
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bbef3f07b2d464a854e2c6d2c0ab26
+      internalID: -1275372438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_61
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534c63396af19dd4d99347761d6ecc0f
+      internalID: 506797807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_62
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e6c477653065c4c9dbf65109bcbe90
+      internalID: -582942208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_63
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce67a79b5d0cb047956bedd157723d5
+      internalID: -1094742895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_64
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 5500
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e6ac4b0358e8946acd49defe9cf189
+      internalID: -160000183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389aef3e3e47f9740953f6b8c369cc63
+      internalID: -415826136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_66
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ba240b9e26e34429680cc6439f2aad
+      internalID: 504995334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_67
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fdf6324e184274582291e4134b6d85
+      internalID: -1936576385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_68
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba0a2a6a083cac4a9f27d624e9b0e96
+      internalID: 1623502231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_69
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c54379e47aca16499f3dbc22320f08a
+      internalID: -1604778063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_70
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2029219da28ac1a4189e95d228b8052a
+      internalID: -591485889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_71
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa5dc3a91634404588858cc9f8a03f4
+      internalID: 1191869969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_72
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7407017a8d0d5a14299a5667aa202d85
+      internalID: -1890212261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_73
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cde195a323239448d0508fcb7a490c
+      internalID: 932558305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_74
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec340bb31ccaa846a9796bc013dfd43
+      internalID: -703922515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_75
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91017d071340c0f43acfd48a09626dd3
+      internalID: -1182782965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_76
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2558c2991ca0d4aac97931bc67df9a
+      internalID: -1614033827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_77
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 4400
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717b8082a414b8a4694406af835f39ae
+      internalID: 305006727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6cb770fc315fb41b1f6fa42233b40c
+      internalID: -1241753478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_79
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19239a31c13342e47b8dfd49ea220b68
+      internalID: -1665242852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_80
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb9342f4b450d04b89393d7ce20e81a
+      internalID: 1936107895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_81
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a90dec08b670f444a9863d2f680040e
+      internalID: 753158850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_82
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c094e25de0508bd4ba221a5bc05073c1
+      internalID: 1348056129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_83
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e499297856aaa04a9640b3669a9d915
+      internalID: -1689057278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_84
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdea09926566721499be69522475f973
+      internalID: -32266899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_85
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c973ba4b09b3b47b325d0e02b50238
+      internalID: 367145227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_86
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c864054b341e7a46825d48cfd0305ff
+      internalID: -857536069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_87
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73d46a969663904982f15b9f5bf2b1a
+      internalID: 930972247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_88
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bd02c5cdf63ba41929c15c10fbde92
+      internalID: 1544030255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_89
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032141209c95d4045b6eb0b086fef41b
+      internalID: -1362352520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_90
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 3300
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8281141b431e34341a005a6bfd1d0c6d
+      internalID: -1167252074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af5725a9a58b4f4eb4d565b225edd68
+      internalID: -1668396632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_92
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db90415709214714585fe48734c773a8
+      internalID: 1328567667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_93
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e6e0604f6132b40b55530bf1b7d31a
+      internalID: -1231317230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_94
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6297e51d767e149439b1add2bedb753c
+      internalID: -212757947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_95
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de87d36a8a1588a468ed6e71631fca00
+      internalID: 1692728601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_96
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a5ea9a7e8083a4aac084694d883084
+      internalID: -1369289151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_97
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6876bc43b91bdf4e8da1e8531c2ec2a
+      internalID: -668538908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_98
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840571d8b522fa6468b5a242600ba89d
+      internalID: -911675493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_99
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbd359067c697843b8f6dc94ccd359b
+      internalID: -1466520596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_100
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508b1089400cea4409f11518a4f7947b
+      internalID: -1915959785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_101
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6ebd59f61bfdc47b61a5bb0cd0b908
+      internalID: -90520807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_102
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9bd6996586d8146adfa226a193d755
+      internalID: 1556012070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_103
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 2200
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d148e3ab3d7f2b46a87bbc26ed6ef15
+      internalID: -1887106074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4809467b16c434cb44112cb91801fa
+      internalID: 531643887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_105
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95ce4248c6cd8d449e93a0f17d4aef5
+      internalID: 1786138148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_106
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df726c968371944bae531c456f65f07
+      internalID: -1980306728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_107
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67d07f97c1671645bfd428d90a23258
+      internalID: 991709131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_108
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1588194f3b70e54fb07fdf20301bc0e
+      internalID: 1111044366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_109
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4926c2e830ac264468707eeb3488f4e5
+      internalID: 1572503546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_110
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24416ba74c47b8e4da448282f79b07ed
+      internalID: -239925936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_111
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b9dde2a40f5d046859903be08302e9
+      internalID: -103912429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_112
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb3cc8b92adce4479a46c992502b687
+      internalID: 763345140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_113
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e82ab9249f4df7428b4ab64e24d7fcc
+      internalID: 447493059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_114
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11024268b339dea468563a01d0edd06e
+      internalID: -1413956475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_115
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888f97f23f7a7b64f8dd88d25c88ac0c
+      internalID: 1056110549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_116
+      rect:
+        serializedVersion: 2
+        x: 14760
+        y: 1100
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d6e417a1dd64e4cb3aadf410e75659
+      internalID: -1206538732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_stun_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1230.7693
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d62580e18b3a0f4380ed5161f1813e2
+      internalID: -1915978798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +2592,125 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shield_stun_0: 613728029
+      shield_stun_1: 2104472964
+      shield_stun_10: 1952406397
+      shield_stun_100: -1915959785
+      shield_stun_101: -90520807
+      shield_stun_102: 1556012070
+      shield_stun_103: -1887106074
+      shield_stun_104: 531643887
+      shield_stun_105: 1786138148
+      shield_stun_106: -1980306728
+      shield_stun_107: 991709131
+      shield_stun_108: 1111044366
+      shield_stun_109: 1572503546
+      shield_stun_11: -1004841381
+      shield_stun_110: -239925936
+      shield_stun_111: -103912429
+      shield_stun_112: 763345140
+      shield_stun_113: 447493059
+      shield_stun_114: -1413956475
+      shield_stun_115: 1056110549
+      shield_stun_116: -1206538732
+      shield_stun_117: -1915978798
+      shield_stun_12: -1616499315
+      shield_stun_13: -553993766
+      shield_stun_14: 1722826258
+      shield_stun_15: 438613726
+      shield_stun_16: -663798070
+      shield_stun_17: -1610665363
+      shield_stun_18: -462644059
+      shield_stun_19: -1193544474
+      shield_stun_2: -1289143534
+      shield_stun_20: 1395865948
+      shield_stun_21: 1105972565
+      shield_stun_22: 887888066
+      shield_stun_23: 869395404
+      shield_stun_24: 1893484954
+      shield_stun_25: -1920033231
+      shield_stun_26: 1526106399
+      shield_stun_27: -1784433050
+      shield_stun_28: 1404021798
+      shield_stun_29: 2041804589
+      shield_stun_3: 1771598333
+      shield_stun_30: -500064423
+      shield_stun_31: -481366538
+      shield_stun_32: -911757428
+      shield_stun_33: -765109830
+      shield_stun_34: -1871291083
+      shield_stun_35: -2061594984
+      shield_stun_36: -788158985
+      shield_stun_37: -1131116054
+      shield_stun_38: -1169788418
+      shield_stun_39: 2137117676
+      shield_stun_4: 435535051
+      shield_stun_40: -729800287
+      shield_stun_41: 1759361997
+      shield_stun_42: -103123985
+      shield_stun_43: 1097369689
+      shield_stun_44: -281523178
+      shield_stun_45: 1299268139
+      shield_stun_46: 268266189
+      shield_stun_47: 1329972275
+      shield_stun_48: -1863213970
+      shield_stun_49: -39485938
+      shield_stun_5: -1616125023
+      shield_stun_50: -769697032
+      shield_stun_51: 1306429609
+      shield_stun_52: 575290484
+      shield_stun_53: -1822889391
+      shield_stun_54: 1553010668
+      shield_stun_55: 888260799
+      shield_stun_56: 955429022
+      shield_stun_57: -818604416
+      shield_stun_58: 781767908
+      shield_stun_59: -812761668
+      shield_stun_6: -1466545849
+      shield_stun_60: -1275372438
+      shield_stun_61: 506797807
+      shield_stun_62: -582942208
+      shield_stun_63: -1094742895
+      shield_stun_64: -160000183
+      shield_stun_65: -415826136
+      shield_stun_66: 504995334
+      shield_stun_67: -1936576385
+      shield_stun_68: 1623502231
+      shield_stun_69: -1604778063
+      shield_stun_7: -2066465881
+      shield_stun_70: -591485889
+      shield_stun_71: 1191869969
+      shield_stun_72: -1890212261
+      shield_stun_73: 932558305
+      shield_stun_74: -703922515
+      shield_stun_75: -1182782965
+      shield_stun_76: -1614033827
+      shield_stun_77: 305006727
+      shield_stun_78: -1241753478
+      shield_stun_79: -1665242852
+      shield_stun_8: -1504811205
+      shield_stun_80: 1936107895
+      shield_stun_81: 753158850
+      shield_stun_82: 1348056129
+      shield_stun_83: -1689057278
+      shield_stun_84: -32266899
+      shield_stun_85: 367145227
+      shield_stun_86: -857536069
+      shield_stun_87: 930972247
+      shield_stun_88: 1544030255
+      shield_stun_89: -1362352520
+      shield_stun_9: -2035707579
+      shield_stun_90: -1167252074
+      shield_stun_91: -1668396632
+      shield_stun_92: 1328567667
+      shield_stun_93: -1231317230
+      shield_stun_94: -212757947
+      shield_stun_95: 1692728601
+      shield_stun_96: -1369289151
+      shield_stun_97: -668538908
+      shield_stun_98: -911675493
+      shield_stun_99: -1466520596
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -12,7 +12,7 @@ public class PigeonIdleState : EnemyBaseState
     }
     public override void Tick()
     {
-        if (CanSeePlayer(currentObject, player,20)) 
+        if (CanSeePlayer(20)) 
         { 
             stateManager.StateSwitch(new PigeonMoveState()); 
         }

@@ -5,20 +5,19 @@ using UnityEngine;
 public class PolicemanSearchState : EnemyBaseState
 {
     int maxDetectionDistance = 15;
-    Animator animator;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         stateManager = manager;
         currentObject = gameObject;
         this.player = player;
         Debug.Log("Policeman entered search state!");
-        animator = currentObject.GetComponent<Animator>();
+        anim = currentObject.GetComponent<Animator>();
     }
     public override void Tick()
     {
-        if (CanSeePlayer(currentObject, player, maxDetectionDistance)) 
+        if (CanSeePlayer(maxDetectionDistance)) 
         {
-            animator.SetBool("Spot",true);
+            anim.SetBool("Spot",true);
             stateManager.StateSwitch(new PolicemanAttackState());
         }
     }

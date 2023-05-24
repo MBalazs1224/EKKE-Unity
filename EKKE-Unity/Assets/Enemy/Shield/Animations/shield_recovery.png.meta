@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +103,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: shield_recovery_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f31ffa82793f0a44ad5959ade3ad8f2
+      internalID: 786327349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_1
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2200
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1d2c9c942544d4ba4c066d2cbcf057
+      internalID: -1185970635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_2
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2200
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a279b8bfbfb6be44b8faa15dcc3f34d
+      internalID: -1874674762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_3
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 2200
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c352751d149907943ba79d7d9640548b
+      internalID: 245120635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_4
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 2200
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb32538caa4b47e42b0bb5f3648d8745
+      internalID: -844814614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_5
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 2200
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ce341152b4ed64a8b1b68ccd2fff70
+      internalID: -990871169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_6
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2200
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfc312d6880d91489c948b6b8b37cde
+      internalID: -1609812722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46405b1c080b6e9498dd3ef926d6aa53
+      internalID: 482261067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_8
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1100
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dacc1200cdc794188d6c5cb2480b81
+      internalID: 1855492626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_9
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1100
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f947378df72614fa0a088b161922f0
+      internalID: 1030192190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_10
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1100
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7c6bb186067204aa4abc89daf00854
+      internalID: 393333269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_11
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 1100
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0974dc2b36ac17a44acc50fe50aaa4e5
+      internalID: -1895381358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_12
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 1100
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a2858e77b9c344d81e477e97bbd0ca
+      internalID: -1531501250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_13
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 1100
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd2296d43c172d42a7638886ddf67fc
+      internalID: 2092320203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb85cfb077979ec41ba62abf2364c7e4
+      internalID: 305611831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shield_recovery_15
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 1100
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385e5cf92d6dfd14eb3ec81d55c4c840
+      internalID: -927531818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +450,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shield_recovery_0: 786327349
+      shield_recovery_1: -1185970635
+      shield_recovery_10: 393333269
+      shield_recovery_11: -1895381358
+      shield_recovery_12: -1531501250
+      shield_recovery_13: 2092320203
+      shield_recovery_14: 305611831
+      shield_recovery_15: -927531818
+      shield_recovery_2: -1874674762
+      shield_recovery_3: 245120635
+      shield_recovery_4: -844814614
+      shield_recovery_5: -990871169
+      shield_recovery_6: -1609812722
+      shield_recovery_7: 482261067
+      shield_recovery_8: 1855492626
+      shield_recovery_9: 1030192190
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

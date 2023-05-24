@@ -22,7 +22,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     float doubleJumpHeight = 10;
     Vector3 wallVector;
-    private bool isSliding;
+    public bool isSliding;
     [SerializeField]
     private int moveSpeed = 50;
     [SerializeField]

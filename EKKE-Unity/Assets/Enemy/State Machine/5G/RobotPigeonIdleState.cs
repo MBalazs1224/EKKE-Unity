@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RobotPigeonIdleState : EnemyBaseState
 {
-    Animator anim;
     float maxDetectionDistance = 20;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
@@ -16,6 +15,6 @@ public class RobotPigeonIdleState : EnemyBaseState
     }
     public override void Tick()
     {
-        if (CanSeePlayer(currentObject, player, maxDetectionDistance)) stateManager.StateSwitch(new RobotPigeonDetectState()) ;
+        if (CanSeePlayer(maxDetectionDistance)) stateManager.StateSwitch(new RobotPigeonDetectState()) ;
     }
 }
