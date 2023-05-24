@@ -1,8 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:EKKE-Unity/Assets/Enemy/Shield/Animations/Death.anim.meta
 guid: b12f8837445edce4986f20f51bae1a96
+========
+guid: 503f92f6e1b6cc74ead2699be5233f20
+>>>>>>>> d6d87fa52bb2553c6aaca86623c9d4e3ca9ff6fd:EKKE-Unity/Assets/Enemy/ExplodingCar/Animations/ExplodingCarController.controller.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 7400000
+  mainObjectFileID: 9100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
