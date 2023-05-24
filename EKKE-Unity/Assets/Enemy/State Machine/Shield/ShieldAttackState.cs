@@ -44,7 +44,7 @@ public class ShieldAttackState : EnemyBaseState
 
     private bool NearPlayer()
     {
-        return CanSeePlayer(currentObject, player, 1);
+        return CanSeePlayer();
     }
 
     IEnumerator AttackCooldown()

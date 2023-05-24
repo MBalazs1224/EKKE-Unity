@@ -40,6 +40,9 @@ public class SceneController : MonoBehaviour
                 case "Policeman":
                     enemyToBeAdded = new PolicemanSearchState();
                     break;
+                case "Security":
+                    enemyToBeAdded = new SecuritySearchState();
+                    break;
                 default:
                     enemyToBeAdded = new ShieldSearchState();
                     break;

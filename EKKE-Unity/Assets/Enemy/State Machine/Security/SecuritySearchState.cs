@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecuritySearchState : MonoBehaviour
+public class SecuritySearchState : EnemyBaseState
 {
-    // Start is called before the first frame update
-    void Start()
+    Animator animator;
+    public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
-        
+        stateManager = manager;
+        currentObject = gameObject;
+        this.player = player;
+        Debug.Log("Security entered search state!");
+        animator = currentObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Tick()
     {
-        
+        if (CanSeePlayer())
+        {
+            animator.SetBool("spot", true);
+            stateManager.StateSwitch(new SecurityAttackState());
+        }
     }
 }

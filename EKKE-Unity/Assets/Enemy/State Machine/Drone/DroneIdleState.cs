@@ -32,7 +32,7 @@ public class DroneIdleState : EnemyBaseState
             }
             return;
         }
-        if (!CanSeePlayer(currentObject,player,30))
+        if (!CanSeePlayer())
         {
             if (currentObject.transform.position.x < maxRight)
             {
