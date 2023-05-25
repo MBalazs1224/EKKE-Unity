@@ -8,7 +8,6 @@ public class DroneIdleState : EnemyBaseState
     float maxLeft;
     private float moveSpeed = 3f;
     bool spotted = false;
-    Animator anim;
 
     float waitedFor = 0;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
@@ -33,7 +32,7 @@ public class DroneIdleState : EnemyBaseState
             }
             return;
         }
-        if (!CanSeePlayer(currentObject,player,30))
+        if (!CanSeePlayer())
         {
             if (currentObject.transform.position.x < maxRight)
             {

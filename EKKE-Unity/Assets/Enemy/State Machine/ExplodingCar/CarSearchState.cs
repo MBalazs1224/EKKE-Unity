@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CarSearchState : EnemyBaseState
 {
-    int maxDetectionDistance = 10;
     float moveSpeed = 0.25f;
     Animator animator;
     float maxXRight;
@@ -26,7 +25,7 @@ public class CarSearchState : EnemyBaseState
 
     public override void Tick()
     {
-        if (!CanSeePlayer(currentObject, player, maxDetectionDistance))
+        if (!CanSeePlayer())
         {
             if (moveRight)
             {

@@ -7,7 +7,6 @@ public class PigeonMoveState : EnemyBaseState
 {
     Vector3 target;
     float moveSpeed = 0.2f;
-    Animator anim;
     float waitTime = 10f;
 
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)

@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class RobotPigeonDetectState : EnemyBaseState
 {
-    Animator anim;
     float waitTime = 3;
     SceneController sceneController;
     bool canDie = true;

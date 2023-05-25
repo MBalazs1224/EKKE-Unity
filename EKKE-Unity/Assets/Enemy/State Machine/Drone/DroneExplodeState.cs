@@ -6,7 +6,6 @@ public class DroneExplodeState : EnemyBaseState
 {
     private float waitTime = 3f;
     float chargedFor = 0f;
-    Animator anim;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         this.stateManager = manager;

@@ -11,15 +11,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Foreground
+  - Assets
+  - Indoor
+  - Ground
+  - Wall
   - Background
-  - CheckpointSave
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -56,9 +56,15 @@ TagManager:
   - name: Assets
     uniqueID: 1433690325
     locked: 0
+  - name: Asset front
+    uniqueID: 576851893
+    locked: 0
   - name: Tilemap
     uniqueID: 2953683733
     locked: 0
   - name: Foreground
     uniqueID: 3540632695
+    locked: 0
+  - name: Player
+    uniqueID: 882315691
     locked: 0

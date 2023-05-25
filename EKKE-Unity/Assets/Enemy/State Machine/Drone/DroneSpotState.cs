@@ -14,7 +14,7 @@ public class DroneSpotState : EnemyBaseState
 
     public override void Tick()
     {
-        if (!CanSeePlayer(currentObject, player))
+        if (!CanSeePlayer())
         {
 
         }

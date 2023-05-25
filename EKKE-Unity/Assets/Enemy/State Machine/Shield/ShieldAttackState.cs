@@ -1,37 +1,52 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ShieldAttackState : EnemyBaseState
 {
-    bool canAttack = true;
     SceneController sceneController;
     int attackCooldown = 3;
+    float maxRight;
+    float maxLeft;
+    bool moveRight = true;
+    bool canAttack = true;
+    private float moveSpeed = 10f;
+
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         stateManager = manager;
         currentObject = gameObject;
         this.player = player;
         sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
-        Debug.Log("Policeman entered attack state!");
+        maxLeft = currentObject.transform.position.x;
+        maxRight = maxLeft + 20;
+        Debug.Log("Shield entered attack state!");
     }
     public override void Tick()
     {
-        if (!CanSeePlayer(currentObject, player)) stateManager.StateSwitch(new ShieldSearchState());
-        if (canAttack)
+        if (!CanSeePlayer()) stateManager.StateSwitch(new ShieldSearchState());
+        if (!canAttack) return;
+        if (moveRight)
         {
-            Vector2.MoveTowards(currentObject.transform.position, player.transform.position, 1);
-
-            var rayDirection = player.gameObject.transform.position - currentObject.transform.position;
-            RaycastHit2D result = Physics2D.Raycast(currentObject.transform.position, rayDirection, 1);
-            if (result.transform == player.transform)
-            {
-                player.TakeDamage();
-                sceneController.StartCoroutine(AttackCooldown());
-            }
+            currentObject.transform.position += new Vector3(1, 0) * Time.deltaTime * moveSpeed;
+            if (currentObject.transform.position.x <= maxRight) moveRight = false;
         }
-        
+        else
+        {
+            currentObject.transform.position += new Vector3(-1, 0) * Time.deltaTime * moveSpeed;
+            if (currentObject.transform.position.x >= maxLeft) moveRight = true;
+        }
+
+        if (NearPlayer() && !player.isSliding) player.TakeDamage();
+
     }
+
+    private bool NearPlayer()
+    {
+        return CanSeePlayer();
+    }
+
     IEnumerator AttackCooldown()
     {
         canAttack = false;

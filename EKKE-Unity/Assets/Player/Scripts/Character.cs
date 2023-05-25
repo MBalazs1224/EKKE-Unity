@@ -22,7 +22,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     float doubleJumpHeight = 10;
     Vector3 wallVector;
-    private bool isSliding;
+    public bool isSliding;
     [SerializeField]
     private int moveSpeed = 50;
     [SerializeField]
@@ -142,9 +142,10 @@ public class Character : MonoBehaviour
         health = maxHealth;
         Debug.Log("Health is back to max value!");
     }
-
-    private void Update()
+    private void FixedUpdate()
     {
+        inAir = false;
+        canDoubleJump = true;
         if (isDead() || isHurting || isSaving) return;
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
         {
@@ -217,6 +218,11 @@ public class Character : MonoBehaviour
         {
             this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
         }
+    }
+
+    private void Update()
+    {
+       
 
     }
 
@@ -314,7 +320,8 @@ public class Character : MonoBehaviour
         else if (!inAir)
         {
             anim.SetTrigger("Jump1");
-            rb.velocity = new Vector2(0, 7.5f) * Time.deltaTime * jumpHeight;
+            rb.velocity = new Vector2(0, jumpHeight) * Time.deltaTime;
+            //rb.AddForce(new Vector2(0, jumpHeight));
             inAir = true;
         }
 
@@ -327,7 +334,7 @@ public class Character : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == 9)
         {
             inAir = false;
             canDoubleJump = true;
@@ -374,7 +381,7 @@ public class Character : MonoBehaviour
     {
         if (collision.gameObject.layer == 7)
         {
-            rb.gravityScale = 1;
+            //rb.gravityScale = 1;
             isOnWall = false;
             inAir = true;
             anim.SetBool("WallStuck", false);

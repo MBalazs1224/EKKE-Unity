@@ -21,7 +21,7 @@ public class CarAttackState : EnemyBaseState
 
     public override void Tick()
     {
-        if (!CanSeePlayer(currentObject, player))
+        if (!CanSeePlayer())
         {
             stateManager.StateSwitch(new CarSearchState());
             animator.SetBool("spot", false);

@@ -12,7 +12,6 @@ public class ParallaxController : MonoBehaviour
     void Start()
     {
         lastPlayerX = player.position.x;
-        player = GameObject.Find("Player").transform;
     }
 
     void Update()
