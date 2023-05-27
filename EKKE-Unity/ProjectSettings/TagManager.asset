@@ -62,9 +62,15 @@ TagManager:
   - name: Tilemap
     uniqueID: 2953683733
     locked: 0
+  - name: npc front
+    uniqueID: 1120152717
+    locked: 0
   - name: Foreground
     uniqueID: 3540632695
     locked: 0
   - name: Player
     uniqueID: 882315691
+    locked: 0
+  - name: FOREGROUND2
+    uniqueID: 4292922975
     locked: 0
