@@ -55,6 +55,7 @@ public class Character : MonoBehaviour
     private bool canSave;
     private bool isSaving;
     private GameObject notification;
+    private float dashCooldown = 5f;
 
     IEnumerator Death()
     {
@@ -268,11 +269,18 @@ public class Character : MonoBehaviour
         anim.SetTrigger("Dash");
         moveSpeed *= 2;
         canDash = false;
+        StartCoroutine(DashCooldown());
+    }
+
+    IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(dashCooldown);
+        Debug.Log("Can dash!");
+        canDash = true;
     }
     void UnDash()
     {
         moveSpeed /= 2;
-        canDash = true;
     }
 
     void Slide()
