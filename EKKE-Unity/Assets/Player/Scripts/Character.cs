@@ -11,7 +11,6 @@ public class Character : MonoBehaviour
     Sprite saveSprite;
     [SerializeField]
     Sprite powerUpSprite;
-
     int startRegenerate = 10;
     Checkpoint cp = new Checkpoint();
     [SerializeField]
@@ -56,6 +55,9 @@ public class Character : MonoBehaviour
     private bool isSaving;
     private GameObject notification;
     private float dashCooldown = 5f;
+
+
+    BoxCollider2D playerCollider;
 
     IEnumerator Death()
     {
@@ -214,7 +216,7 @@ public class Character : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.S) && !inAir)
+        if (Input.GetKeyDown(KeyCode.S) && !inAir && !isSliding)
         {
             Slide();
 
@@ -288,12 +290,17 @@ public class Character : MonoBehaviour
         anim.SetBool("Run", false);
         anim.SetBool("Slide", true);
         isSliding = true;
+        playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y / 2);
+        playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y * 6);
     }
 
     public void UnSlide()
     {
         anim.SetBool("Slide", false);
         isSliding = false;
+        playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y * 2);
+        playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y / 6);
+
     }
 
     private void Start()
@@ -302,6 +309,7 @@ public class Character : MonoBehaviour
         anim = this.gameObject.GetComponent<Animator>();
         health = maxHealth;
         cp.resumePoint = this.gameObject.transform.position;
+        playerCollider = gameObject.GetComponent<BoxCollider2D>();
         this.notification = GameObject.Find("Notification");
         notification.SetActive(false);
     }
