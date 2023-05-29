@@ -7,6 +7,8 @@ TagManager:
   - Undefined
   - Enemy
   - Foreground
+  - Checkpoint
+  - Checkpoint (saved)
   layers:
   - Default
   - TransparentFX

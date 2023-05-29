@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
+    [SerializeField]
+    Sprite saveSprite;
+    [SerializeField]
+    Sprite powerUpSprite;
+
     int startRegenerate = 10;
     Checkpoint cp = new Checkpoint();
     [SerializeField]
@@ -49,6 +54,7 @@ public class Character : MonoBehaviour
     bool isHurting = false;
     private bool canSave;
     private bool isSaving;
+    private GameObject notification;
 
     IEnumerator Death()
     {
@@ -144,8 +150,6 @@ public class Character : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        inAir = false;
-        canDoubleJump = true;
         if (isDead() || isHurting || isSaving) return;
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
         {
@@ -290,6 +294,8 @@ public class Character : MonoBehaviour
         anim = this.gameObject.GetComponent<Animator>();
         health = maxHealth;
         cp.resumePoint = this.gameObject.transform.position;
+        this.notification = GameObject.Find("Notification");
+        notification.SetActive(false);
     }
 
     private void MoveLeft()
@@ -354,27 +360,9 @@ public class Character : MonoBehaviour
             rb.velocity = new Vector2(0, 0);
             canDoubleJump = true;
             inAir = false;
-            if (WallOnRightSide())
-            {
-                this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
-            }
-            else
-            {
-                this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
-            }
-        }
-        else if(collision.gameObject.layer == 8)
-        {
-            canSave = true;
         }
 
-    }
 
-    private bool WallOnRightSide()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.right);
-
-        return hit && hit.transform.position.x >= this.transform.position.x;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -388,14 +376,11 @@ public class Character : MonoBehaviour
             anim.SetBool("Fall", true);
             this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
         }
-        else if (collision.gameObject.layer == 8)
-        {
-            canSave = false;
-        }
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 8 && Input.GetKeyDown(KeyCode.G))
+        if (collision.gameObject.tag.Equals("Checkpoint") && Input.GetKeyDown(KeyCode.G))
         {
             if (isSaving || inAir || isSliding) return;
             Debug.Log("Save");
@@ -405,12 +390,35 @@ public class Character : MonoBehaviour
             Animator saveAnim = collision.gameObject.GetComponent<Animator>();
             saveAnim.SetTrigger("Save");
             SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
-            sc.StartCoroutine(RemoveSave());
+            sc.StartCoroutine(RemoveSave(collision.gameObject));
+            
+            collision.gameObject.tag = "Checkpoint (saved)";
+            notification.SetActive(false);
         }
     }
-    IEnumerator RemoveSave()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        yield return new WaitForSeconds(1.03f);
+        if (collision.gameObject.tag.Equals("Checkpoint"))
+        {
+            canSave = true;
+            notification.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Checkpoint"))
+        {
+            canSave = false;
+            notification.SetActive(false);
+        }
+    }
+    IEnumerator RemoveSave(GameObject collision)
+    {
+        yield return new WaitForSeconds(.5f);
+        SpriteRenderer r = collision.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
+        r.sprite = saveSprite;
+        yield return new WaitForSeconds(.53f);
         isSaving = false;
     }
 }
