@@ -125,6 +125,7 @@ public class Character : MonoBehaviour
         {
             StopAllCoroutines();
             StartCoroutine(Death());
+            AudioController.PlayDeath();
             Debug.Log($"Dead!");
         }
         else
@@ -132,6 +133,7 @@ public class Character : MonoBehaviour
             StopCoroutine(StartRegen());
             StartCoroutine(StartRegen());
             anim.SetTrigger("Hurt");
+            AudioController.PlayHurt();
             isHurting = true;
             //anim.ResetTrigger("Unhurt");
             //anim.ResetTrigger("Death");
@@ -148,6 +150,7 @@ public class Character : MonoBehaviour
     IEnumerator StartRegen()
     {
         yield return new WaitForSeconds(startRegenerate);
+        AudioController.PlayHeal();
         health = maxHealth;
         Debug.Log("Health is back to max value!");
     }
@@ -269,6 +272,7 @@ public class Character : MonoBehaviour
     private void Dash()
     {
         anim.SetTrigger("Dash");
+        AudioController.PlayDash();
         moveSpeed *= 2;
         canDash = false;
         StartCoroutine(DashCooldown());
