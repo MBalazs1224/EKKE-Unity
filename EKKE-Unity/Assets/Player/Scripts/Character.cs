@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class Character : MonoBehaviour
 {
@@ -59,6 +60,10 @@ public class Character : MonoBehaviour
 
     BoxCollider2D playerCollider;
 
+    InputMaster controllerInput;
+
+    Vector2 controllerMoveValue = new Vector2(0,0);
+
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -111,10 +116,14 @@ public class Character : MonoBehaviour
     public bool isDead() => health == 0;
     void Attack()
     {
-        anim.SetTrigger("Attack");
-        anim.SetBool("Run", false);
-        anim.SetBool("Slide", false);
-        anim.SetBool("Idle", true);
+        if (!inAir && !isOnWall)
+        {
+            anim.SetTrigger("Attack");
+            anim.SetBool("Run", false);
+            anim.SetBool("Slide", false);
+            anim.SetBool("Idle", true);
+        }
+
     }
     public void TakeDamage()
     {
@@ -157,25 +166,32 @@ public class Character : MonoBehaviour
     private void FixedUpdate()
     {
         if (isDead() || isHurting || isSaving) return;
+
+        Move(controllerMoveValue);
+
         if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !isOnWall)
         {
 
             anim.SetBool("Run", false);
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
-        if (!Input.anyKey)
-        {
-            afkTime += Time.deltaTime;
-            if (afkTime >= waitForAFK)
-            {
-                StartAFK();
-            }
-            return;
-        }
-        afkTime = 0;
+        //if (!Input.anyKey)
+        //{
+        //    afkTime += Time.deltaTime;
+        //    if (afkTime >= waitForAFK)
+        //    {
+        //        StartAFK();
+        //    }
+        //    return;
+        //}
+        //afkTime = 0;
         if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
         else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
-        else if (Input.GetKeyDown(KeyCode.E) && !inAir && !isOnWall)
+        else if (isOnWall)
+        {
+            this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             Attack();
             rb.velocity = new Vector2(0, rb.velocity.y);
@@ -187,18 +203,14 @@ public class Character : MonoBehaviour
             //StopAllCoroutines();
 
         }
-        else if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !isSliding)
+        else if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             Dash();
         }
-        else if (Input.GetKey(KeyCode.D) && !isOnWall)
+        else if (Input.GetKey(KeyCode.D))
         {
-            if (isOnWall)
-            {
-                anim.SetBool("WallStuck", false);
-                anim.SetBool("Fall", true);
-            }
-            MoveRight();
+
+            Move(new Vector2(0.07f, 0));
             this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             //StopAllCoroutines();
 
@@ -207,27 +219,20 @@ public class Character : MonoBehaviour
 
         else if (Input.GetKey(KeyCode.A))
         {
-            if (isOnWall)
-            {
-                anim.SetBool("WallStuck", false);
-                anim.SetBool("Fall", true);
-            }
-            MoveLeft();
+
+            Move(new Vector2(-0.07f, 0));
             this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             //StopAllCoroutines();
 
         }
 
 
-        if (Input.GetKeyDown(KeyCode.S) && !inAir && !isSliding)
+         if (Input.GetKeyDown(KeyCode.S))
         {
             Slide();
 
         }
-        if (isOnWall)
-        {
-            this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
-        }
+
     }
 
     private void Update()
@@ -271,11 +276,15 @@ public class Character : MonoBehaviour
 
     private void Dash()
     {
-        anim.SetTrigger("Dash");
-        AudioController.PlayDash();
-        moveSpeed *= 2;
-        canDash = false;
-        StartCoroutine(DashCooldown());
+        if (canDash && !isSliding)
+        {
+            anim.SetTrigger("Dash");
+            AudioController.PlayDash();
+            moveSpeed *= 2;
+            canDash = false;
+            StartCoroutine(DashCooldown());
+        }
+        
     }
 
     IEnumerator DashCooldown()
@@ -291,11 +300,15 @@ public class Character : MonoBehaviour
 
     void Slide()
     {
-        anim.SetBool("Run", false);
-        anim.SetBool("Slide", true);
-        isSliding = true;
-        playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y / 2);
-        playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y * 6);
+        if (!inAir && !isSliding)
+        {
+            anim.SetBool("Run", false);
+            anim.SetBool("Slide", true);
+            isSliding = true;
+            playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y / 2);
+            playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y * 6);
+        }
+        
     }
 
     public void UnSlide()
@@ -316,16 +329,42 @@ public class Character : MonoBehaviour
         playerCollider = gameObject.GetComponent<BoxCollider2D>();
         this.notification = GameObject.Find("Notification");
         notification.SetActive(false);
+        controllerInput = new InputMaster();
+        controllerInput.Player.Enable();
+        controllerInput.Player.Jump.started += ctx => Jump();
+        controllerInput.Player.Dash.performed += ctx => Dash();
+        controllerInput.Player.Attack.performed += ctx => Attack();
+        controllerInput.Player.MoveRight.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
+        controllerInput.Player.MoveLeft.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
+        controllerInput.Player.MoveRight.canceled += ctx => controllerMoveValue = new Vector2(0,0);
+        controllerInput.Player.MoveLeft.canceled += ctx => controllerMoveValue = new Vector2(0,0);
+        controllerInput.Player.Slide.performed += ctx => Slide();
     }
 
-    private void MoveLeft()
+    private void Move(Vector2 distance)
     {
-
-        rb.position += new Vector2(-0.07f, 0) * moveSpeed * Time.deltaTime;
+        if (distance == new Vector2(0, 0))
+        {
+            anim.SetBool("Run",false);
+            return;
+        }
+        if (isOnWall)
+        {
+            anim.SetBool("WallStuck", false);
+            anim.SetBool("Fall", true);
+        }
+        distance.y = 0;
+        if (distance.x > 0) this.transform.rotation = new Quaternion(0, 0, 0, 0);
+        else
+        {
+            this.transform.rotation = new Quaternion(0, 180, 0, 0);
+        }
+        rb.position += distance * moveSpeed * Time.deltaTime;
         if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
     private void Jump()
     {
+        Debug.Log("Jump");
         anim.SetBool("Run", false);
         anim.SetBool("Idle", false);
         anim.SetBool("Slide", false);
@@ -351,12 +390,6 @@ public class Character : MonoBehaviour
             inAir = true;
         }
 
-    }
-    private void MoveRight()
-    {
-        rb.position += new Vector2(0.07f, 0) * Time.deltaTime * moveSpeed;
-
-        if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
