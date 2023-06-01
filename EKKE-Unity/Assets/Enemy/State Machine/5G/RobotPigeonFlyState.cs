@@ -27,6 +27,8 @@ public class RobotPigeonFlyState : EnemyBaseState
             currentObject.transform.rotation = new Quaternion(0, 0, 10,0);
             target = new Vector2(-100, 100);
         }
+
+        AudioController.PlayPigeonMove5G(currentObject.GetComponent<AudioSource>());
     }
     public override void Tick()
     {

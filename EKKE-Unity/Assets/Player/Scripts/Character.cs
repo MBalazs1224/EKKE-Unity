@@ -62,7 +62,11 @@ public class Character : MonoBehaviour
 
     InputMaster controllerInput;
 
-    Vector2 controllerMoveValue = new Vector2(0,0);
+    Vector2 controllerMoveValue = new Vector2(0, 0);
+    AudioSource audioSource;
+
+    [SerializeField]
+    float keyboardMovementSpeed = 1f;
 
     IEnumerator Death()
     {
@@ -87,9 +91,9 @@ public class Character : MonoBehaviour
         var hit = Physics2D.Raycast(this.transform.position - directon * 3, directon);
         Vector3 target = hit ? hit.transform.position : GetEndFallback();
 
-        while (Vector3.Distance(this.transform.position,target) > .1f)
+        while (Vector3.Distance(this.transform.position, target) > .1f)
         {
-            this.transform.position += Vector3.MoveTowards(this.transform.position,target,5);
+            this.transform.position += Vector3.MoveTowards(this.transform.position, target, 5);
             yield return null;
         }
         Debug.Log("Player fallback ended!");
@@ -97,7 +101,7 @@ public class Character : MonoBehaviour
 
     private Vector3 GetEndFallback()
     {
-        return this.transform.rotation == new Quaternion(0, 0, 0, 0) ? this.transform.position + new Vector3(fallBackDistance,0) : this.transform.transform.position + new Vector3(-fallBackDistance, 0);
+        return this.transform.rotation == new Quaternion(0, 0, 0, 0) ? this.transform.position + new Vector3(fallBackDistance, 0) : this.transform.transform.position + new Vector3(-fallBackDistance, 0);
     }
 
     public bool IsAttacking()
@@ -134,7 +138,7 @@ public class Character : MonoBehaviour
         {
             StopAllCoroutines();
             StartCoroutine(Death());
-            AudioController.PlayDeath();
+            AudioController.PlayDeath(audioSource);
             Debug.Log($"Dead!");
         }
         else
@@ -142,7 +146,7 @@ public class Character : MonoBehaviour
             StopCoroutine(StartRegen());
             StartCoroutine(StartRegen());
             anim.SetTrigger("Hurt");
-            AudioController.PlayHurt();
+            AudioController.PlayHurt(audioSource);
             isHurting = true;
             //anim.ResetTrigger("Unhurt");
             //anim.ResetTrigger("Death");
@@ -159,10 +163,11 @@ public class Character : MonoBehaviour
     IEnumerator StartRegen()
     {
         yield return new WaitForSeconds(startRegenerate);
-        AudioController.PlayHeal();
+        AudioController.PlayHeal(audioSource);
         health = maxHealth;
         Debug.Log("Health is back to max value!");
     }
+
     private void FixedUpdate()
     {
         if (isDead() || isHurting || isSaving) return;
@@ -210,7 +215,7 @@ public class Character : MonoBehaviour
         else if (Input.GetKey(KeyCode.D))
         {
 
-            Move(new Vector2(0.07f, 0));
+            Move(new Vector2(keyboardMovementSpeed, 0));
             this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             //StopAllCoroutines();
 
@@ -220,24 +225,26 @@ public class Character : MonoBehaviour
         else if (Input.GetKey(KeyCode.A))
         {
 
-            Move(new Vector2(-0.07f, 0));
+            Move(new Vector2(-keyboardMovementSpeed, 0));
             this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
             //StopAllCoroutines();
 
         }
 
 
-         if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             Slide();
 
         }
 
+        notification.transform.position = new Vector2(gameObject.transform.position.x,gameObject.transform.position.y + 5);
+
     }
 
     private void Update()
     {
-       
+
 
     }
 
@@ -279,18 +286,19 @@ public class Character : MonoBehaviour
         if (canDash && !isSliding)
         {
             anim.SetTrigger("Dash");
-            AudioController.PlayDash();
+
             moveSpeed *= 2;
             canDash = false;
             StartCoroutine(DashCooldown());
         }
-        
+
     }
 
     IEnumerator DashCooldown()
     {
         yield return new WaitForSeconds(dashCooldown);
         Debug.Log("Can dash!");
+        AudioController.PlayDash(audioSource);
         canDash = true;
     }
     void UnDash()
@@ -308,7 +316,7 @@ public class Character : MonoBehaviour
             playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y / 2);
             playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y * 6);
         }
-        
+
     }
 
     public void UnSlide()
@@ -336,16 +344,20 @@ public class Character : MonoBehaviour
         controllerInput.Player.Attack.performed += ctx => Attack();
         controllerInput.Player.MoveRight.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
         controllerInput.Player.MoveLeft.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
-        controllerInput.Player.MoveRight.canceled += ctx => controllerMoveValue = new Vector2(0,0);
-        controllerInput.Player.MoveLeft.canceled += ctx => controllerMoveValue = new Vector2(0,0);
+        controllerInput.Player.MoveRight.canceled += ctx => controllerMoveValue = new Vector2(0, 0);
+        controllerInput.Player.MoveLeft.canceled += ctx => controllerMoveValue = new Vector2(0, 0);
         controllerInput.Player.Slide.performed += ctx => Slide();
+
+        audioSource = this.gameObject.GetComponent<AudioSource>();
+
     }
 
     private void Move(Vector2 distance)
     {
-        if (distance == new Vector2(0, 0))
+
+        if (distance.x < 0 && distance.x > 0.1f || distance.x >= 0 && distance.x < 0.01f)
         {
-            anim.SetBool("Run",false);
+            anim.SetBool("Run", false);
             return;
         }
         if (isOnWall)
@@ -353,6 +365,7 @@ public class Character : MonoBehaviour
             anim.SetBool("WallStuck", false);
             anim.SetBool("Fall", true);
         }
+        if (!isSliding) anim.SetBool("Run", true);
         distance.y = 0;
         if (distance.x > 0) this.transform.rotation = new Quaternion(0, 0, 0, 0);
         else
@@ -433,9 +446,9 @@ public class Character : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Checkpoint") && Input.GetKeyDown(KeyCode.G))
+        if (collision.gameObject.tag.Equals("Checkpoint"))
         {
-            if (isSaving || inAir || isSliding) return;
+            if (!Input.GetKeyDown(KeyCode.G) || isSaving || inAir || isSliding) return;
             Debug.Log("Save");
             anim.SetTrigger("Graffiti");
             isSaving = true;
@@ -444,9 +457,9 @@ public class Character : MonoBehaviour
             saveAnim.SetTrigger("Save");
             SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
             sc.StartCoroutine(RemoveSave(collision.gameObject));
-            
             collision.gameObject.tag = "Checkpoint (saved)";
             notification.SetActive(false);
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

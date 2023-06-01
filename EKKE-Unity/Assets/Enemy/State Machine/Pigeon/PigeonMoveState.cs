@@ -31,6 +31,8 @@ public class PigeonMoveState : EnemyBaseState
         GameObject.Find("SceneController").GetComponent<SceneController>().StartCoroutine(RemoveSelf());
 
         Debug.Log("Pigeon started flying away!");
+
+        AudioController.PlayPigeonMove(currentObject.GetComponent<AudioSource>());
     }
     public override void Tick()
     {

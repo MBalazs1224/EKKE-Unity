@@ -19,6 +19,8 @@ public class RobotPigeonDetectState : EnemyBaseState
         anim = currentObject.GetComponent<Animator>();
         anim.SetTrigger("Spot");
         sceneController.StartCoroutine(WaitForFly());
+
+        AudioController.PlayPigeonSpot5G(currentObject.GetComponent<AudioSource>());
     }
     public override void Tick()
     {
