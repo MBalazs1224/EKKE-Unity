@@ -11,6 +11,42 @@ public class CameraController : MonoBehaviour
     [SerializeField]float dampTime = 0.5f;
     [SerializeField]
     float camHeight = 5;
+
+
+    public float shakeIntesity = 1;
+    public float shakeDuration = 0.5f;
+    private float shakeTimer = 0f;
+    private Transform cameraTransform;
+
+
+
+    private void Awake()
+    {
+        cameraTransform = GetComponent<Transform>();
+    }
+
+    public void Shake()
+    {
+        shakeTimer = shakeDuration;
+        StartCoroutine(ShakeCoroutine());
+    }
+
+    public IEnumerator ShakeCoroutine()
+    {
+        float elapsed = 0f;
+
+        while (elapsed < shakeDuration)
+        {
+            float x = UnityEngine.Random.Range(transform.localPosition.x - shakeIntesity, transform.localPosition.x + shakeIntesity);
+            float y = UnityEngine.Random.Range(transform.localPosition.y - shakeIntesity, transform.localPosition.y + shakeIntesity);
+
+            transform.localPosition = new Vector3(x, y, transform.localPosition.z);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+
     void Start()
     {
         cam = Camera.main;

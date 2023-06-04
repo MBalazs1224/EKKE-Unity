@@ -12,6 +12,7 @@ public class ShieldSpotState : EnemyBaseState
         Debug.Log("Shield entered spot state!");
         SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
         sc.StartCoroutine(SwitchToAttack());
+        AudioController.PlayShieldSpot(currentObject.GetComponent<AudioSource>());
     }
 
     public override void Tick()

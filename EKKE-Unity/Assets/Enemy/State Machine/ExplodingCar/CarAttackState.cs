@@ -17,6 +17,7 @@ public class CarAttackState : EnemyBaseState
         sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
         Debug.Log("Exploding car entered attack state!");
         animator = currentObject.GetComponent<Animator>();
+        AudioController.PlayRcAttack(currentObject.GetComponent<AudioSource>());
     }
 
     public override void Tick()

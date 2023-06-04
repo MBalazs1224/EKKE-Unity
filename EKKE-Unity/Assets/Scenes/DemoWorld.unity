@@ -25779,6 +25779,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dampTime: 0.05
   camHeight: 9.9
+  intensity: 0.001
+  duration: 0.5
+  frequency: 25
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0

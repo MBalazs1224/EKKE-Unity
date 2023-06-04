@@ -68,6 +68,10 @@ public class Character : MonoBehaviour
     [SerializeField]
     float keyboardMovementSpeed = 1f;
 
+
+
+    CameraController camController;
+
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -134,6 +138,7 @@ public class Character : MonoBehaviour
         if (isDead()) return;
         anim.SetBool("Run", false);
         anim.SetBool("Slide", false);
+        camController.Shake();
         if (--health == 0)
         {
             StopAllCoroutines();
@@ -191,6 +196,8 @@ public class Character : MonoBehaviour
         //}
         //afkTime = 0;
         if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
+
+        else if (Input.GetKeyDown(KeyCode.B)) camController.Shake();
         else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
         else if (isOnWall)
         {
@@ -349,6 +356,8 @@ public class Character : MonoBehaviour
         controllerInput.Player.Slide.performed += ctx => Slide();
 
         audioSource = this.gameObject.GetComponent<AudioSource>();
+
+        camController = Camera.main.GetComponent<CameraController>();
 
     }
 

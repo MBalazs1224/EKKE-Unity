@@ -38,7 +38,10 @@ public class ShieldAttackState : EnemyBaseState
             if (currentObject.transform.position.x >= maxLeft) moveRight = true;
         }
 
-        if (NearPlayer() && !player.isSliding) player.TakeDamage();
+        if (NearPlayer() && !player.isSliding)
+        {
+            player.TakeDamage();
+        }
 
     }
 

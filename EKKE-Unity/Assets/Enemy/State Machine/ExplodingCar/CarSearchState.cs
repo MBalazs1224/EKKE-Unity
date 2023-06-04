@@ -59,7 +59,7 @@ public class CarSearchState : EnemyBaseState
             if (elapsedTime >= AudioController.soundWaitTime)
             {
                 elapsedTime = 0f;
-                AudioController.PlayDroneIdle(source);
+                AudioController.PlayRcIdle(source);
             }
         }
         else
