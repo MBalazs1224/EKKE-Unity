@@ -12,6 +12,7 @@ public class DroneAttackState : EnemyBaseState
         this.currentObject = gameObject;
         this.player = player;
         anim = currentObject.GetComponent<Animator>();
+        AudioController.PlayDroneSpotAttack(currentObject.GetComponent<AudioSource>());
         Debug.Log("Drone entered attack state!");
     }
 

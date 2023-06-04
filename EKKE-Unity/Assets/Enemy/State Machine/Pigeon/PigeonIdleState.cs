@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PigeonIdleState : EnemyBaseState
 {
-    float soundWaitTime = 5f;
     float elapsedTime = 0f;
     AudioSource source;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
@@ -23,7 +22,7 @@ public class PigeonIdleState : EnemyBaseState
         else
         {
             elapsedTime += Time.deltaTime;
-            if (elapsedTime >= soundWaitTime)
+            if (elapsedTime >= AudioController.soundWaitTime)
             {
                 elapsedTime = 0f;
                 System.Random rnd = new System.Random();

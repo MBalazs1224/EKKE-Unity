@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class CarSearchState : EnemyBaseState
 {
@@ -11,6 +12,9 @@ public class CarSearchState : EnemyBaseState
     bool moveRight = true;
     SpriteRenderer sr;
     Rigidbody2D rb;
+
+    float elapsedTime = 0f;
+    AudioSource source;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         stateManager = manager;
@@ -21,6 +25,8 @@ public class CarSearchState : EnemyBaseState
         Debug.Log("Exploding car entered search state!");
         sr = currentObject.GetComponent<SpriteRenderer>();
         animator = currentObject.GetComponent<Animator>();
+
+        source = currentObject.GetComponent<AudioSource>();
     }
 
     public override void Tick()
@@ -47,6 +53,13 @@ public class CarSearchState : EnemyBaseState
                     animator.SetBool("right", true);
                     sr.flipX = false;
                 }
+            }
+
+            elapsedTime += Time.deltaTime;
+            if (elapsedTime >= AudioController.soundWaitTime)
+            {
+                elapsedTime = 0f;
+                AudioController.PlayDroneIdle(source);
             }
         }
         else

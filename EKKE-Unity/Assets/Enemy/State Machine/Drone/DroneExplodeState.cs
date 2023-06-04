@@ -22,6 +22,7 @@ public class DroneExplodeState : EnemyBaseState
             if (chargedFor >= waitTime)
             {
                 anim.SetTrigger("Explode");
+                AudioController.PlayDroneDeath(currentObject.GetComponent<AudioSource>());
                 if (TouchesPlayer())
                 {
                     player.TakeDamage();
@@ -36,6 +37,7 @@ public class DroneExplodeState : EnemyBaseState
             {
                 GameObject.Find("SceneController").GetComponent<SceneController>().StartCoroutine(RemoveEffect(false));
                 anim.SetTrigger("Hurt");
+                AudioController.PlayDroneHurt(currentObject.GetComponent<AudioSource>());
                 stateManager.shouldTick = false;
             }
         }

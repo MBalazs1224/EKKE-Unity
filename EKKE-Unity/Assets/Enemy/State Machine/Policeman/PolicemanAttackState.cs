@@ -28,6 +28,7 @@ public class PolicemanAttackState : EnemyBaseState
         lr.endColor = Color.red;
         Debug.Log("RangedPoliceman entered attack state!");
         anim = currentObject.GetComponent<Animator>();
+        AudioController.PlayPoliceSpot(currentObject.GetComponent<AudioSource>());
     }
 
     public override void Tick()
@@ -66,6 +67,7 @@ public class PolicemanAttackState : EnemyBaseState
                 chargedFor += Time.deltaTime;
                 if (chargedFor >= chargeUpTime)
                 {
+                    AudioController.PlayPoliceAttack(currentObject.GetComponent<AudioSource>());
                     anim.SetTrigger("Attack");
                     player.TakeDamage();
                     chargedFor = 0;
