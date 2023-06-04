@@ -72,6 +72,9 @@ public class Character : MonoBehaviour
 
     CameraController camController;
 
+    GameObject nearestCheckpoint;
+
+
     IEnumerator Death()
     {
         anim.SetBool("Idle", false);
@@ -211,7 +214,7 @@ public class Character : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            Button_A_Press();
             //StopAllCoroutines();
 
         }
@@ -315,7 +318,7 @@ public class Character : MonoBehaviour
 
     void Slide()
     {
-        if (!inAir && !isSliding)
+        if (!inAir && !isSliding && !StandingStill())
         {
             anim.SetBool("Run", false);
             anim.SetBool("Slide", true);
@@ -324,6 +327,11 @@ public class Character : MonoBehaviour
             playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y * 6);
         }
 
+    }
+
+    private bool StandingStill()
+    {
+        return !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && controllerMoveValue.x == 0;
     }
 
     public void UnSlide()
@@ -346,7 +354,7 @@ public class Character : MonoBehaviour
         notification.SetActive(false);
         controllerInput = new InputMaster();
         controllerInput.Player.Enable();
-        controllerInput.Player.Jump.started += ctx => Jump();
+        controllerInput.Player.Jump.started += ctx => Button_A_Press();
         controllerInput.Player.Dash.performed += ctx => Dash();
         controllerInput.Player.Attack.performed += ctx => Attack();
         controllerInput.Player.MoveRight.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
@@ -384,8 +392,26 @@ public class Character : MonoBehaviour
         rb.position += distance * moveSpeed * Time.deltaTime;
         if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
-    private void Jump()
+    private void Button_A_Press()
     {
+
+
+        if (canSave && !isSaving && !inAir && !isSliding)
+        {
+            Debug.Log("Save");
+            anim.SetTrigger("Graffiti");
+            isSaving = true;
+            cp.resumePoint = nearestCheckpoint.transform.position;
+            Animator saveAnim = nearestCheckpoint.GetComponent<Animator>();
+            saveAnim.SetTrigger("Save");
+            SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
+            sc.StartCoroutine(RemoveSave(nearestCheckpoint.gameObject));
+            nearestCheckpoint.gameObject.tag = "Checkpoint (saved)";
+            notification.SetActive(false);
+            canSave = false;
+            return;
+        }
+
         Debug.Log("Jump");
         anim.SetBool("Run", false);
         anim.SetBool("Idle", false);
@@ -457,17 +483,7 @@ public class Character : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Checkpoint"))
         {
-            if (!Input.GetKeyDown(KeyCode.G) || isSaving || inAir || isSliding) return;
-            Debug.Log("Save");
-            anim.SetTrigger("Graffiti");
-            isSaving = true;
-            cp.resumePoint = collision.gameObject.transform.position;
-            Animator saveAnim = collision.gameObject.GetComponent<Animator>();
-            saveAnim.SetTrigger("Save");
-            SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
-            sc.StartCoroutine(RemoveSave(collision.gameObject));
-            collision.gameObject.tag = "Checkpoint (saved)";
-            notification.SetActive(false);
+            
 
         }
     }
@@ -477,6 +493,7 @@ public class Character : MonoBehaviour
         {
             canSave = true;
             notification.SetActive(true);
+            nearestCheckpoint = collision.gameObject;
         }
     }
 
