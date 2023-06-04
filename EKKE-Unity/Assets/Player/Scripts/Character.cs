@@ -11,8 +11,10 @@ public class Character : MonoBehaviour
     [SerializeField]
     Sprite saveSprite;
     [SerializeField]
+    Sprite powerSprite;
+    [SerializeField]
     Sprite powerUpSprite;
-    int startRegenerate = 10;
+    int regenerationWaitTime = 15;
     Checkpoint cp = new Checkpoint();
     [SerializeField]
     int maxHealth = 2;
@@ -53,7 +55,7 @@ public class Character : MonoBehaviour
 
     bool isHurting = false;
     private bool canSave;
-    private bool isSaving;
+    private bool CheckpointAnimationRunning;
     private GameObject notification;
     private float dashCooldown = 5f;
 
@@ -74,6 +76,7 @@ public class Character : MonoBehaviour
 
     GameObject nearestCheckpoint;
 
+    bool nearPowerPoint = false;
 
     IEnumerator Death()
     {
@@ -170,15 +173,21 @@ public class Character : MonoBehaviour
 
     IEnumerator StartRegen()
     {
-        yield return new WaitForSeconds(startRegenerate);
+        yield return new WaitForSeconds(regenerationWaitTime);
         AudioController.PlayHeal(audioSource);
         health = maxHealth;
         Debug.Log("Health is back to max value!");
     }
 
+    public void LowerRegenerationTime()
+    {
+        regenerationWaitTime -= 5;
+        Debug.Log($"Regeneration time is down to : {regenerationWaitTime} seconds!");
+    }
+
     private void FixedUpdate()
     {
-        if (isDead() || isHurting || isSaving) return;
+        if (isDead() || isHurting || CheckpointAnimationRunning) return;
 
         Move(controllerMoveValue);
 
@@ -248,7 +257,7 @@ public class Character : MonoBehaviour
 
         }
 
-        notification.transform.position = new Vector2(gameObject.transform.position.x,gameObject.transform.position.y + 5);
+        notification.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 5);
 
     }
 
@@ -260,7 +269,7 @@ public class Character : MonoBehaviour
 
     private void StartSave()
     {
-        isSaving = true;
+        CheckpointAnimationRunning = true;
         anim.SetTrigger("Save");
         cp.resumePoint = this.transform.position;
     }
@@ -355,13 +364,13 @@ public class Character : MonoBehaviour
         controllerInput = new InputMaster();
         controllerInput.Player.Enable();
         controllerInput.Player.Jump.started += ctx => Button_A_Press();
-        controllerInput.Player.Dash.performed += ctx => Dash();
-        controllerInput.Player.Attack.performed += ctx => Attack();
+        controllerInput.Player.Dash.started += ctx => Dash();
+        controllerInput.Player.Attack.started += ctx => Attack();
         controllerInput.Player.MoveRight.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
         controllerInput.Player.MoveLeft.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
         controllerInput.Player.MoveRight.canceled += ctx => controllerMoveValue = new Vector2(0, 0);
         controllerInput.Player.MoveLeft.canceled += ctx => controllerMoveValue = new Vector2(0, 0);
-        controllerInput.Player.Slide.performed += ctx => Slide();
+        controllerInput.Player.Slide.started += ctx => Slide();
 
         audioSource = this.gameObject.GetComponent<AudioSource>();
 
@@ -392,27 +401,66 @@ public class Character : MonoBehaviour
         rb.position += distance * moveSpeed * Time.deltaTime;
         if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
+
+
+    IEnumerator RemoveSave(GameObject collision)
+    {
+        yield return new WaitForSeconds(.5f);
+        SpriteRenderer r = collision.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
+        r.sprite = saveSprite;
+        yield return new WaitForSeconds(.53f);
+        CheckpointAnimationRunning = false;
+    }
+    IEnumerator PowerUp(GameObject collision)
+    {
+        yield return new WaitForSeconds(.5f);
+        SpriteRenderer r = collision.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
+        r.sprite = powerSprite;
+        yield return new WaitForSeconds(.51f);
+        CheckpointAnimationRunning = false;
+    }
+
     private void Button_A_Press()
     {
-
-
-        if (canSave && !isSaving && !inAir && !isSliding)
+        Debug.Log("Fired");
+        if (canSave || nearPowerPoint)
         {
-            Debug.Log("Save");
-            anim.SetTrigger("Graffiti");
-            isSaving = true;
-            cp.resumePoint = nearestCheckpoint.transform.position;
-            Animator saveAnim = nearestCheckpoint.GetComponent<Animator>();
-            saveAnim.SetTrigger("Save");
-            SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
-            sc.StartCoroutine(RemoveSave(nearestCheckpoint.gameObject));
-            nearestCheckpoint.gameObject.tag = "Checkpoint (saved)";
-            notification.SetActive(false);
-            canSave = false;
+            if (CheckpointAnimationRunning && inAir && isSliding) return;
+            if (canSave)
+            {
+                Debug.Log("Save");
+                anim.SetTrigger("Graffiti");
+                CheckpointAnimationRunning = true;
+                cp.resumePoint = nearestCheckpoint.transform.position;
+                Animator saveAnim = nearestCheckpoint.GetComponent<Animator>();
+                saveAnim.SetTrigger("Save");
+                SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
+                sc.StartCoroutine(RemoveSave(nearestCheckpoint.gameObject));
+                nearestCheckpoint.gameObject.tag = "Checkpoint (saved)";
+                notification.SetActive(false);
+                canSave = false;
+            }
+            else 
+            {
+                Debug.Log("Save");
+                anim.SetTrigger("Graffiti");
+                CheckpointAnimationRunning = true;
+                LowerRegenerationTime();
+                Animator powerAnim = nearestCheckpoint.GetComponent<Animator>();
+                powerAnim.SetTrigger("Power");
+                SceneController sc = GameObject.Find("SceneController").GetComponent<SceneController>();
+                sc.StartCoroutine(PowerUp(nearestCheckpoint.gameObject));
+                nearestCheckpoint.gameObject.tag = "Powerpoint (activated)";
+                notification.SetActive(false);
+                nearPowerPoint = false;
+            }
+
+
             return;
         }
 
-        Debug.Log("Jump");
+      
+
         anim.SetBool("Run", false);
         anim.SetBool("Idle", false);
         anim.SetBool("Slide", false);
@@ -427,13 +475,15 @@ public class Character : MonoBehaviour
         else if (inAir && canDoubleJump)
         {
             anim.SetTrigger("Jump2");
-            rb.velocity = doubleJumpHeight * Time.deltaTime * new Vector2(0, 7.5f);
+            rb.velocity += new Vector2(0, doubleJumpHeight) * Time.deltaTime;
             canDoubleJump = false;
         }
         else if (!inAir)
         {
+            Debug.Log("Jump");
             anim.SetTrigger("Jump1");
-            rb.velocity = new Vector2(0, jumpHeight) * Time.deltaTime;
+            rb.velocity += new Vector2(0, Math.Clamp(jumpHeight, 500, 700)) * Time.deltaTime;
+            Debug.Log($"Velocity: {rb.velocity}");
             //rb.AddForce(new Vector2(0, jumpHeight));
             inAir = true;
         }
@@ -479,19 +529,17 @@ public class Character : MonoBehaviour
         }
 
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag.Equals("Checkpoint"))
-        {
-            
-
-        }
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Checkpoint"))
         {
             canSave = true;
+            notification.SetActive(true);
+            nearestCheckpoint = collision.gameObject;
+        }
+        else if (collision.gameObject.tag.Equals("Powerpoint"))
+        {
+            nearPowerPoint = true;
             notification.SetActive(true);
             nearestCheckpoint = collision.gameObject;
         }
@@ -504,13 +552,11 @@ public class Character : MonoBehaviour
             canSave = false;
             notification.SetActive(false);
         }
+        else if (collision.gameObject.tag.Equals("Powerpoint"))
+        {
+            nearPowerPoint = false;
+            notification.SetActive(false);
+        }
     }
-    IEnumerator RemoveSave(GameObject collision)
-    {
-        yield return new WaitForSeconds(.5f);
-        SpriteRenderer r = collision.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
-        r.sprite = saveSprite;
-        yield return new WaitForSeconds(.53f);
-        isSaving = false;
-    }
+
 }

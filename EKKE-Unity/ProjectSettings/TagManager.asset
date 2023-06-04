@@ -9,6 +9,8 @@ TagManager:
   - Foreground
   - Checkpoint
   - Checkpoint (saved)
+  - Powerpoint
+  - Powerpoint (activated)
   layers:
   - Default
   - TransparentFX

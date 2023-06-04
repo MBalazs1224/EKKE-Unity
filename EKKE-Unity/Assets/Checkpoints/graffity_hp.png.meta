@@ -1,0 +1,783 @@
+fileFormatVersion: 2
+guid: 3ce49113feea0754e9121ffa08f80e1c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: graffity_hp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5785.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67eafe486fe50524d9766d245b7a4c0a
+      internalID: -618840252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_1
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 5785.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0c5133d374095438d92dad985a8ce6
+      internalID: 1393171650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_2
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 5785.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c0bf029a06b97439e4c193f4f9ce27
+      internalID: 882817071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_3
+      rect:
+        serializedVersion: 2
+        x: 4149
+        y: 5785.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d722dc2f11b29964b9ec75eb51b3c1ac
+      internalID: -913652094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_4
+      rect:
+        serializedVersion: 2
+        x: 5532
+        y: 5785.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562ce17c223271a489712492a34c5f76
+      internalID: -1117818103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4628.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9065672f77e0c41458a70bc2675d754e
+      internalID: -2051091099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_6
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 4628.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968c62ec435aab24e8644d130188d0ac
+      internalID: 1847490199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_7
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 4628.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a4838f4f4478540bc6bde2642a21b2
+      internalID: 719035120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_8
+      rect:
+        serializedVersion: 2
+        x: 4149
+        y: 4628.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0d680e5e98e5446b34242d07e180a7
+      internalID: -602062357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_9
+      rect:
+        serializedVersion: 2
+        x: 5532
+        y: 4628.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7bbc3e2bacd4748ab3157d0d4ea534
+      internalID: -750632057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3471.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c0dcbaa7b982540a15c52c4bf70d36
+      internalID: -798625045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_11
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 3471.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4aeee02c9998374cbf9cffd8e796605
+      internalID: -1801692031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_12
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 3471.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c25a057f34ca044fa225ceed612b318
+      internalID: 990961356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_13
+      rect:
+        serializedVersion: 2
+        x: 4149
+        y: 3471.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d49b0d139b4a74285762b18bc89c21
+      internalID: 656397969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_14
+      rect:
+        serializedVersion: 2
+        x: 5532
+        y: 3471.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2da19301f8b97c499bddd9ac4cedb77
+      internalID: -1722053759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2314.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2845abf4245e5a4fa679d85a4c846fb
+      internalID: 1576498529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_16
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 2314.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086fe026d1d491a4f9d8506e777be5cd
+      internalID: 1008120537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_17
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 2314.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1af76ba8c1c0e479a7500f74b11b98
+      internalID: 670829009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_18
+      rect:
+        serializedVersion: 2
+        x: 4149
+        y: 2314.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6df8b743b26b7409686b47e020a7e9
+      internalID: 1848355741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_19
+      rect:
+        serializedVersion: 2
+        x: 5532
+        y: 2314.8335
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eaa07d709fd7af4f9e588630bc26dfd
+      internalID: 764173460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1157.8334
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110ba5ba97d825a48bc7fc694103818a
+      internalID: -282686104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_21
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 1157.8334
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4557faced7152c944b5815c47027e677
+      internalID: -1312908006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_22
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 1157.8334
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d24eced6dda9734f87f0e9450845ca2
+      internalID: 1341149064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_23
+      rect:
+        serializedVersion: 2
+        x: 4149
+        y: 1157.8334
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f90b5fdd9f0204f9bf9e4d9b5356ec
+      internalID: 1683390885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_24
+      rect:
+        serializedVersion: 2
+        x: 5532
+        y: 1157.8334
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffab8969ef3bb84b856812bdbd4f98e
+      internalID: 314949729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.833374
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524389ef78e68eb4d9e1384f2a63da55
+      internalID: 469321397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_26
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 0.833374
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39763717fc690f24eb0abdf53415b99a
+      internalID: 1352693101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_27
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 0.833374
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ea0b47cf918e940a54bb650241fb14
+      internalID: -236387777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_28
+      rect:
+        serializedVersion: 2
+        x: 4149
+        y: 0.833374
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4853cbac3d798974881ab80cb52d6c0a
+      internalID: -107561652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graffity_hp_29
+      rect:
+        serializedVersion: 2
+        x: 5532
+        y: 0.833374
+        width: 1383
+        height: 1157.1666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0908d37c281383047b125fa8a7c501c2
+      internalID: -1502510461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      graffity_hp_0: -618840252
+      graffity_hp_1: 1393171650
+      graffity_hp_10: -798625045
+      graffity_hp_11: -1801692031
+      graffity_hp_12: 990961356
+      graffity_hp_13: 656397969
+      graffity_hp_14: -1722053759
+      graffity_hp_15: 1576498529
+      graffity_hp_16: 1008120537
+      graffity_hp_17: 670829009
+      graffity_hp_18: 1848355741
+      graffity_hp_19: 764173460
+      graffity_hp_2: 882817071
+      graffity_hp_20: -282686104
+      graffity_hp_21: -1312908006
+      graffity_hp_22: 1341149064
+      graffity_hp_23: 1683390885
+      graffity_hp_24: 314949729
+      graffity_hp_25: 469321397
+      graffity_hp_26: 1352693101
+      graffity_hp_27: -236387777
+      graffity_hp_28: -107561652
+      graffity_hp_29: -1502510461
+      graffity_hp_3: -913652094
+      graffity_hp_4: -1117818103
+      graffity_hp_5: -2051091099
+      graffity_hp_6: 1847490199
+      graffity_hp_7: 719035120
+      graffity_hp_8: -602062357
+      graffity_hp_9: -750632057
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
