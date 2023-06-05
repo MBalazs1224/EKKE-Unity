@@ -77,6 +77,7 @@ public class Character : MonoBehaviour
     GameObject nearestCheckpoint;
 
     bool nearPowerPoint = false;
+    private bool isStomping;
 
     IEnumerator Death()
     {
@@ -116,7 +117,7 @@ public class Character : MonoBehaviour
 
     public bool IsAttacking()
     {
-        return Input.GetKeyDown(KeyCode.E);
+        return Input.GetKeyDown(KeyCode.E) || isStomping;
     }
 
     private void Respawn()
@@ -187,7 +188,7 @@ public class Character : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isDead() || isHurting || CheckpointAnimationRunning) return;
+        if (isDead() || isHurting || CheckpointAnimationRunning || isStomping) return;
 
         Move(controllerMoveValue);
 
@@ -253,7 +254,7 @@ public class Character : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Slide();
+            ButtonDownPress();
 
         }
 
@@ -325,9 +326,16 @@ public class Character : MonoBehaviour
         moveSpeed /= 2;
     }
 
-    void Slide()
+    void ButtonDownPress()
     {
-        if (!inAir && !isSliding && !StandingStill())
+        if (isStomping || isSliding) return;
+        if (inAir)
+        {
+            anim.SetTrigger("Stomp");
+            isStomping = true;
+        }
+
+        else if (!StandingStill())
         {
             anim.SetBool("Run", false);
             anim.SetBool("Slide", true);
@@ -370,7 +378,7 @@ public class Character : MonoBehaviour
         controllerInput.Player.MoveLeft.performed += ctx => controllerMoveValue = ctx.ReadValue<Vector2>() / 15;
         controllerInput.Player.MoveRight.canceled += ctx => controllerMoveValue = new Vector2(0, 0);
         controllerInput.Player.MoveLeft.canceled += ctx => controllerMoveValue = new Vector2(0, 0);
-        controllerInput.Player.Slide.started += ctx => Slide();
+        controllerInput.Player.Slide.started += ctx => ButtonDownPress();
 
         audioSource = this.gameObject.GetComponent<AudioSource>();
 
@@ -391,7 +399,7 @@ public class Character : MonoBehaviour
             anim.SetBool("WallStuck", false);
             anim.SetBool("Fall", true);
         }
-        if (!isSliding) anim.SetBool("Run", true);
+        if (!isSliding &&!inAir) anim.SetBool("Run", true);
         distance.y = 0;
         if (distance.x > 0) this.transform.rotation = new Quaternion(0, 0, 0, 0);
         else
@@ -422,7 +430,6 @@ public class Character : MonoBehaviour
 
     private void Button_A_Press()
     {
-        Debug.Log("Fired");
         if (canSave || nearPowerPoint)
         {
             if (CheckpointAnimationRunning && inAir && isSliding) return;
@@ -440,7 +447,7 @@ public class Character : MonoBehaviour
                 notification.SetActive(false);
                 canSave = false;
             }
-            else 
+            else
             {
                 Debug.Log("Save");
                 anim.SetTrigger("Graffiti");
@@ -459,7 +466,7 @@ public class Character : MonoBehaviour
             return;
         }
 
-      
+
 
         anim.SetBool("Run", false);
         anim.SetBool("Idle", false);
@@ -482,7 +489,7 @@ public class Character : MonoBehaviour
         {
             Debug.Log("Jump");
             anim.SetTrigger("Jump1");
-            rb.velocity += new Vector2(0, Math.Clamp(jumpHeight, 500, 700)) * Time.deltaTime;
+            rb.velocity += new Vector2(0, jumpHeight) * Time.deltaTime;
             Debug.Log($"Velocity: {rb.velocity}");
             //rb.AddForce(new Vector2(0, jumpHeight));
             inAir = true;
@@ -499,6 +506,11 @@ public class Character : MonoBehaviour
             anim.SetBool("Fall", false);
             anim.SetBool("Idle", true);
             isOnWall = false;
+            if (isStomping)
+            {
+                isStomping = false;
+                anim.SetTrigger("StompFinish");
+            }
 
         }
         else if (collision.gameObject.layer == 7)
