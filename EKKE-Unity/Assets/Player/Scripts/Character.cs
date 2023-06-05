@@ -489,7 +489,8 @@ public class Character : MonoBehaviour
         {
             Debug.Log("Jump");
             anim.SetTrigger("Jump1");
-            rb.velocity += new Vector2(0, jumpHeight) * Time.deltaTime;
+            rb.velocity += new Vector2(0, jumpHeight) * Time.fixedDeltaTime;
+
             Debug.Log($"Velocity: {rb.velocity}");
             //rb.AddForce(new Vector2(0, jumpHeight));
             inAir = true;
@@ -513,7 +514,7 @@ public class Character : MonoBehaviour
             }
 
         }
-        else if (collision.gameObject.layer == 7)
+        else if (collision.gameObject.layer == 10)
         {
             isOnWall = true;
             anim.SetBool("Run", false);
@@ -530,7 +531,7 @@ public class Character : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == 9)
         {
             //rb.gravityScale = 1;
             isOnWall = false;
