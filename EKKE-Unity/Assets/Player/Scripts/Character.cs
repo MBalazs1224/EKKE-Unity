@@ -196,7 +196,6 @@ public class Character : MonoBehaviour
         {
 
             anim.SetBool("Run", false);
-            rb.velocity = new Vector2(0, rb.velocity.y);
         }
         //if (!Input.anyKey)
         //{
@@ -212,10 +211,7 @@ public class Character : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.B)) camController.Shake();
         else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
-        else if (isOnWall)
-        {
-            this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
-        }
+
         else if (Input.GetKeyDown(KeyCode.E))
         {
             Attack();
@@ -256,6 +252,10 @@ public class Character : MonoBehaviour
         {
             ButtonDownPress();
 
+        }
+         if (isOnWall)
+        {
+            this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
         }
 
         notification.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 5);
@@ -342,23 +342,29 @@ public class Character : MonoBehaviour
             isSliding = true;
             playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y / 2);
             playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y * 6);
+            StartCoroutine(UnSlide());
         }
 
     }
+
+    IEnumerator UnSlide()
+    {
+        yield return null;
+        yield return null;
+        yield return null;
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        anim.SetBool("Slide", false);
+        isSliding = false;
+        playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y * 2);
+        playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y / 6);
+    }
+
 
     private bool StandingStill()
     {
         return !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && controllerMoveValue.x == 0;
     }
 
-    public void UnSlide()
-    {
-        anim.SetBool("Slide", false);
-        isSliding = false;
-        playerCollider.size = new Vector2(playerCollider.size.x, playerCollider.size.y * 2);
-        playerCollider.offset = new Vector2(playerCollider.offset.x, playerCollider.offset.y / 6);
-
-    }
 
     private void Start()
     {
@@ -399,7 +405,7 @@ public class Character : MonoBehaviour
             anim.SetBool("WallStuck", false);
             anim.SetBool("Fall", true);
         }
-        if (!isSliding &&!inAir) anim.SetBool("Run", true);
+        if (!isSliding && !inAir) anim.SetBool("Run", true);
         distance.y = 0;
         if (distance.x > 0) this.transform.rotation = new Quaternion(0, 0, 0, 0);
         else
@@ -407,7 +413,6 @@ public class Character : MonoBehaviour
             this.transform.rotation = new Quaternion(0, 180, 0, 0);
         }
         rb.position += distance * moveSpeed * Time.deltaTime;
-        if (!inAir && !isSliding) anim.SetBool("Run", true);
     }
 
 
@@ -474,9 +479,11 @@ public class Character : MonoBehaviour
         if (isOnWall)
         {
             anim.SetBool("WallStuck", false);
-            anim.SetBool("Fall", false);
             anim.SetTrigger("Jump1");
-            Vector2 jumpDirection = new Vector2(-transform.localScale.x * wallJumpSpeed, wallJumpHeight);
+
+            int multiplier = transform.rotation.y == 0 ? 1 : -1;
+
+            Vector2 jumpDirection = new Vector2(wallJumpSpeed * multiplier, wallJumpHeight) * Time.deltaTime;
             rb.velocity += jumpDirection;
         }
         else if (inAir && canDoubleJump)
@@ -497,6 +504,14 @@ public class Character : MonoBehaviour
         }
 
     }
+
+    IEnumerator ResetIsStomping()
+    {
+        yield return null;
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        isStomping = false;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 9)
@@ -509,8 +524,8 @@ public class Character : MonoBehaviour
             isOnWall = false;
             if (isStomping)
             {
-                isStomping = false;
                 anim.SetTrigger("StompFinish");
+                StartCoroutine(ResetIsStomping());
             }
 
         }
@@ -531,7 +546,7 @@ public class Character : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 9)
+        if (collision.gameObject.layer == 10)
         {
             //rb.gravityScale = 1;
             isOnWall = false;
