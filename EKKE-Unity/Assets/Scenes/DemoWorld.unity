@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624317}
   - component: {fileID: 624318}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5994262}
   - component: {fileID: 5994263}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (70)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7203349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 449.4, y: 75.4, z: -0.27}
+  m_LocalPosition: {x: 245.6, y: 21, z: -0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -750,7 +750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8438042}
   - component: {fileID: 8438043}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Far
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13783015}
   - component: {fileID: 13783016}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (157)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -966,7 +966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 15421199}
   - component: {fileID: 15421200}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (95)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -1050,7 +1050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 19636458}
   - component: {fileID: 19636459}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (31)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 19650582}
   - component: {fileID: 19650583}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 21518449}
   - component: {fileID: 21518450}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (104)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -1301,7 +1301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 21660173}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: 'Indoor '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1353,7 +1353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24089434}
   - component: {fileID: 24089435}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1521,7 +1521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 25829678}
   - component: {fileID: 25829679}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1835,7 +1835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30332454}
   - component: {fileID: 30332455}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2003,7 +2003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 35535329}
   - component: {fileID: 35535330}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (35)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -2087,7 +2087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36611455}
   - component: {fileID: 36611456}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2171,7 +2171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36854073}
   - component: {fileID: 36854074}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (127)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -2339,7 +2339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39619414}
   - component: {fileID: 39619415}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (82)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -2423,7 +2423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39678481}
   - component: {fileID: 39678482}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (93)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -2507,7 +2507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 42081303}
   - component: {fileID: 42081304}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2675,7 +2675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 45242209}
   - component: {fileID: 45242210}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3011,7 +3011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64380704}
   - component: {fileID: 64380705}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (94)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -3095,7 +3095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 65247410}
   - component: {fileID: 65247411}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (95)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -3179,7 +3179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 66407315}
   - component: {fileID: 66407316}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (21)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -3347,7 +3347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 71693558}
   - component: {fileID: 71693559}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (220)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -3431,7 +3431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 73084044}
   - component: {fileID: 73084045}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (193)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -3935,7 +3935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 82765589}
   - component: {fileID: 82765590}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4103,7 +4103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86871943}
   - component: {fileID: 86871944}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (192)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -4187,7 +4187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 88054732}
   - component: {fileID: 88054733}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (35)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -4271,7 +4271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 88159739}
   - component: {fileID: 88159740}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (62)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -4713,7 +4713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95303483}
   - component: {fileID: 95303484}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4881,7 +4881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97652039}
   - component: {fileID: 97652040}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (206)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -4965,7 +4965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102025402}
   - component: {fileID: 102025403}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (21)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -5049,7 +5049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102956415}
   - component: {fileID: 102956416}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (150)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -5133,7 +5133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104325407}
   - component: {fileID: 104325408}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5217,7 +5217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 109350738}
   - component: {fileID: 109350739}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5407,7 +5407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113151587}
   - component: {fileID: 113151588}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (155)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -5491,7 +5491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113498467}
   - component: {fileID: 113498468}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: ForeGround
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -5538,7 +5538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 114864308}
   - component: {fileID: 114864309}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (181)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -5901,7 +5901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 124621525}
   - component: {fileID: 124621526}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (88)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -5985,7 +5985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127338437}
   - component: {fileID: 127338438}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7014,7 +7014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 143374326}
   - component: {fileID: 143374327}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (72)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -7434,7 +7434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 162348233}
   - component: {fileID: 162348234}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (186)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -7602,7 +7602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 163181483}
   - component: {fileID: 163181484}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (129)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -7686,7 +7686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 163441931}
   - component: {fileID: 163441932}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (140)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -7881,7 +7881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165686021}
   - component: {fileID: 165686022}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8035,7 +8035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 170029127}
   - component: {fileID: 170029128}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (106)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -8203,7 +8203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174388867}
   - component: {fileID: 174388868}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (27)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -8371,7 +8371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175539253}
   - component: {fileID: 175539254}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (65)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -8455,7 +8455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178995305}
   - component: {fileID: 178995306}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (75)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -8623,7 +8623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 182829856}
   - component: {fileID: 182829857}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8706,7 +8706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 184518172}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8742,7 +8742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 189879491}
   - component: {fileID: 189879492}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (196)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -8826,7 +8826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 191296852}
   - component: {fileID: 191296853}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9105,7 +9105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200025652}
   - component: {fileID: 200025653}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (92)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -9379,7 +9379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201544656}
   - component: {fileID: 201544657}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: indoor_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9883,7 +9883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 208316793}
   - component: {fileID: 208316794}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10219,7 +10219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218066230}
   - component: {fileID: 218066231}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (112)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -10303,7 +10303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 220877371}
   - component: {fileID: 220877372}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10387,7 +10387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224206513}
   - component: {fileID: 224206514}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (178)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -10834,7 +10834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 231372628}
   - component: {fileID: 231372629}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10918,7 +10918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232221221}
   - component: {fileID: 232221222}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (102)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -11002,7 +11002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233643929}
   - component: {fileID: 233643930}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (51)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -11922,7 +11922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 263820732}
   - component: {fileID: 263820733}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (13)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -12470,7 +12470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 275938762}
   - component: {fileID: 275938763}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (165)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -12554,7 +12554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 276345436}
   - component: {fileID: 276345437}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (85)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -12638,7 +12638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 280071416}
   - component: {fileID: 280071417}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (104)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -12721,7 +12721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 284671369}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Lenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12939,7 +12939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 286733893}
   - component: {fileID: 286733894}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: indoor_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13023,7 +13023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287422431}
   - component: {fileID: 287422432}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (161)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -13403,7 +13403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 297124090}
   - component: {fileID: 297124091}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (37)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -13682,7 +13682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301764025}
   - component: {fileID: 301764026}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13766,7 +13766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 303524649}
   - component: {fileID: 303524650}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (87)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -13934,7 +13934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305270454}
   - component: {fileID: 305270455}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (74)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -14018,7 +14018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305379007}
   - component: {fileID: 305379006}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: wingsurance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14101,7 +14101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306938410}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Fenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14225,7 +14225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 309029171}
   - component: {fileID: 309029172}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (18)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -14309,7 +14309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311666435}
   - component: {fileID: 311666436}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (91)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -14588,7 +14588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 314449014}
   - component: {fileID: 314449015}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (162)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -14756,7 +14756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 316651816}
   - component: {fileID: 316651817}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (56)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -15371,7 +15371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 330227536}
   - component: {fileID: 330227537}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (20)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -15539,7 +15539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 334678291}
   - component: {fileID: 334678292}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (223)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -15623,7 +15623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 335629357}
   - component: {fileID: 335629358}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (154)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -15707,7 +15707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 336375499}
   - component: {fileID: 336375500}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16238,7 +16238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 342788272}
   - component: {fileID: 342788273}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (103)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -16490,7 +16490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344795487}
   - component: {fileID: 344795488}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (44)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -16658,7 +16658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 346304942}
   - component: {fileID: 346304943}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (33)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -16742,7 +16742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 346954558}
   - component: {fileID: 346954559}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (6)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -16826,7 +16826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 348121124}
   - component: {fileID: 348121125}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (3)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -16994,7 +16994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350829635}
   - component: {fileID: 350829636}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (10)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -17246,7 +17246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 355512173}
   - component: {fileID: 355512174}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (53)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -17330,7 +17330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356772308}
   - component: {fileID: 356772309}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (100)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -17529,7 +17529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 358065715}
   - component: {fileID: 358065716}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (41)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -17697,7 +17697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 362118346}
   - component: {fileID: 362118347}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (115)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -17781,7 +17781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 362705288}
   - component: {fileID: 362705289}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (99)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -18369,7 +18369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377040500}
   - component: {fileID: 377040501}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (46)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -18453,7 +18453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 381296752}
   - component: {fileID: 381296753}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18957,7 +18957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398253302}
   - component: {fileID: 398253303}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (145)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -19041,7 +19041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398674287}
   - component: {fileID: 398674288}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19377,7 +19377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404317056}
   - component: {fileID: 404317057}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (132)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -19461,7 +19461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406056537}
   - component: {fileID: 406056538}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19545,7 +19545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408086824}
   - component: {fileID: 408086825}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (78)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -19713,7 +19713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 413931046}
   - component: {fileID: 413931047}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (18)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -19797,7 +19797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 414332911}
   - component: {fileID: 414332912}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (170)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -19965,7 +19965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 415753192}
   - component: {fileID: 415753193}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (116)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -20049,7 +20049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418959822}
   - component: {fileID: 418959823}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (176)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -20133,7 +20133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422501104}
   - component: {fileID: 422501105}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (17)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -20217,7 +20217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 424476886}
   - component: {fileID: 424476887}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20782,7 +20782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434437921}
   - component: {fileID: 434437922}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (75)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -21236,7 +21236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 439536911}
   - component: {fileID: 439536912}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21320,7 +21320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440220004}
   - component: {fileID: 440220005}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: indoor_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21404,7 +21404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441010522}
   - component: {fileID: 441010523}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (86)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -21488,7 +21488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441426056}
   - component: {fileID: 441426057}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21656,7 +21656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 446585861}
   - component: {fileID: 446585862}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (81)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -21824,7 +21824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451146539}
   - component: {fileID: 451146540}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22076,7 +22076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451958658}
   - component: {fileID: 451958659}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (49)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -22271,7 +22271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 457451236}
   - component: {fileID: 457451237}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (48)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -22355,7 +22355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458554839}
   - component: {fileID: 458554840}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (57)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -22439,7 +22439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 459662138}
   - component: {fileID: 459662139}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (53)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -22930,7 +22930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 469486085}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Lenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23140,7 +23140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 475044093}
   - component: {fileID: 475044094}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: indoor_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23392,7 +23392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477287716}
   - component: {fileID: 477287717}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (42)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -23475,7 +23475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478134475}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Lenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23687,7 +23687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 480030153}
   - component: {fileID: 480030154}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (92)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -23771,7 +23771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481622806}
   - component: {fileID: 481622807}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23855,7 +23855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 482978970}
   - component: {fileID: 482978971}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (3)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -24023,7 +24023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485022336}
   - component: {fileID: 485022337}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24191,7 +24191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 489451453}
   - component: {fileID: 489451454}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (57)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -24779,7 +24779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497534109}
   - component: {fileID: 497534110}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (66)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -24862,7 +24862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497781457}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Fenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24908,7 +24908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498130176}
   - component: {fileID: 498130177}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (38)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -25076,7 +25076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499313127}
   - component: {fileID: 499313128}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (39)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -25244,7 +25244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502172615}
   - component: {fileID: 502172616}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (189)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -25328,7 +25328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 504226317}
   - component: {fileID: 504226318}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (217)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -25412,7 +25412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506406780}
   - component: {fileID: 506406781}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25496,7 +25496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506649683}
   - component: {fileID: 506649684}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (16)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -25580,7 +25580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 507562793}
   - component: {fileID: 507562794}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (158)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -25664,7 +25664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508951551}
   - component: {fileID: 508951552}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (12)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -25748,7 +25748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515089719}
   - component: {fileID: 515089720}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25916,7 +25916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516821171}
   - component: {fileID: 516821172}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26000,7 +26000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516967534}
   - component: {fileID: 516967535}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (34)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -26416,7 +26416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 521622420}
   - component: {fileID: 521622421}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (97)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -26606,7 +26606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525546685}
   - component: {fileID: 525546686}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (11)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -27048,7 +27048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 531530797}
   - component: {fileID: 531530798}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27216,7 +27216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534715073}
   - component: {fileID: 534715074}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (60)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -27300,7 +27300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534733947}
   - component: {fileID: 534733948}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (24)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -27384,7 +27384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536025103}
   - component: {fileID: 536025104}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27711,7 +27711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549006714}
   - component: {fileID: 549006715}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28131,7 +28131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 561038872}
   - component: {fileID: 561038873}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (191)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -28299,7 +28299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 569059227}
   - component: {fileID: 569059228}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (74)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -28551,7 +28551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572962148}
   - component: {fileID: 572962149}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (147)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -28635,7 +28635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574905305}
   - component: {fileID: 574905306}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (66)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -28825,7 +28825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 576293618}
   - component: {fileID: 576293619}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (134)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -28909,7 +28909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 579476278}
   - component: {fileID: 579476279}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (166)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -28993,7 +28993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580400599}
   - component: {fileID: 580400600}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (203)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -29077,7 +29077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582171561}
   - component: {fileID: 582171562}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (52)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -29209,7 +29209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585959582}
   - component: {fileID: 585959583}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: powerup_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29293,7 +29293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589631255}
   - component: {fileID: 589631256}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (78)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -29461,7 +29461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600015849}
   - component: {fileID: 600015850}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (172)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -29629,7 +29629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600891504}
   - component: {fileID: 600891505}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (64)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -29713,7 +29713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604335615}
   - component: {fileID: 604335616}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (69)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -29992,7 +29992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 613204313}
   - component: {fileID: 613204314}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (25)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -30160,7 +30160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615495382}
   - component: {fileID: 615495383}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (152)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -30611,7 +30611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627366715}
   - component: {fileID: 627366716}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (51)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -30695,7 +30695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 636951354}
   - component: {fileID: 636951355}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (43)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -30779,7 +30779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637719929}
   - component: {fileID: 637719930}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (120)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -31199,7 +31199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644162290}
   - component: {fileID: 644162291}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31635,7 +31635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653795134}
   - component: {fileID: 653795135}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (93)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -31825,7 +31825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 659590288}
   - component: {fileID: 659590289}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (173)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -32077,7 +32077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 665121313}
   - component: {fileID: 665121314}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (171)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -32665,7 +32665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677268098}
   - component: {fileID: 677268099}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (117)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -33085,7 +33085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 681764034}
   - component: {fileID: 681764035}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (76)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -33337,7 +33337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 687263911}
   - component: {fileID: 687263912}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (65)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -33421,7 +33421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 694715974}
   - component: {fileID: 694715975}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (130)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -33616,7 +33616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 699379006}
   - component: {fileID: 699379007}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (59)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -33784,7 +33784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 699913804}
   - component: {fileID: 699913805}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (27)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -33868,7 +33868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 701493168}
   - component: {fileID: 701493169}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34063,7 +34063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704917692}
   - component: {fileID: 704917693}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34231,7 +34231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 706564082}
   - component: {fileID: 706564083}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (141)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -34315,7 +34315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708730038}
   - component: {fileID: 708730039}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (9)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -34567,7 +34567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710709488}
   - component: {fileID: 710709489}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (54)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -34735,7 +34735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 715415110}
   - component: {fileID: 715415111}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (90)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -34819,7 +34819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 716202706}
   - component: {fileID: 716202707}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (115)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -34903,7 +34903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 716807508}
   - component: {fileID: 716807509}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (30)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -34987,7 +34987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 717598791}
   - component: {fileID: 717598792}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (218)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -35350,7 +35350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 722359550}
   - component: {fileID: 722359551}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (167)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -35602,7 +35602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724778686}
   - component: {fileID: 724778687}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (182)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -35686,7 +35686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725476760}
   - component: {fileID: 725476761}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35770,7 +35770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 726623352}
   - component: {fileID: 726623353}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (111)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -35938,7 +35938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 729840506}
   - component: {fileID: 729840507}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (113)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -36128,7 +36128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 735563774}
   - component: {fileID: 735563775}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (33)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -36212,7 +36212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738662711}
   - component: {fileID: 738662712}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36911,7 +36911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 757239915}
   - component: {fileID: 757239916}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (200)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -37185,7 +37185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759872872}
   - component: {fileID: 759872873}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (221)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -37437,7 +37437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 760699575}
   - component: {fileID: 760699576}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: indoor_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37773,7 +37773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 772045670}
   - component: {fileID: 772045671}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (119)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -38361,7 +38361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783299589}
   - component: {fileID: 783299590}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (40)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -38445,7 +38445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784194721}
   - component: {fileID: 784194722}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (61)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -38613,7 +38613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788694409}
   - component: {fileID: 788694410}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (88)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -38697,7 +38697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788805527}
   - component: {fileID: 788805528}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (219)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -38949,7 +38949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794015613}
   - component: {fileID: 794015614}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (102)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -39307,7 +39307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798508793}
   - component: {fileID: 798508794}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39670,7 +39670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 804520200}
   - component: {fileID: 804520201}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (60)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -40028,7 +40028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812406178}
   - component: {fileID: 812406179}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (156)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -40364,7 +40364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828600622}
   - component: {fileID: 828600623}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45179,7 +45179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842148696}
   - component: {fileID: 842148697}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (111)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -45767,7 +45767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 869366479}
   - component: {fileID: 869366480}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: room_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45851,7 +45851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 872310101}
   - component: {fileID: 872310102}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (146)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -46187,7 +46187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883237030}
   - component: {fileID: 883237031}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (31)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -46439,7 +46439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892695843}
   - component: {fileID: 892695844}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (224)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -47049,7 +47049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908228290}
   - component: {fileID: 908228291}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (14)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -47133,7 +47133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908559241}
   - component: {fileID: 908559242}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (89)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -47217,7 +47217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 910505251}
   - component: {fileID: 910505252}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47943,7 +47943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 925520757}
   - component: {fileID: 925520758}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (198)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -48027,7 +48027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 926266623}
   - component: {fileID: 926266624}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (202)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -48111,7 +48111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 926978946}
   - component: {fileID: 926978947}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (50)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -48363,7 +48363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931406607}
   - component: {fileID: 931406608}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (6)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -48615,7 +48615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936921964}
   - component: {fileID: 936921965}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48699,7 +48699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938789669}
   - component: {fileID: 938789670}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (49)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -48783,7 +48783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941691317}
   - component: {fileID: 941691318}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (86)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -49035,7 +49035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952044908}
   - component: {fileID: 952044909}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49119,7 +49119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 954025098}
   - component: {fileID: 954025099}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (4)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -49287,7 +49287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957355173}
   - component: {fileID: 957355174}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: powerup_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49455,7 +49455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972022413}
   - component: {fileID: 972022414}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (164)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -49623,7 +49623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 978807991}
   - component: {fileID: 978807992}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49707,7 +49707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 979177051}
   - component: {fileID: 979177052}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49875,7 +49875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 980944486}
   - component: {fileID: 980944487}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (123)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -50211,7 +50211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 993079293}
   - component: {fileID: 993079294}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (214)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -50295,7 +50295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 994190864}
   - component: {fileID: 994190865}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50531,7 +50531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 997379716}
   - component: {fileID: 997379717}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (55)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -50615,7 +50615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000883779}
   - component: {fileID: 1000883780}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (61)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -50951,7 +50951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1012421816}
   - component: {fileID: 1012421817}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51035,7 +51035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1015058443}
   - component: {fileID: 1015058444}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (96)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -51309,7 +51309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020648325}
   - component: {fileID: 1020648326}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51392,7 +51392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1027669938}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Parallax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51763,7 +51763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036985072}
   - component: {fileID: 1036985073}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (4)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -52015,7 +52015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1040213821}
   - component: {fileID: 1040213822}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (199)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -52183,7 +52183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044442688}
   - component: {fileID: 1044442689}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (128)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -52267,7 +52267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045296195}
   - component: {fileID: 1045296196}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (108)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -52771,7 +52771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056196688}
   - component: {fileID: 1056196689}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (48)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -53023,7 +53023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057211536}
   - component: {fileID: 1057211537}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (10)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -53107,7 +53107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1059333164}
   - component: {fileID: 1059333165}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (32)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -53359,7 +53359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064527600}
   - component: {fileID: 1064527601}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (23)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -53633,7 +53633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1068042543}
   - component: {fileID: 1068042544}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (179)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -53885,7 +53885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069354722}
   - component: {fileID: 1069354723}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (28)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -53969,7 +53969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069697236}
   - component: {fileID: 1069697237}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54389,7 +54389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1081541925}
   - component: {fileID: 1081541926}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54557,7 +54557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082968105}
   - component: {fileID: 1082968106}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (190)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -54725,7 +54725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1085819052}
   - component: {fileID: 1085819053}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (109)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -55145,7 +55145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1090474287}
   - component: {fileID: 1090474288}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (1)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -55565,7 +55565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1103029479}
   - component: {fileID: 1103029480}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (116)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -55733,7 +55733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1103751640}
   - component: {fileID: 1103751641}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55817,7 +55817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1108571994}
   - component: {fileID: 1108571995}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (107)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -56153,7 +56153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121534038}
   - component: {fileID: 1121534039}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56321,7 +56321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1123986621}
   - component: {fileID: 1123986622}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (110)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -56405,7 +56405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127805676}
   - component: {fileID: 1127805677}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (99)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -56573,7 +56573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1133905564}
   - component: {fileID: 1133905565}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57077,7 +57077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1153284204}
   - component: {fileID: 1153284205}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (2)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -57413,7 +57413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162132922}
   - component: {fileID: 1162132923}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (17)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -57497,7 +57497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162162889}
   - component: {fileID: 1162162890}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (79)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -57917,7 +57917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173751167}
   - component: {fileID: 1173751168}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (64)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -58001,7 +58001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173906593}
   - component: {fileID: 1173906594}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (63)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -58191,7 +58191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175728265}
   - component: {fileID: 1175728266}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: wingsurance_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58275,7 +58275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176941231}
   - component: {fileID: 1176941232}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (89)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -58470,7 +58470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179461637}
   - component: {fileID: 1179461638}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (55)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -58554,7 +58554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179980395}
   - component: {fileID: 1179980396}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (90)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -58805,7 +58805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1181864940}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Fenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59013,7 +59013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186241912}
   - component: {fileID: 1186241913}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (70)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -59097,7 +59097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188353602}
   - component: {fileID: 1188353603}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59349,7 +59349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202312202}
   - component: {fileID: 1202312203}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (19)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -59517,7 +59517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1206512890}
   - component: {fileID: 1206512891}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (52)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -59601,7 +59601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1208808294}
   - component: {fileID: 1208808295}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (103)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -59685,7 +59685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209773704}
   - component: {fileID: 1209773705}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (159)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -59769,7 +59769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210747198}
   - component: {fileID: 1210747199}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59853,7 +59853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211238822}
   - component: {fileID: 1211238823}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (205)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -59937,7 +59937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212299184}
   - component: {fileID: 1212299185}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (211)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -60211,7 +60211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1220383815}
   - component: {fileID: 1220383816}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (98)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -60463,7 +60463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223599999}
   - component: {fileID: 1223600000}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (69)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -60667,7 +60667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230997899}
   - component: {fileID: 1230997900}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60751,7 +60751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1233744616}
   - component: {fileID: 1233744617}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (15)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -60835,7 +60835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234814099}
   - component: {fileID: 1234814100}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61003,7 +61003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1237422890}
   - component: {fileID: 1237422891}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (105)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -61171,7 +61171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1244260129}
   - component: {fileID: 1244260130}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (67)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -61339,7 +61339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1253535504}
   - component: {fileID: 1253535505}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (131)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -61423,7 +61423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256044842}
   - component: {fileID: 1256044843}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (114)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -61927,7 +61927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266513177}
   - component: {fileID: 1266513178}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62263,7 +62263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268438106}
   - component: {fileID: 1268438107}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (25)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -62347,7 +62347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268860033}
   - component: {fileID: 1268860034}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62599,7 +62599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1273067485}
   - component: {fileID: 1273067486}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (85)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -62683,7 +62683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1273586502}
   - component: {fileID: 1273586503}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (94)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -62767,7 +62767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1275517719}
   - component: {fileID: 1275517720}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (11)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -62851,7 +62851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278936042}
   - component: {fileID: 1278936043}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62935,7 +62935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1279820522}
   - component: {fileID: 1279820523}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63103,7 +63103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1282314844}
   - component: {fileID: 1282314845}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (1)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -63523,7 +63523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1290524339}
   - component: {fileID: 1290524340}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63970,7 +63970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1302165341}
   - component: {fileID: 1302165342}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (215)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -64054,7 +64054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1302317487}
   - component: {fileID: 1302317488}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64169,7 +64169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1304195650}
   - component: {fileID: 1304195651}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (110)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -64253,7 +64253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1304353857}
   - component: {fileID: 1304353858}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (43)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -64505,7 +64505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308721997}
   - component: {fileID: 1308721998}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (8)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -64589,7 +64589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1311577473}
   - component: {fileID: 1311577474}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: park_2x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64673,7 +64673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1314099026}
   - component: {fileID: 1314099027}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65031,7 +65031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1320915618}
   - component: {fileID: 1320915619}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65079,7 +65079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321429633}
   - component: {fileID: 1321429634}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (177)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -65163,7 +65163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1324821224}
   - component: {fileID: 1324821225}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (201)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -65331,7 +65331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325565228}
   - component: {fileID: 1325565229}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (26)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -65499,7 +65499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1329863742}
   - component: {fileID: 1329863743}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (47)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -65919,7 +65919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338266017}
   - component: {fileID: 1338266018}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66941,7 +66941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1373481911}
   - component: {fileID: 1373481913}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -67109,7 +67109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1376245245}
   - component: {fileID: 1376245246}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67193,7 +67193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1376719821}
   - component: {fileID: 1376719822}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (83)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -67388,7 +67388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1386674768}
   - component: {fileID: 1386674769}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (101)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -67583,7 +67583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388873062}
   - component: {fileID: 1388873063}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (15)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -67667,7 +67667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391151733}
   - component: {fileID: 1391151734}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67941,7 +67941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1395742386}
   - component: {fileID: 1395742387}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (187)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -68109,7 +68109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1408231741}
   - component: {fileID: 1408231742}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (208)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -68277,7 +68277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418873496}
   - component: {fileID: 1418873497}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (210)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -68361,7 +68361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419309165}
   - component: {fileID: 1419309166}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (42)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -68529,7 +68529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1422560039}
   - component: {fileID: 1422560040}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (30)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -68613,7 +68613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426041203}
   - component: {fileID: 1426041204}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (168)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -68781,7 +68781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1432417153}
   - component: {fileID: 1432417154}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (135)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -69033,7 +69033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1438059657}
   - component: {fileID: 1438059658}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (13)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -69273,7 +69273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1443602619}
   - component: {fileID: 1443602620}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (101)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -69357,7 +69357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1443951037}
   - component: {fileID: 1443951038}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (151)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -69631,7 +69631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1451117107}
   - component: {fileID: 1451117108}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69715,7 +69715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1451855694}
   - component: {fileID: 1451855695}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (87)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -69799,7 +69799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453522085}
   - component: {fileID: 1453522086}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (45)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -69883,7 +69883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453547063}
   - component: {fileID: 1453547064}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: indoor_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70051,7 +70051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1458691382}
   - component: {fileID: 1458691383}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70144,7 +70144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1460347674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70560,7 +70560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461505269}
   - component: {fileID: 1461505270}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (160)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -70728,7 +70728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466112816}
   - component: {fileID: 1466112817}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (81)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -70980,7 +70980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466757782}
   - component: {fileID: 1466757783}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (72)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -71073,7 +71073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1468804488
 Animator:
   serializedVersion: 5
@@ -71489,7 +71489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475244312}
   - component: {fileID: 1475244313}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (149)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -71741,7 +71741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1479853231}
   - component: {fileID: 1479853232}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71825,7 +71825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485507184}
   - component: {fileID: 1485507185}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (109)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -71993,7 +71993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495141548}
   - component: {fileID: 1495141549}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72077,7 +72077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496830347}
   - component: {fileID: 1496830349}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -72413,7 +72413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510055696}
   - component: {fileID: 1510055697}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (82)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -72497,7 +72497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512422753}
   - component: {fileID: 1512422754}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (136)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -72833,7 +72833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525394951}
   - component: {fileID: 1525394952}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (19)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -73001,7 +73001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526763991}
   - component: {fileID: 1526763992}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (47)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -73421,7 +73421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1536556890}
   - component: {fileID: 1536556891}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (62)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -73673,7 +73673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1546894262}
   - component: {fileID: 1546894263}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (121)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -73757,7 +73757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1549171254}
   - component: {fileID: 1549171255}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (37)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -74221,7 +74221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1559553250}
   - component: {fileID: 1559553251}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (138)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -74305,7 +74305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561394917}
   - component: {fileID: 1561394918}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (14)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -74389,7 +74389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563680428}
   - component: {fileID: 1563680429}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (144)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -74473,7 +74473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563750503}
   - component: {fileID: 1563750504}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (58)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -74725,7 +74725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1569540019}
   - component: {fileID: 1569540020}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (212)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -75144,7 +75144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1579337555}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Lenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75187,7 +75187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581806035}
   - component: {fileID: 1581806036}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (26)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -75271,7 +75271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583798331}
   - component: {fileID: 1583798332}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (183)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -75819,7 +75819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1593546708}
   - component: {fileID: 1593546709}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76243,7 +76243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1600163049}
   - component: {fileID: 1600163050}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (105)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -76495,7 +76495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1608704330}
   - component: {fileID: 1608704331}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (68)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -76579,7 +76579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1612701937}
   - component: {fileID: 1612701938}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (163)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -76819,7 +76819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1617308525}
   - component: {fileID: 1617308526}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (12)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -76903,7 +76903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1618091893}
   - component: {fileID: 1618091894}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (139)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -77155,7 +77155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1618757996}
   - component: {fileID: 1618757997}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (46)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -77407,7 +77407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634640166}
   - component: {fileID: 1634640167}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (36)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -77659,7 +77659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646792480}
   - component: {fileID: 1646792481}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (7)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -77743,7 +77743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647787397}
   - component: {fileID: 1647787398}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (58)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -77827,7 +77827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649020950}
   - component: {fileID: 1649020951}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (169)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -77995,7 +77995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1650170563}
   - component: {fileID: 1650170564}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78375,7 +78375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1656253440}
   - component: {fileID: 1656253441}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (54)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -78822,7 +78822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664019006}
   - component: {fileID: 1664019007}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78990,7 +78990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668432164}
   - component: {fileID: 1668432165}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (63)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -79074,7 +79074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1671390926}
   - component: {fileID: 1671390927}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79830,7 +79830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1686342794}
   - component: {fileID: 1686342795}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (5)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -79914,7 +79914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687331227}
   - component: {fileID: 1687331228}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (91)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -80082,7 +80082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689825175}
   - component: {fileID: 1689825176}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (204)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -80166,7 +80166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1691886061}
   - component: {fileID: 1691886062}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (8)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -80250,7 +80250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1692129477}
   - component: {fileID: 1692129478}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (40)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -80334,7 +80334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1692617262}
   - component: {fileID: 1692617263}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80860,7 +80860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1711552203}
   - component: {fileID: 1711552204}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (122)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -81112,7 +81112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714745983}
   - component: {fileID: 1714745984}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (41)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -81475,7 +81475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1721702420}
   - component: {fileID: 1721702421}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (96)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -81559,7 +81559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1721844389}
   - component: {fileID: 1721844390}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81727,7 +81727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1725224240}
   - component: {fileID: 1725224241}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (216)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -81811,7 +81811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1727108228}
   - component: {fileID: 1727108229}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (36)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -82009,7 +82009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1727468654
 AudioSource:
   m_ObjectHideFlags: 0
@@ -82204,7 +82204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1727959488}
   - component: {fileID: 1727959489}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: spot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82288,7 +82288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729929471}
   - component: {fileID: 1729929472}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: room_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82483,7 +82483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734076954}
   - component: {fileID: 1734076955}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (39)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -82757,7 +82757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747221940}
   - component: {fileID: 1747221941}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (98)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -83009,7 +83009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750231840}
   - component: {fileID: 1750231841}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (28)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -83093,7 +83093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1751146668}
   - component: {fileID: 1751146669}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (29)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -83261,7 +83261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757257574}
   - component: {fileID: 1757257575}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83429,7 +83429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1759491713}
   - component: {fileID: 1759491714}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (185)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -83597,7 +83597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1760542151}
   - component: {fileID: 1760542152}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (100)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -83681,7 +83681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1763185408}
   - component: {fileID: 1763185409}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (142)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -83849,7 +83849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769060874}
   - component: {fileID: 1769060875}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (118)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -84101,7 +84101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775176360}
   - component: {fileID: 1775176361}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (71)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -84531,7 +84531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778801787}
   - component: {fileID: 1778801788}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: gym
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84615,7 +84615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778842052}
   - component: {fileID: 1778842053}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (148)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -84699,7 +84699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780326218}
   - component: {fileID: 1780326219}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (83)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -84783,7 +84783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780684991}
   - component: {fileID: 1780684992}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85062,7 +85062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1786353996}
   - component: {fileID: 1786353997}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85230,7 +85230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1793381866}
   - component: {fileID: 1793381867}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (22)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -85314,7 +85314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794879746}
   - component: {fileID: 1794879747}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (16)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -85398,7 +85398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800315746}
   - component: {fileID: 1800315747}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (68)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -85481,7 +85481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1802242698}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: BokorGroup
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -85854,7 +85854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802854037}
   - component: {fileID: 1802854038}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86380,7 +86380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814066661}
   - component: {fileID: 1814066662}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86464,7 +86464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814258307}
   - component: {fileID: 1814258308}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (50)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -86548,7 +86548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1816964542}
   - component: {fileID: 1816964543}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (133)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -86632,7 +86632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1820170670}
   - component: {fileID: 1820170671}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86716,7 +86716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821053781}
   - component: {fileID: 1821053782}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (32)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -86800,7 +86800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821176523}
   - component: {fileID: 1821176524}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86884,7 +86884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821239466}
   - component: {fileID: 1821239467}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (143)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -86968,7 +86968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1822533511}
   - component: {fileID: 1822533512}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (194)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -87136,7 +87136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1825620543}
   - component: {fileID: 1825620544}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (77)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -87304,7 +87304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1828117603}
   - component: {fileID: 1828117604}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (80)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -87388,7 +87388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1828261893}
   - component: {fileID: 1828261894}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (195)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -87472,7 +87472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1829429277}
   - component: {fileID: 1829429278}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (38)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -88082,7 +88082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1842770594}
   - component: {fileID: 1842770595}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (5)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -88166,7 +88166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1843528131}
   - component: {fileID: 1843528132}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (126)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -88334,7 +88334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1847333222}
   - component: {fileID: 1847333223}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (45)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -88574,7 +88574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1855397723}
   - component: {fileID: 1855397724}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (180)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -88658,7 +88658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1855920931}
   - component: {fileID: 1855920932}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88826,7 +88826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1859468098}
   - component: {fileID: 1859468099}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (59)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -88910,7 +88910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1859949283}
   - component: {fileID: 1859949284}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (106)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -89246,7 +89246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869568902}
   - component: {fileID: 1869568903}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (107)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -89330,7 +89330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1870585241}
   - component: {fileID: 1870585242}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (80)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -89414,7 +89414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871118784}
   - component: {fileID: 1871118785}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (7)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -89498,7 +89498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871899805}
   - component: {fileID: 1871899806}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (112)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -89750,7 +89750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1881964155}
   - component: {fileID: 1881964156}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (2)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -90024,7 +90024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1886684654}
   - component: {fileID: 1886684655}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (84)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -90661,7 +90661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1905499088}
   - component: {fileID: 1905499089}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (73)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -90754,7 +90754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1906841359
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90815,7 +90815,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906841358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.7, y: -3.5, z: 0}
+  m_LocalPosition: {x: 14.5, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90975,7 +90975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908018881}
   - component: {fileID: 1908018882}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (125)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -91059,7 +91059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909468545}
   - component: {fileID: 1909468546}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (114)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -91143,7 +91143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909678084}
   - component: {fileID: 1909678085}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91479,7 +91479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919759139}
   - component: {fileID: 1919759140}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (77)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -91647,7 +91647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929405163}
   - component: {fileID: 1929405164}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (9)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -91731,7 +91731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1930496303}
   - component: {fileID: 1930496304}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (24)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -91815,7 +91815,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932362608}
   - component: {fileID: 1932362609}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92094,7 +92094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1935031672}
   - component: {fileID: 1935031673}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92802,7 +92802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1959533353
 Animator:
   serializedVersion: 5
@@ -92862,8 +92862,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 882315691
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -92884,7 +92884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959533352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 283.1, y: 36.9, z: -0.27}
+  m_LocalPosition: {x: 264.2, y: 20.2, z: -0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -93023,7 +93023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1960207939}
   - component: {fileID: 1960207940}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (188)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -93107,7 +93107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1960507117}
   - component: {fileID: 1960507118}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (222)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -93190,7 +93190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1960999036}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Fenti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93239,7 +93239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1961523453}
   - component: {fileID: 1961523454}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93323,7 +93323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1961751529}
   - component: {fileID: 1961751530}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93407,7 +93407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963470885}
   - component: {fileID: 1963470886}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (175)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -93681,7 +93681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1968747213}
   - component: {fileID: 1968747214}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93849,7 +93849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1972870494}
   - component: {fileID: 1972870495}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (97)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -94266,7 +94266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977307170}
   - component: {fileID: 1977307171}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (76)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -94602,7 +94602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983682104}
   - component: {fileID: 1983682105}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94686,7 +94686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1989778183}
   - component: {fileID: 1989778184}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (29)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -94854,7 +94854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992041727}
   - component: {fileID: 1992041728}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (153)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -94938,7 +94938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1995142582}
   - component: {fileID: 1995142583}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (184)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -95022,7 +95022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997435861}
   - component: {fileID: 1997435862}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (137)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -95274,7 +95274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000331304}
   - component: {fileID: 2000331305}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (79)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -96252,7 +96252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015873064}
   - component: {fileID: 2015873065}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (207)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -96336,7 +96336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2017244900}
   - component: {fileID: 2017244901}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96672,7 +96672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023358464}
   - component: {fileID: 2023358465}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (73)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -97008,7 +97008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2031848325}
   - component: {fileID: 2031848326}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (108)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -97092,7 +97092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2034261349}
   - component: {fileID: 2034261350}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97176,7 +97176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2035220721}
   - component: {fileID: 2035220722}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (23)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -97371,7 +97371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2041119685}
   - component: {fileID: 2041119686}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: save_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97539,7 +97539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045233073}
   - component: {fileID: 2045233074}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97623,7 +97623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2046583643}
   - component: {fileID: 2046583644}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (67)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -97818,7 +97818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2050927068}
   - component: {fileID: 2050927069}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (113)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -98070,7 +98070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057831588}
   - component: {fileID: 2057831589}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (124)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -98154,7 +98154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2058430714}
   - component: {fileID: 2058430715}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (34)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -98238,7 +98238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2063273514}
   - component: {fileID: 2063273515}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98322,7 +98322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2064443417}
   - component: {fileID: 2064443418}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (213)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -98601,7 +98601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2078833075}
   - component: {fileID: 2078833076}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (84)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -98937,7 +98937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092259161}
   - component: {fileID: 2092259162}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (117)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -99021,7 +99021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092629351}
   - component: {fileID: 2092629352}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor3 (56)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -99273,7 +99273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2095462753}
   - component: {fileID: 2095462754}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (209)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -99609,7 +99609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2099861285}
   - component: {fileID: 2099861286}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: wallmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100029,7 +100029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109204057}
   - component: {fileID: 2109204058}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (22)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -100123,7 +100123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &2109316142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100695,7 +100695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2114714423}
   - component: {fileID: 2114714424}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (20)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -100779,7 +100779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115621982}
   - component: {fileID: 2115621983}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: save_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101031,7 +101031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2123582270}
   - component: {fileID: 2123582271}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101283,7 +101283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2130618610}
   - component: {fileID: 2130618611}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Building (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101367,7 +101367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132239656}
   - component: {fileID: 2132239657}
-  m_Layer: 11
+  m_Layer: 2
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101499,7 +101499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2140062788}
   - component: {fileID: 2140062789}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (44)
   m_TagString: Foreground
   m_Icon: {fileID: 0}
@@ -130404,7 +130404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2146630670}
   - component: {fileID: 2146630671}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Bokor1 (197)
   m_TagString: Foreground
   m_Icon: {fileID: 0}

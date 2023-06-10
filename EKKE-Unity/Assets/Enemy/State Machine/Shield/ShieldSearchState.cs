@@ -22,6 +22,17 @@ public class ShieldSearchState : EnemyBaseState
         {
             stateManager.StateSwitch(new ShieldSpotState());
         }
+        if (NearPlayer() && player.isSliding)
+        {
+            stateManager.StateSwitch(new ShieldGatyaState());
+
+        }
 
     }
+
+    private bool NearPlayer()
+    {
+        return CanSeePlayer(.1f);
+    }
+
 }

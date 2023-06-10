@@ -64,12 +64,16 @@ public class SceneController : MonoBehaviour
         enemies.Clear();
         FindEnemies();
     }
-
-    void Update()
+    private void LateUpdate()
     {
         TicKEnemies();
         //Debug.Log($"FPS: {1.0f / Time.deltaTime}");
         UIController.Update();
+    }
+
+    void Update()
+    {
+        
     }
 
     private void TicKEnemies()

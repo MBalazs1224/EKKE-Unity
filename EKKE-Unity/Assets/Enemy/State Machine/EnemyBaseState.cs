@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public abstract class EnemyBaseState
 {
@@ -11,7 +13,7 @@ public abstract class EnemyBaseState
     protected Character player = null;
     protected Animator anim = null;
     public abstract void Tick();
-    public abstract void EnterState(EnemyStateManager manager,GameObject gameObject, Character player);
+    public abstract void EnterState(EnemyStateManager manager, GameObject gameObject, Character player);
     protected bool CanSeePlayer(float maxDetectionDistance = 10)
     {
         if (player.isDead()) return false;

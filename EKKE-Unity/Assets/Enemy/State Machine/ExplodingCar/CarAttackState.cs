@@ -8,7 +8,7 @@ public class CarAttackState : EnemyBaseState
     public float explosionTimer = 1f;
     public float explosionRadius = 5f;
     Animator animator;
-    float moveSpeed = 0.3f;
+    float moveSpeed = 20f;
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
         stateManager = manager;
@@ -29,7 +29,9 @@ public class CarAttackState : EnemyBaseState
         }
         else
         {
-            currentObject.transform.position = Vector2.MoveTowards(currentObject.transform.position, player.transform.position, moveSpeed);
+            int multiplier = player.transform.position.x < currentObject.transform.position.x ? -1 : 1;
+            currentObject.transform.position += new Vector3(moveSpeed * multiplier, 0) * Time.deltaTime;
+            //currentObject.transform.position = Vector2.MoveTowards(currentObject.transform.position, player.transform.position, moveSpeed);
             explosionTimer -= Time.deltaTime;
             if (explosionTimer <= 0f)
             {

@@ -19,12 +19,15 @@ public class RobotPigeonFlyState : EnemyBaseState
         double num = rnd.NextDouble();
         if (num < .5d)
         {
-            currentObject.transform.rotation = new Quaternion(0, 0, 10,0);
+            //currentObject.transform.rotation = new Quaternion(180, 0, 160, 0);
+            currentObject.transform.rotation = Quaternion.Euler(180, 0, 160);
             target = new Vector2(100, 100);
         }
         else
         {
-            currentObject.transform.rotation = new Quaternion(0, 0, 10,0);
+            //currentObject.transform.rotation = new Quaternion(0, 0, -30, 0);
+            currentObject.transform.rotation = Quaternion.Euler(0, 0, -30);
+
             target = new Vector2(-100, 100);
         }
 

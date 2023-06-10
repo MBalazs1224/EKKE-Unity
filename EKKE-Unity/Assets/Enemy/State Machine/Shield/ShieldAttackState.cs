@@ -11,7 +11,7 @@ public class ShieldAttackState : EnemyBaseState
     float maxLeft;
     bool moveRight = true;
     bool canAttack = true;
-    private float moveSpeed = 10f;
+    private float moveSpeed = 2f;
 
     public override void EnterState(EnemyStateManager manager, GameObject gameObject, Character player)
     {
@@ -25,7 +25,7 @@ public class ShieldAttackState : EnemyBaseState
     }
     public override void Tick()
     {
-        if (!CanSeePlayer()) stateManager.StateSwitch(new ShieldSearchState());
+        if (!CanSeePlayer(15)) stateManager.StateSwitch(new ShieldSearchState());
         if (!canAttack) return;
         if (moveRight)
         {
@@ -38,16 +38,26 @@ public class ShieldAttackState : EnemyBaseState
             if (currentObject.transform.position.x >= maxLeft) moveRight = true;
         }
 
-        if (NearPlayer() && !player.isSliding)
+        if (NearPlayer())
         {
-            player.TakeDamage();
+            if (player.isSliding)
+            {
+                stateManager.StateSwitch(new ShieldGatyaState());
+            }
+            else if (canAttack)
+            {
+                player.TakeDamage();
+                canAttack = false;
+                sceneController.StartCoroutine(AttackCooldown());
+            }
         }
+
 
     }
 
     private bool NearPlayer()
     {
-        return CanSeePlayer();
+        return CanSeePlayer(.1f);
     }
 
     IEnumerator AttackCooldown()
