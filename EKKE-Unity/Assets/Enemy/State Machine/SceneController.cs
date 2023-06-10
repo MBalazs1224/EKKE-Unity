@@ -13,6 +13,7 @@ public class SceneController : MonoBehaviour
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 30;
         AudioController.Init();
+        UIController.Init();
     }
     void Start()
     {

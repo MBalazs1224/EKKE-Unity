@@ -5,6 +5,7 @@ using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEditor;
 
 public class Character : MonoBehaviour
 {
@@ -78,6 +79,7 @@ public class Character : MonoBehaviour
 
     bool nearPowerPoint = false;
     private bool isStomping;
+    private bool isPaused = false;
 
     IEnumerator Death()
     {
@@ -126,6 +128,8 @@ public class Character : MonoBehaviour
         this.gameObject.transform.position = cp.resumePoint;
         anim.SetBool("Idle", true);
         health = maxHealth;
+        UIController.Heal();
+        UIController.CanDash();
     }
 
     public bool isDead() => health == 0;
@@ -152,12 +156,15 @@ public class Character : MonoBehaviour
             StartCoroutine(Death());
             AudioController.PlayDeath(audioSource);
             Debug.Log($"Dead!");
+            UIController.Death();
         }
         else
         {
             StopCoroutine(StartRegen());
             StartCoroutine(StartRegen());
             anim.SetTrigger("Hurt");
+            UIController.TakeDamage();
+
             AudioController.PlayHurt(audioSource);
             isHurting = true;
             //anim.ResetTrigger("Unhurt");
@@ -178,6 +185,8 @@ public class Character : MonoBehaviour
         AudioController.PlayHeal(audioSource);
         health = maxHealth;
         Debug.Log("Health is back to max value!");
+        UIController.Heal();
+
     }
 
     public void LowerRegenerationTime()
@@ -187,6 +196,26 @@ public class Character : MonoBehaviour
     }
 
     private void FixedUpdate()
+    {
+        
+    }
+
+    private void ESC_Pressed()
+    {
+
+        if (!isPaused)
+        {
+            UIController.Pause();
+            isPaused = true;
+        }
+        else
+        {
+            UIController.Unpause();
+            isPaused = false;
+        }
+    }
+
+    private void Update()
     {
         if (isDead() || isHurting || CheckpointAnimationRunning || isStomping) return;
 
@@ -208,6 +237,7 @@ public class Character : MonoBehaviour
         //}
         //afkTime = 0;
         if (Input.GetKeyDown(KeyCode.F10)) ReloadScene();
+        else if (Input.GetKeyDown(KeyCode.Escape)) ESC_Pressed();
 
         else if (Input.GetKeyDown(KeyCode.B)) camController.Shake();
         else if (Input.GetKeyDown(KeyCode.F)) TakeDamage();
@@ -253,17 +283,12 @@ public class Character : MonoBehaviour
             ButtonDownPress();
 
         }
-         if (isOnWall)
+        if (isOnWall)
         {
             this.transform.position -= moveSpeed * Time.deltaTime * new Vector3(0, .01f);
         }
 
         notification.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 5);
-
-    }
-
-    private void Update()
-    {
 
 
     }
@@ -306,10 +331,11 @@ public class Character : MonoBehaviour
         if (canDash && !isSliding)
         {
             anim.SetTrigger("Dash");
-
+            UIController.CantDash();
             moveSpeed *= 2;
             canDash = false;
             StartCoroutine(DashCooldown());
+            //StartCoroutine(UnDash());
         }
 
     }
@@ -320,10 +346,14 @@ public class Character : MonoBehaviour
         Debug.Log("Can dash!");
         AudioController.PlayDash(audioSource);
         canDash = true;
+        UIController.CanDash();
+
+
     }
     void UnDash()
     {
         moveSpeed /= 2;
+
     }
 
     void ButtonDownPress()
