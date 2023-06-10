@@ -41,9 +41,12 @@ public static class AudioController
     static AudioClip shieldRecovery;
     static AudioClip shieldSpot;
 
+    static AudioClip notificationIn;
+    static AudioClip notificationOut;
+
     public static float soundWaitTime = 5f;
 
-
+    static AudioSource source;
     public static void Init()
     {
         death = Resources.Load<AudioClip>("Audio/death");
@@ -84,7 +87,20 @@ public static class AudioController
         shieldSpot = Resources.Load<AudioClip>("Audio/shield/shield_spot_1");
 
 
+        notificationIn = Resources.Load<AudioClip>("Audio/notification_in");
+        notificationOut = Resources.Load<AudioClip>("Audio/notification_out");
+
+        source = GameObject.Find("Player").GetComponent<AudioSource>();
         
+    }
+
+    public static void PlayNotificationIn()
+    {
+        source.PlayOneShot(notificationIn);
+    }
+    public static void PlayNotificationOut()
+    {
+        source.PlayOneShot(notificationOut);
     }
 
     public static void PlayDeath(AudioSource source)

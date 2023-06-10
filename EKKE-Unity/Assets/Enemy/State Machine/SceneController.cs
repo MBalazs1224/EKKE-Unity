@@ -69,6 +69,7 @@ public class SceneController : MonoBehaviour
     {
         TicKEnemies();
         //Debug.Log($"FPS: {1.0f / Time.deltaTime}");
+        UIController.Update();
     }
 
     private void TicKEnemies()

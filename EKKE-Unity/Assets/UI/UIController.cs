@@ -29,6 +29,19 @@ public static class UIController
 
     static MB mb;
 
+    static float notificationHiddenPostition;
+    static float notificationShownPostition;
+
+    static Sprite savedNotification;
+    static Sprite powerNotification;
+
+    static SpriteRenderer notificationRenderer;
+    static GameObject notificationObject;
+
+    [SerializeField]
+    private static float notificationMoveSpeed = -40f;
+    private static float notificationWaitTime = 1f;
+
     public static void Init()
     {
         dashRenderer = GameObject.Find("Dash").GetComponent<SpriteRenderer>();
@@ -50,6 +63,10 @@ public static class UIController
         pauseAnim.enabled = false;
         pauseRenderer.sprite = null;
 
+        savedNotification = Resources.Load<Sprite>("HUD/gamesaved");
+        powerNotification = Resources.Load<Sprite>("HUD/regeneration");
+        notificationObject = GameObject.Find("UI Notification");
+        notificationRenderer = notificationObject.GetComponent<SpriteRenderer>();
 
         GameObject go = new GameObject("rakos");
         mb = go.AddComponent<MB>();
@@ -63,6 +80,48 @@ public static class UIController
     {
         dashRenderer.sprite = cantDash;
     }
+
+    public static void Update()
+    {
+        notificationShownPostition = Camera.main.transform.position.x + 45;
+        notificationHiddenPostition = Camera.main.transform.position.x + 60;
+    }
+
+
+    static IEnumerator ActivateNotification(bool isSave)
+    {
+        Debug.Log("Save notification started moving");
+        notificationRenderer.sprite = isSave ? savedNotification : powerNotification;
+        AudioController.PlayNotificationIn();
+        while (notificationObject.transform.position.x >= notificationShownPostition)
+        {
+            notificationObject.transform.position += new Vector3(notificationMoveSpeed, 0) * Time.deltaTime;
+            yield return null;
+        }
+        yield return new WaitForSeconds(notificationWaitTime);
+        sc.StartCoroutine(HideNotification());
+    }
+
+    static IEnumerator HideNotification()
+    {
+        AudioController.PlayNotificationOut();
+
+        while (notificationObject.transform.position.x <= notificationHiddenPostition)
+        {
+            notificationObject.transform.position += new Vector3(-notificationMoveSpeed, 0) * Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    public static void ActivateSaveNotification()
+    {
+        sc.StartCoroutine(ActivateNotification(true));
+    }
+    public static void ActivatePowerNotification()
+    {
+        sc.StartCoroutine(ActivateNotification(false));
+    }
+
 
 
     public static void TakeDamage()

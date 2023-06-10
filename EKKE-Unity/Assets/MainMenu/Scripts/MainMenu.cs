@@ -12,11 +12,7 @@ public class MainMenu : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         loading.SetActive(true);
-        VideoPlayer loadingVP = loading.GetComponent<VideoPlayer>();
-        loadingVP.loopPointReached += (_) =>
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // "Game scene"
-        };
+        StartCoroutine(LoadScene());
     }
     IEnumerator LoadScene()
     {

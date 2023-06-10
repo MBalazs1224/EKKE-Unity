@@ -481,10 +481,11 @@ public class Character : MonoBehaviour
                 nearestCheckpoint.gameObject.tag = "Checkpoint (saved)";
                 notification.SetActive(false);
                 canSave = false;
+                UIController.ActivateSaveNotification();
             }
             else
             {
-                Debug.Log("Save");
+                Debug.Log("Powerup");
                 anim.SetTrigger("Graffiti");
                 CheckpointAnimationRunning = true;
                 LowerRegenerationTime();
@@ -495,6 +496,7 @@ public class Character : MonoBehaviour
                 nearestCheckpoint.gameObject.tag = "Powerpoint (activated)";
                 notification.SetActive(false);
                 nearPowerPoint = false;
+                UIController.ActivatePowerNotification();
             }
 
 
